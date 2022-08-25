@@ -1,6 +1,6 @@
 # Ibtech
 
-# Descrição:
+# Descrição de doidao:
 
 ***O projeto visa facilitar a apresentação dos projetos feitos pelos alunos da instituição Ibmec nos cursos de tecnologia, tendo como base a apresentação de portifólios dos alunos bem como os resultados alcançados por eles.***
 
