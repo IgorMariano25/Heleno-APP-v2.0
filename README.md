@@ -4,7 +4,7 @@
 
 ***O projeto visa facilitar a apresentação dos projetos feitos pelos alunos da instituição Ibmec nos cursos de tecnologia, tendo como base a apresentação de portifólios dos alunos bem como os resultados alcançados por eles.***
 
-# História:
+# História:asdiosdf
 
 ***O Projeto Heleno surgiu em 2022 como projeto final da disciplina de Projeto Front-end do curso de Análise e Desenvolvimento de Sistemas do IBMEC. Seu idealizador foi o professor Eduardo Mangeli e seu desenvolvimento ficou a cargo dos alunos Clarissa Proença, Guilherme Félix, Felipe Castelhano e Igor Mariano do primeiro período. O foco do site são os alunos e os projetos desenvolvidos por eles. Através dessa plataforma alunos de todos os períodos, dos cursos de tecnologia, poderão mostrar os códigos e projetos que desenvolveram ou venham a desenvolver ao longo de sua formação acadêmica.***
 
