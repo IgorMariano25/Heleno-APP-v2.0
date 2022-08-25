@@ -10,7 +10,6 @@
 
 # Status do projeto: Em desenvolvimento
 
-* ***Layout***
 * ***Requisitos do projeto***
 
 
