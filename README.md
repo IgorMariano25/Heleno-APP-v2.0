@@ -10,7 +10,7 @@
 
 # Status do projeto: Em desenvolvimento
 
-* ***Requisitos do projeto***
+
 
 
 # Técnicas de lavantamento de requisito:
