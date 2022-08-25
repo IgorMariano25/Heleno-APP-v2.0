@@ -13,7 +13,7 @@
 
 
 
-# Técnicas de lavantamento de requisito: bundinha
+# Técnicas de lavantamento de requisito: bundas
 
 * ***Entrevista***
 * ***Prototipação***
