@@ -10,8 +10,7 @@
 
 # Status do projeto: Em desenvolvimento
 
-* ***Layout***
-* ***Requisitos do projeto***
+
 
 
 # Técnicas de lavantamento de requisito: bundinha
