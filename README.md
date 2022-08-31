@@ -1,5 +1,4 @@
 # Projeto-ibtech
-=======
 
 # Descrição:
 
