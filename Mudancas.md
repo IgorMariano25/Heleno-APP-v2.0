@@ -25,10 +25,6 @@
 
 - Colocar a lista de projetos do ibmec.
 
-- Tirar os nomes de todos os participantes do card da lista.
-
-- Colocar o nome do lider do projeto no card da lista.
-
 - Ao clicar no card, aparecer todos os participantes com as tecnologias.
 
 ### ALUNOS
@@ -40,6 +36,7 @@
 ### CONTATO
 
 - Integrar o botao `enviar mensagem` com o whatsapp.
+
 - Transformar o botao de mensagem em uma textarea.
 
 ### SOBRE 
