@@ -25,16 +25,17 @@
 
 - Colocar a lista de projetos do ibmec.
 
+- Tirar os nomes de todos os participantes do card da lista.
 
+- Colocar o nome do lider do projeto no card da lista.
 
 - Ao clicar no card, aparecer todos os participantes com as tecnologias.
 
 ### ALUNOS
-- Ajeitar o estilo do card.
 
 - Ao clicar no card, aparecer todos os projetos do aluno.
 
-
+- Ajeitar o estilo do card.
 
 ### CONTATO
 
