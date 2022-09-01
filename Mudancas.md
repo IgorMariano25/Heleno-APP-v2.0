@@ -1,5 +1,5 @@
 ### GERAL
-- Criar a area do Hubs, Graduações e Pós Graduações.
+- Criar a area do Hubs, Graduações, Pós Graduações e MBA.
 
 - Deixar a navbar presa.
 
@@ -8,14 +8,18 @@
 - Deixar responsivo.
 
 ### HOME
+- Tirar a secao de alunos
 
 - Tirar a secao de projetos
 
-- Tirar a secao de alunos
-
 - Colocar um `Como Chegar no Ibmec` google maps
 
+- Seção para falar sobre o Hubs, com botão para levar a aba própria do Hubs
+
 ### PORTFOLIOS
+- Colocar o nome do lider do projeto no card da lista.
+
+- Tirar os nomes de todos os participantes do card da lista.
 
 - Tirar a lista de projetos dos alunos.
 
