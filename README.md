@@ -1,27 +1,103 @@
 # Projeto-ibtech
 
-# Descrição:
+# `DOCUMENTAÇÃO ATUAL`
+
+## O QUE ESPERAMOS DO PROJETO
+
+- Nós, como um grupo, esperamos evoluir o projeto deixado pela turma anterior, que visa permitir que os alunos do curso de tecnologia do Ibmec possam compartilhar seus portifólios, distribuir seus conhecimentos e demostrar o uso de diferentes linguagens de programação.
+
+### REQUISITOS FUNCIONAIS
+
+| CÓDIGO      | DESCRIÇÃO |
+| ----------- | ----------- |
+| [RF01]     | O sistema deve permitir o login de usuarios     |
+| [RF02]   | O sistema deve permitir o crud de usuários      |
+| [RF03] | O sistema deve permitir o crud de projetos |
+| [RF04] | O sistema deve permitir o chat simultâneo entre o usuário e a faculdade |
+
+### REQUISITOS NÃO FUNCIONAIS
+
+| CÓDIGO      | DESCRIÇÃO |
+| ----------- | ----------- |
+| [RNF01]      | O sistema deve possibilitar que o usuário adicione uma foto ao projeto, com até X (Kb, Mb ou Gb)      |
+| [RNF02]   | O sistema deve criptografar a senha do usuário        |
+| [RNF03]   | O sistema deve ser responsivo        |
+
+
+## Mudanças:
+
+#### ÁREA GERAL:
+- Criar a area do Hubs, Graduações e Pós Graduações.
+
+- Deixar a navbar presa.
+
+- Deixar o footer solto.
+
+- Deixar o sistema responsivo.
+
+#### HOME
+
+- Tirar a seção de projetos.
+
+- Tirar a seção de alunos.
+
+- Colocar um `Como Chegar no Ibmec` google maps.
+
+#### PORTFÓLIOS
+
+- Tirar a lista de projetos dos alunos.
+
+- Colocar a lista de projetos do ibmec.
+
+- Tirar os nomes de todos os participantes do card da lista.
+
+- Colocar o nome do lider do projeto no card da lista.
+
+- Ao clicar no card, aparecer todos os participantes com as tecnologias.
+
+#### ALUNOS
+
+- Ao clicar no card, aparecer todos os projetos do aluno.
+
+- Ajeitar o estilo do card.
+
+#### CONTATO
+
+- Integrar o botao `enviar mensagem` com o whatsapp.
+- Transformar o botao de mensagem em uma textarea.
+
+#### SOBRE 
+
+- Colocar a galeria das turmas e seus respectivos projetos.
+
+
+<hr>
+
+# `DOCUMENTAÇÃO DA TURMA ANTERIOR`
+
+
+## Descrição:
 
 ***O projeto visa facilitar a apresentação dos projetos feitos pelos alunos da instituição Ibmec nos cursos de tecnologia, tendo como base a apresentação de portifólios dos alunos bem como os resultados alcançados por eles.***
 
-# História:
+## História:
 
 ***O Projeto surgiu em 2022 como projeto final da disciplina de Projeto Front-end do curso de Análise e Desenvolvimento de Sistemas do IBMEC. Seu idealizador foi o professor Eduardo Mangeli e seu desenvolvimento ficou a cargo dos alunos Clarissa Proença, Guilherme Félix, Felipe Castelhano e Igor Mariano do primeiro período. O foco do site são os alunos e os projetos desenvolvidos por eles. Através dessa plataforma alunos de todos os períodos, dos cursos de tecnologia, poderão mostrar os códigos e projetos que desenvolveram ou venham a desenvolver ao longo de sua formação acadêmica.***
 
-# Status do projeto: Em desenvolvimento
+## Status do projeto: Em desenvolvimento
 
 * ***Layout***
 * ***Requisitos do projeto***
 
 
-# Técnicas de lavantamento de requisito:
+## Técnicas de lavantamento de requisito:
 
 * ***Entrevista***
 * ***Prototipação***
 
-# Listagem de requisitos:
+## Listagem de requisitos:
 
-## Funcionais:
+### Funcionais:
 
 * ***Permitir o cadastro de novos usuários;***
 * ***Permitir o cadastro de novos projetos;***
@@ -37,7 +113,7 @@
 * ***Permitir a edição dos projetos;***
 * ***Permitir a edição dos perfis dos alunos;***
 
-## Não Funcionias:
+### Não Funcionais:
 
 * ***Possibilitar que o usuário adicione uma foto ao projeto, com até X (Kb, Mb ou Gb);***
 * ***Estar disponível para o usuário 24/7;***
@@ -46,11 +122,11 @@
 * ***Estar hospedado no GitLab Pages;***
 * ***Ser elaborado com o React;***
 
-# Técnica de descrição de requisitos a ser utilizada:
+## Técnica de descrição de requisitos a ser utilizada:
 
 *  ***História de usuário com critérios de aceitação***
 
-# Gestão de ramos (branchs) escolhida para esse projeto:
+## Gestão de ramos (branchs) escolhida para esse projeto:
 
 * *A gestão de ramos (branchs) escolhida para esse projeto foi: Integração Contínua* 
 
