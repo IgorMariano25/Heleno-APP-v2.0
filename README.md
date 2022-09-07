@@ -4,7 +4,7 @@
 
 ## O QUE ESPERAMOS DO PROJETO
 
-- Nós, como um grupo, esperamos evoluir o projeto deixado pela turma anterior, que visa permitir que os alunos do curso de tecnologia do Ibmec possam compartilhar seus portifólios, distribuir seus conhecimentos e demostrar o uso de diferentes linguagens de programação.
+- Nós, como um grupo, esperamos evoluir o projeto deixado pela turma anterior, que visa permitir que os alunos do curso de tecnologia do Ibmec possam compartilhar seus portifólios, distribuir seus conhecimentos e demostrar o uso de diferentes linguagens de programação...
 
 ### REQUISITOS FUNCIONAIS
 
