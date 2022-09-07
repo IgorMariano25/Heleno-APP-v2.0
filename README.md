@@ -86,3 +86,6 @@ git remote add origin https://gitlab.com/projeto-multidisciplinar/projeto-eleno.
 git branch -M main
 git push -uf origin main
 ```
+
+### Caso de uso adicionado 
+
