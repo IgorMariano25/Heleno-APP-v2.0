@@ -89,7 +89,7 @@ git push -uf origin main
 
 ### Caso de uso adicionado 
 
-## Requisitos debatidos pela turma
+# Requisitos debatidos pela turma
 
 ### GERAL
 - Criar a area do Hubs, Graduações, Pós Graduações e MBA.
