@@ -1,6 +1,6 @@
 # Projeto-ibtech
 
-# Descrição de doidao:
+# Descrição:
 
 ***O projeto visa facilitar a apresentação dos projetos feitos pelos alunos da instituição Ibmec nos cursos de tecnologia, tendo como base a apresentação de portifólios dos alunos bem como os resultados alcançados por eles.***
 
@@ -88,4 +88,51 @@ git push -uf origin main
 ```
 
 ### Caso de uso adicionado 
+
+## Requisitos debatidos pela turma
+
+### GERAL
+- Criar a area do Hubs, Graduações, Pós Graduações e MBA.
+
+- Deixar a navbar presa.
+
+- Deixar o footer solto.
+
+- Deixar responsivo.
+
+### HOME
+- Tirar a secao de alunos
+
+- Tirar a secao de projetos
+
+- Colocar um `Como Chegar no Ibmec` google maps
+
+- Seção para falar sobre o Hubs, com botão para levar a aba própria do Hubs
+
+### PORTFOLIOS
+- Colocar o nome do lider do projeto no card da lista.
+
+- Tirar os nomes de todos os participantes do card da lista.
+
+- Tirar a lista de projetos dos alunos.
+
+- Colocar a lista de projetos do ibmec.
+
+- Ao clicar no card, aparecer todos os participantes com as tecnologias.
+
+### ALUNOS
+
+- Ao clicar no card, aparecer todos os projetos do aluno.
+
+- Ajeitar o estilo do card.
+
+### CONTATO
+
+- Integrar o botao `enviar mensagem` com o whatsapp.
+
+- Transformar o botao de mensagem em uma textarea.
+
+### SOBRE 
+
+- Colocar a galeria das turmas e seus respectivos projetos.
 
