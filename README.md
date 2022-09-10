@@ -13,7 +13,7 @@
 
 
 
-# Técnicas de lavantamento de requisito: bundas
+# Técnicas de lavantamento de requisito:
 
 * ***Entrevista***
 * ***Prototipação***
@@ -35,15 +35,15 @@
 - [RF11] Permitir a edição dos perfis dos alunos;
 - [RF12] Permitir pesquisar por alunos dentro de um projeto
 - [RF13] Permitir adicionar novidades do IBMEC
+- [RF14] Possibilitar que o usuário adicione uma foto ao projeto, com até X (Kb, Mb ou Gb);
 
 ### Não Funcionias:
 
-- [RNF1] Possibilitar que o usuário adicione uma foto ao projeto, com até X (Kb, Mb ou Gb);
-- [RNF2] Estar disponível para o usuário 24/7;
-- [RNF3] Criptografar a senha do usuário;
-- [RNF4] Deve rodar em vários tipos de navegadores;
-- [RNF5] Estar hospedado no GitLab Pages;
-- [RNF6] Ser elaborado com o React;
+- [RNF1] Estar disponível para o usuário 24/7;
+- [RNF2] Criptografar a senha do usuário;
+- [RNF3] Deve rodar em vários tipos de navegadores;
+- [RNF4] Estar hospedado no GitLab Pages;
+- [RNF5] Ser elaborado com o React;
 
 
 # Técnica de descrição de requisitos a ser utilizada:
