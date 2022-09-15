@@ -37,3 +37,43 @@
 | RNF04   | Estar disponível para o usuário 24/7.       |
 | RNF05   | O sistema deve ser responsivo.        |
 
+
+# Descrição de casos de uso:
+
+## Página dos Alunos:
+
+> Caso de uso:
+>
+> Exibição do espaço individual (card) do aluno
+> <hr>
+> Referência:
+>
+> RF11 e RF01 parcialmente
+> <hr>
+> Descrição geral:
+>
+> Começa com o usuário do sistema querendo ver as informações de determinada pessoa dentro do sistema.
+> <hr>
+> Atores:
+> 
+> Usuário
+> <hr>
+> Pre-condições:
+> 
+> acessar o site
+> <hr>
+> Pós-condições:
+> 
+> Aparecer as informações do aluno na tela
+> <hr>
+> Campos:
+>
+> Foto do aluno, nome do aluno, curso do aluno, semestre que começou o curso, ano em que deve terminar o curso, projetos em que participou e uma breve descrição escrita pelo proprio aluno
+> <hr>
+> Fluxo básico:
+> 
+> a) acessar a tela dos alunos
+> 
+> b) clicar no card de um aluno a fim de mostrar mais informações sobre o aluno
+> 
+> Fim de caso de uso
