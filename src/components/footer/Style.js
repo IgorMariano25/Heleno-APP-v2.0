@@ -1,13 +1,36 @@
 import styled from "styled-components";
 
 const Footer = styled.footer`
-    bottom: 0%;
-    left:0,033%; /* 36px / 1080px  */
+    bottom: 0;
     width: 100%;
-    height: 75px; /* 94px /1080px */
     background-color: #F5AC00;
-    position: fixed;
+    // position: absolute;
     display: flex;
+
+    @media screen and (max-width: 1025px){
+        bottom: 0;
+        width: 100%;
+        background-color: #F5AC00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+`;
+
+const FooterPagPrincipal = styled.footer`
+    bottom: 0;
+    width: 100%;
+    background-color: #F5AC00;
+    display: flex;
+
+    @media screen and (max-width: 800px){
+        bottom: 0;
+        width: 100%;
+        background-color: #F5AC00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 `;
 
 const Logo = styled.img`
@@ -18,14 +41,27 @@ const Logo = styled.img`
     margin-left: 10em;
 `;
 
+const DivLogo= styled.div`
+    @media screen and (max-width: 800px){
+        display: none;
+    }
+`;
+
 const DivRede = styled.div`
     margin-left: auto;
+
+    @media screen and (max-width: 800px){
+        margin: auto;
+    }
 `;
 
 const ListaRede = styled.ul`
     display: flex;
     list-style-type: none;
-    margin-right: 10em;
+
+    @media screen and (max-width: 800px){
+        margin-right: 0;
+    }
 `;
 
 const IconeRedeSocial = styled.img`
@@ -34,4 +70,4 @@ const IconeRedeSocial = styled.img`
     height: 25px;
 `;
 
-export { Footer, Logo, DivRede, ListaRede, IconeRedeSocial}
+export { Footer, FooterPagPrincipal, Logo, DivRede, DivLogo, ListaRede, IconeRedeSocial}

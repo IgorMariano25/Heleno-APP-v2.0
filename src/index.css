@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
 
+html, body, #root{
+  height: 100%;
+}
+
+#root{
+  height: 100%;
+}
+
 input[type=text].section-readonly-input {
     outline: none !important;
     border-width: 0px !important;
     border: none !important;
     
-    &:hover {
+    /* &:hover {
       outline: none !important;
       border-width: 0px !important;
       border: none !important;
@@ -14,7 +22,7 @@ input[type=text].section-readonly-input {
       outline: none !important;
       border-width: 0px !important;
       border: none !important;
-    }
+    } */
   }
 
 .ContainerCardProjetos{

@@ -35,7 +35,7 @@ const Projetos = () => {
     }, [filtra]);
 
     return (
-        <div>
+        <div className="container">
             <Topo/>
             <div className="Pesquisa">
                 <form onSubmit={(e) => {
