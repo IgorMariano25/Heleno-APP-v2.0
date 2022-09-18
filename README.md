@@ -1,165 +1,306 @@
-# Projeto-ibtech
+##### *Documentação Nova*
+# **PROJETO IBTECH**
 
-# `DOCUMENTAÇÃO ATUAL`
 
-## O QUE ESPERAMOS DO PROJETO
 
-- Nós, como um grupo, esperamos evoluir o projeto deixado pela turma anterior, que visa permitir que os alunos do curso de tecnologia do Ibmec possam compartilhar seus portifólios, distribuir seus conhecimentos e demostrar o uso de diferentes linguagens de programação...
+## **REQUISITOS FUNCIONAIS**
 
-### REQUISITOS FUNCIONAIS
-
-| CÓDIGO      | DESCRIÇÃO |
-| ----------- | ----------- |
-| [RF01]     | O sistema deve permitir o login de usuarios     |
-| [RF02]   | O sistema deve permitir o crud de usuários      |
-| [RF03] | O sistema deve permitir o crud de projetos |
-| [RF04] | O sistema deve permitir o chat simultâneo entre o usuário e a faculdade |
-
-### REQUISITOS NÃO FUNCIONAIS
+### **Geral**
 
 | CÓDIGO      | DESCRIÇÃO |
 | ----------- | ----------- |
-| [RNF01]      | O sistema deve possibilitar que o usuário adicione uma foto ao projeto, com até X (Kb, Mb ou Gb)      |
-| [RNF02]   | O sistema deve criptografar a senha do usuário        |
-| [RNF03]   | O sistema deve ser responsivo        |
+| RF01     | O sistema deve [MANTER*](#legenda) as pessoas     |
+| RF02 | O sistema deve [MANTER*](#legenda) os projetos 
+| RF03 | O sistema deve [MANTER*](#legenda) novas tecnologias.
+| RF04 | O sistema deve [MANTER*](#legenda) o IBMEC HUBS.
+| RF05 | Possibilitar que o usuário realize buscas por pessoas.
+| RF06 | Possibilitar que o usuário realize buscas por projetos.
+| RF07 | Possibilitar que o usuário filtre como informações de busca por pessoas.
+| RF08 | Possibilitar que o usuário filtre como informações de busca por projetos.
+| RF09 | Permitir uma referência entre a pessoa e o projeto.
+| RF10 | Possibilitar busca de empresas.
+| RF11 | O sistema deve possibilitar que o usuário adicione uma foto ao projeto, com até X (Kb, Mb ou Gb).
+| RF12 | O sistema deve permitir fazer login|
+
+#### <a name="legenda"> *Manter: Listar, Visualizar, Editar, Criar e Excluir* </a>
+---
+
+## **REQUISITOS NÃO FUNCIONAIS**
 
 
-## Mudanças:
 
-#### ÁREA GERAL:
-- Criar a area do Hubs, Graduações e Pós Graduações.
-
-- Deixar a navbar presa.
-
-- Deixar o footer solto.
-
-- Deixar o sistema responsivo.
-
-#### HOME
-
-- Tirar a seção de projetos.
-
-- Tirar a seção de alunos.
-
-- Colocar um `Como Chegar no Ibmec` google maps.
-
-#### PORTFÓLIOS
-
-- Tirar a lista de projetos dos alunos.
-
-- Colocar a lista de projetos do ibmec.
-
-- Tirar os nomes de todos os participantes do card da lista.
-
-- Colocar o nome do lider do projeto no card da lista.
-
-- Ao clicar no card, aparecer todos os participantes com as tecnologias.
-
-#### ALUNOS
-
-- Ao clicar no card, aparecer todos os projetos do aluno.
-
-- Ajeitar o estilo do card.
-
-#### CONTATO
-
-- Integrar o botao `enviar mensagem` com o whatsapp.
-- Transformar o botao de mensagem em uma textarea.
-
-#### SOBRE 
-
-- Colocar a galeria das turmas e seus respectivos projetos.
+| CÓDIGO      | DESCRIÇÃO |
+| ----------- | ----------- | 
+| RNF01   | O sistema deve criptografar a senha do usuário.        |
+| RNF02   | Ser elaborado com o React.         |
+| RNF03   | Estar hospedado no GitLab Pages.       |
+| RNF04   | Estar disponível para o usuário 24/7.       |
+| RNF05   | O sistema deve ser responsivo.        |
 
 
-<hr>
+# Descrição de casos de uso:
 
-# `DOCUMENTAÇÃO DA TURMA ANTERIOR`
+## Página dos Alunos:
 
+> Caso de uso:
+>
+> Exibição do espaço individual (card) do aluno
+> <hr>
+> Referência:
+>
+> RF11 e RF01 parcialmente
+> <hr>
+> Descrição geral:
+>
+> Começa com o usuário do sistema querendo ver as informações de determinada pessoa dentro do sistema.
+> <hr>
+> Atores:
+> 
+> Usuário
+> <hr>
+> Pre-condições:
+> 
+> acessar o site
+> <hr>
+> Pós-condições:
+> 
+> Aparecer as informações do aluno na tela
+> <hr>
+> Campos:
+>
+> Foto do aluno, nome do aluno, curso do aluno, semestre que começou o curso, ano em que deve terminar o curso, projetos em que participou e uma breve descrição escrita pelo proprio aluno
+> <hr>
+> Fluxo básico:
+> 
+> a) acessar a tela dos alunos
+> 
+> b) clicar no card de um aluno a fim de mostrar mais informações sobre o aluno
+> 
+> Fim de caso de uso
 
-## Descrição:
+## UC01 fazer login
+> ##### Nome:
+> 
+> Fazer Login
+> <hr>
+>
+> ##### referências:
+>
+> RF12
+><hr>
+> 
+> ##### Breve descrição:
+> 
+> Autentica a pessoa no sistema dando a ele acesso à alterar as informações dos projetos e portifólios
+> <hr>
+>
+> ##### Atores:
+> 
+> Pessoas, administrador
+> <hr>
+>
+> ##### Fluxo de eventos:
+> 
+> ##### Fluxo principal:
+> 
+> P1. Começa quando o ator abre o sistema
+>
+> P2. O sistema abre a tela inicial para iniciar login
+>
+> P3. O ator digita seu usuário e senha [FA01]
+>
+> P4. O ator toca no enter
+>
+> P5. O sistema autentica o ator [FE01][FE02]
+>
+> P6. O ator realiza login no sistema
+> 
+> ##### Fluxo alternativo
+>
+> A1. O ator esqueceu sua senha
+>
+> a) O ator seleciona esqueceu a senha
+>
+> b) O sistema envia um email ao usuário para troca de email
+>
+> c) O ator abre o email
+> 
+> d) O ator redefine sua senha
+> 
+> e) O fluxo principal é recomeçado
+> 
+> ##### Fluxo de exceção
+> 
+> E1.Não ter acesso a internet durante o procedimento
+>
+> a) O sistema informa a falta de acesso a internet
+>
+> E2. Preenchimento incorreto da senha
+>
+> a) O sistema informa qe a senha inserida está incorreta
+>
+> b) O sistema retorna a tela de preenchimento de dados
+> 
+> <hr>
+> 
+> ##### Pré condições:
+> 
+> a) Ter acesso a internet
+>
+> b) Ter acessado site ou aplicativo do sistema
+>
+> c) Estar no banco de dados do sistema
+><hr>
+> 
+> ##### pós-condições:
+>
+> a) ator está logado no sistema
+> <hr>
+>
+> ##### Regras de negócio:
+>
+> RN1 Senha deve possuir ao menos 8 dígitos, sendo esses números ou caracteres
 
-***O projeto visa facilitar a apresentação dos projetos feitos pelos alunos da instituição Ibmec nos cursos de tecnologia, tendo como base a apresentação de portifólios dos alunos bem como os resultados alcançados por eles.***
+## UC2 Buscar Pessoas
+> ##### Nome:
+> 
+> Buscar pessoas
+> <hr>
+> 
+> ##### Breve descrição:
+> 
+> Permitir a um ator buscar por informações de pessoas cadastradas
+><hr>
+>
+> ##### Atores:
+> 
+> Pessoas
+><hr>
+>
+> ##### Fluxo de eventos:
+>
+> ##### Fluxo principal:
+> 
+> P1. o usuário clica na caixa de busca
+>
+> P2. digita o nome de quem deseja procurar
+>
+> P3. Exibe as informações da pessoa pesquisada
+>
+> ##### Fluxo de exceção:
+> 
+> A1. O sistema não identificou o nome informado
+>
+> a) Exibe mensagem informando que não foi identificado e pede para reescrever o nome da pessoa
 
-## História:
+## UC3 Buscar projetos
+> ##### Nome:
+> 
+> Buscar Projetos
+> <hr>
+> 
+> ##### Breve descrição:
+> 
+> Permitir a um ator buscar por Projetos e portifólios cadastrados
+><hr>
+>
+> ##### Atores:
+> 
+> Pessoas
+><hr>
+>
+> ##### Fluxo de eventos:
+>
+> ##### Fluxo principal:
+> 
+> P1. o usuário clica na caixa de busca
+>
+> P2. digita o nome do projeto que deseja procurar
+>
+> P3. Exibe as informações do projeto pesquisado
+>
+> ##### Fluxo de exceção:
+> 
+> A1. O sistema não identificou o projeto informado
+>
+> a) Exibe mensagem informando que não foi identificado e pede para reescrever o nome do projeto
 
-***O Projeto surgiu em 2022 como projeto final da disciplina de Projeto Front-end do curso de Análise e Desenvolvimento de Sistemas do IBMEC. Seu idealizador foi o professor Eduardo Mangeli e seu desenvolvimento ficou a cargo dos alunos Clarissa Proença, Guilherme Félix, Felipe Castelhano e Igor Mariano do primeiro período. O foco do site são os alunos e os projetos desenvolvidos por eles. Através dessa plataforma alunos de todos os períodos, dos cursos de tecnologia, poderão mostrar os códigos e projetos que desenvolveram ou venham a desenvolver ao longo de sua formação acadêmica.***
+## UC4 Fazer cadastro
+> ##### Nome:
+> 
+> Fazer cadastro
+> <hr>
+>
+> ##### referências:
+>
+> 
+><hr>
+>
+> ##### Breve descrição:
+> 
+> O administrador do sistema deve preencher e validar os seus dados pessoais
+requeridos para o uso do sistema.
+> <hr>
+>
+> ##### Atores:
+> 
+> Administrador
+> <hr>
+>
+> ##### Fluxo de eventos:
+> 
+> ##### Fluxo principal:
+> 
+> P1. O caso de uso começa quando o administrador clica em cadastrar no sistema
+>
+> P2. O sistema exibe a tela com as informações que precisam ser preenchidas
+>
+> P3.  O administrador preenche as informações requeridas pelo sistema
+>
+> P4. O administrador clica em confirmar
+>
+> P5.  O sistema valida as informações preenchidas pelo administrador
+>
+> P6. O sistema armazena as informações inseridas
+> 
+> ##### Fluxo alternativo
+>
+> A1. Preencheu o cadastro de maneira incorreta
+>
+> a) O sistema exibe uma mensagem de erro
+>
+> b) O sistema indica os campos que possuem as informações incorretas
+>
+> c) O administrador corrige os campos com as informações corretas
+> 
+> d) O sistema valida as informações preenchidas pelo administrador
+> 
+> ##### Fluxo de exceção
+>
+> <hr>
+> 
+> ##### Pré condições:
+> 
+> a)  ter acesso a página inicial do sistema
+>
+><hr>
+> 
+> ##### pós-condições:
+>
+> a) A pessoa é cadastrada no sistema e pode ter acesso
+> <hr>
+>
+> ##### Regras de negócio:
+>
+> RN1 Registrar dados no cadastro
+> 
+> RN2 informações devem ser validas
 
-## Status do projeto: Em desenvolvimento
+## UC5 Manter pessoas
 
-* ***Layout***
-* ***Requisitos do projeto***
+> **A ser alterado**
 
+## UC6 Manter sobre
 
-## Técnicas de lavantamento de requisito:
-
-* ***Entrevista***
-* ***Prototipação***
-
-## Listagem de requisitos:
-
-### Funcionais:
-
-* ***Permitir o cadastro de novos usuários;***
-* ***Permitir o cadastro de novos projetos;***
-* ***Permitir o cadastro de novas tecnologias;***
-* ***Possibilitar que o usuário realize buscas por pessoas;***
-* ***Possibilitar que o usuário realize buscas por projetos;***
-* ***Possibilitar que o usuário filtre as informações de busca por pessoas;***
-* ***Possibilitar que o usuário filtre as informações de busca por projetos;***
-* ***Exibir as informações das pessoas;***
-* ***Exibir as informações dos projetos;***
-* ***Exibir quais tecnologia foram usadas no projeto;***
-* ***Permitir que o usuário adicione arquivos ao projeto;***
-* ***Permitir a edição dos projetos;***
-* ***Permitir a edição dos perfis dos alunos;***
-
-### Não Funcionais:
-
-* ***Possibilitar que o usuário adicione uma foto ao projeto, com até X (Kb, Mb ou Gb);***
-* ***Estar disponível para o usuário 24/7;***
-* ***Criptografar a senha do usuário;***
-* ***Deve rodar em vários tipos de navegadores;***
-* ***Estar hospedado no GitLab Pages;***
-* ***Ser elaborado com o React;***
-
-## Técnica de descrição de requisitos a ser utilizada:
-
-*  ***História de usuário com critérios de aceitação***
-
-## Gestão de ramos (branchs) escolhida para esse projeto:
-
-* *A gestão de ramos (branchs) escolhida para esse projeto foi: Integração Contínua* 
-
-O motivo pelo qual o grupo escolheu essa gestão de ramos (branchs) foi porque ela é altamente recomendada para ser utilizada em conjunto com os processos de desenvolvimento ágil de software. Além disso, a medida que o desenvolvedor efetua alterações no código ele deve disponibilizar essas alterações no repositório ***(develop)*** para que os outros desenvolvedores tenham acesso a ele, visando facilitar a compreensão do código desenvolvido. Outro fator que contribuiu para a nossa escolha se deve ao fato da rastreabilidade de erros ser facilitada, justamente porque o código será atualizado constantimente com pequenos commits.
-
-[Explicação da integração contínua](https://aws.amazon.com/pt/devops/continuous-integration/#:~:text=Explica%C3%A7%C3%A3o%20da%20integra%C3%A7%C3%A3o%20cont%C3%ADnua&text=Os%20principais%20objetivos%20da%20integra%C3%A7%C3%A3o,lan%C3%A7ar%20novas%20atualiza%C3%A7%C3%B5es%20de%20software.)
-[Dicas para usar os repositórios com integração contínua ](https://www.atlassian.com/br/continuous-delivery/continuous-integration/ci-friendly-git-repos)
-
-
-# Definição da Branchs:
-
-***Teremos:***
-
-* ***(1) MAIN***
-* ***(2) DEVELOP***
-* ***(3) IMAGENS/LAYOUT***
-
-### Decidir uma das opções abaixo 
-* [Fluxo de trabalho de um branch de recurso do Git Flow](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow) 
-* [Desenvolvimento baseado em tronco](https://www.atlassian.com/br/continuous-delivery/continuous-integration/trunk-based-development)
-* [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
-* [Git Flow: o que é e como gerenciar branches? Exemplos!](https://blog.betrybe.com/git/git-flow/)
-* [Integração contínua](https://www.atlassian.com/br/continuous-delivery/continuous-integration)
-
-***A equipes escolheu  Integração Contínua***
-
-# Link para site do projeto
-Projeto Heleno: http://projeto-multidisciplinar.gitlab.io/heleno-app/
-
-```
-cd existing_repo
-git remote add origin https://gitlab.com/projeto-multidisciplinar/projeto-eleno.git
-git branch -M main
-git push -uf origin main
-```
+> **A ser alterado**
 
