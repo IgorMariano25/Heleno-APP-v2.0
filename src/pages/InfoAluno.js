@@ -1,6 +1,6 @@
-import Topo from "../components/topo/topo";
-import RodaPe from "../components/footer/footer";
-import PessoaCardDetalhado from "../components/Card/PessoaCardDetalhado";
+import Topo from "../components/Alunos/topo";
+import RodaPe from "../components/Alunos/footer";
+import PessoaCardDetalhado from "../components/Alunos/cardPessoaDetalhado";
 import arquivo from "../dados.json";
 import { useParams } from "react-router-dom";
 

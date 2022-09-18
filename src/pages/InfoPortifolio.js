@@ -1,7 +1,6 @@
-
-import Topo from "../components/topo/topo";
-import RodaPe from "../components/footer/footer";
-import ProjetoCardDetalhado from "../components/CardProjetos/ProjetoCardDetalhado";
+import Topo from "../components/Portfolios/topo";
+import RodaPe from "../components/Portfolios/footer";
+import ProjetoCardDetalhado from "../components/Portfolios/cardProjetoDetalhado";
 import arquivo from "../projetos.json";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
