@@ -1,6 +1,6 @@
 import './styles.css';
 import Topo from '../../components/Home/topo';
-import RodaPe from '../../components/Home/footer';
+import Footer from '../../components/Home/footer';
 import { ConteudoPage, Titulo, P, SubTitulo} from '../../components/Home/styledComponents';
 import ProjetoCard from '../../components/Home/cardProjeto';
 import projetos from '../../projetos.json';
@@ -78,7 +78,7 @@ export default function App() {
               </div>
         </div>
         </ConteudoPage>
-        <RodaPe principal={true}/>
+        <Footer/>
      </div>
   );
 }

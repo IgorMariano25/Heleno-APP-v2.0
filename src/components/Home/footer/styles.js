@@ -3,24 +3,6 @@ import styled from "styled-components";
 const Footer = styled.footer`
     bottom: 0;
     width: 100%;
-    background-color: #F5AC00;
-    position: absolute;
-    display: flex;
-
-    @media screen and (max-width: 1025px){
-        bottom: 0;
-        width: 100%;
-        background-color: #F5AC00;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-`;
-
-const FooterPagPrincipal = styled.footer`
-    bottom: 0;
-    width: 100%;
     position: relative;
     background-color: #F5AC00;
     display: flex;
@@ -72,4 +54,4 @@ const IconeRedeSocial = styled.img`
     height: 25px;
 `;
 
-export { Footer, FooterPagPrincipal, Logo, DivRede, DivLogo, ListaRede, IconeRedeSocial}
+export { Footer, Logo, DivRede, DivLogo, ListaRede, IconeRedeSocial}
