@@ -1,5 +1,5 @@
 import Topo from "../../components/Contato/topo";
-import RodaPe from "../../components/Contato/footer";
+import Footer from "../../components/Contato/footer";
 import Formulario from "../../components/Contato/formulario";
 import { Img, Conteudo } from "../../components/Contato/styledComponents";
 
@@ -16,7 +16,7 @@ export default function App(){
                     <Formulario/>
                 </div>
             </Conteudo>
-            <RodaPe/>
+            <Footer/>
         </div>
     );
 }

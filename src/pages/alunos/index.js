@@ -1,10 +1,10 @@
 import React from 'react';
 import './styles.css';
-import Topo from '../../components/Home/topo/index';
-import RodaPe from '../../components/Home/footer';
+import Topo from '../../components/Alunos/topo';
+import RodaPe from '../../components/Alunos/footer';
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
-import PessoaCard from '../../components/Home/cardPessoa';
+import PessoaCard from '../../components/Alunos/cardPessoa';
 import arquivo from '../../dados.json'
 
 
