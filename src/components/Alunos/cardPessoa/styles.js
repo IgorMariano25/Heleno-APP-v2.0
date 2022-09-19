@@ -18,22 +18,9 @@ const Card = styled.a`
     }
 `;
 
-const CardDetalhado = styled.div`
-    width: 15em;
-    border-width: 1px;
-    background-color: #002555;
-    display: flex;
-    border-radius: 5%;
-    flex-flow: column;
-    padding: .5em;
-    text-decoration: none;
-    color: black;
-    
-
-    &:hover{
-        transform: scale(1.05);
-        transition: transform 0.3s ease;
-    }
+const ContainerModal = styled.div`
+    width: 100%;
+    padding: 15px;
 `;
 
 const Img = styled.img`
@@ -85,4 +72,4 @@ const PrevFormatura = styled.p`
     font-style: Italic;
 `;
 
-export { Card, CardDetalhado, Img, Textos, Nome, Curso, Bio, Ingresso, PrevFormatura, Projetos};
+export { Card, ContainerModal, Img, Textos, Nome, Curso, Bio, Ingresso, PrevFormatura, Projetos};

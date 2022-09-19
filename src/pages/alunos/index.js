@@ -60,56 +60,47 @@ export default function App() {
 
           <div className="Pesquisa">
 
-          <form onSubmit={(e) => {
+            <form onSubmit={(e) => {
 
-              e.preventDefault();
+                e.preventDefault();
 
-              setParametros({"busca": `${entrada.current.value}`})
+                setParametros({"busca": `${entrada.current.value}`})
 
-              }}>
+                }}>
 
-              <input
+                <input
 
-                  type="text"
+                    type="text"
 
-                  ref={entrada}
+                    ref={entrada}
 
-                  className="Filtro"
+                    className="Filtro"
 
-                  placeholder="Buscar"
+                    placeholder="Buscar"
 
-                  />
+                    />
 
-              <button type='submit' className="BotaoFiltro">Pesquisar</button>
+                <button type='submit' className="BotaoFiltro">Pesquisar</button>
 
-          </form>
+            </form>
 
           </div>
 
-
           <div className="ContainerCardAlunos">
 
-              {
+            {
+                dados.map( (p, ind) => (
+                    <PessoaCard
+                        key = { ind }
+                        imagem = {p.imagem}
+                        nome = {p.nome}
+                        curso = {p.curso}
+                        ID = {p.ID}
+                    />
 
-                      dados.map( (p, ind) => (
+                ))
 
-                          <PessoaCard
-
-                                  key = { ind }
-
-                                  imagem = {p.imagem}
-
-                                  nome = {p.nome}
-
-                                  curso = {p.curso}
-
-                                  ID = {p.ID}
-
-                          />
-
-                      ))
-
-                  }
+            }
 
           </div>
 
