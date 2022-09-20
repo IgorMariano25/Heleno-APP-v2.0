@@ -29,7 +29,7 @@ export default function App(){
                         <h2 className="TituloSobre">
                             <p>Criado inicialmente por Guilherme Félix, Igor Mariano, Felipe Castelhano e Clarissa Proença.</p>
 
-                            Assumido após por Victor Hugo Rocha, Amanda Senra, Matheus Herzog, William Fagundes, Caio da luz, Gabriel Espósito,<br/> Guilherme Maia, Ilidio , João Victor Meirelles, Leonardo Campello,<br/> Maria Giulia , Pedro Reis, Augusto Amorim, Thaís Bustamante, Gabriel Oscar, Vitor Lobianco, Raphael Meres, João Curvelho, Thé    o Furtado, Rafael Neiva
+                            Assumido após por Victor Hugo Rocha, Amanda Senra, Matheus Herzog, William Fagundes, Caio da luz, Gabriel Espósito,<br/> Guilherme Maia, Ilidio , João Victor Meirelles, Leonardo Campello, Maria Giulia , Pedro Reis, Augusto Amorim, Thaís Bustamante, Gabriel Oscar, Vitor Lobianco, Raphael Meres, João Curvelho, Théo Furtado, Rafael Neiva
                         </h2>
                         <h2 className="TituloSobre">
                             O Projeto ibtech originou-se como o projeto semestral dos alunos de Análise e Desenvolvimento de Sistemas do Ibmec-Barra, dirigido e direcionado pelo professor <i>Eduardo Mangeli</i>,
