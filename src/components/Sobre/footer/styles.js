@@ -4,7 +4,7 @@ const Footer = styled.footer`
     bottom: 0;
     width: 100%;
     background-color: #F5AC00;
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -13,6 +13,7 @@ const Footer = styled.footer`
         bottom: 0;
         width: 100%;
         background-color: #F5AC00;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
