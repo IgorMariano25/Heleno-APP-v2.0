@@ -14,29 +14,28 @@ export default function App(){
                         <a href="https://gitlab.com/projeto-multidisciplinar/heleno-app" target="_blank" rel="noreferrer">
                             <button className="btnImagem">
                                 <img src={fotoTurmaAntiga} className="imagem"/>
-                                {/*Ver documentação antiga*/}
+                                Ver documentação antiga
                             </button>
                         </a>
                         <a href="https://gitlab.com/EduardoMangeli/ibtech" target="_blank" rel="noreferrer">
                             <button className="btnImagem">
                                 <img src={fotoTurmaAntiga}  className="imagem"/>
-                                {/*Ver documentação antiga*/}
+                                Ver documentação nova
                             </button>
                         </a>     
                     </div>    
 
                     <div className="containerDescricao">
                         <h2 className="TituloSobre">
-                            Criado por Guilherme Félix, Igor Mariano, Felipe Castelhano e Clarissa Proença.
+                            <p>Criado inicialmente por Guilherme Félix, Igor Mariano, Felipe Castelhano e Clarissa Proença.</p>
+
+                            Assumido após por Victor Hugo Rocha, Amanda Senra, Matheus Herzog, William Fagundes, Caio da luz, Gabriel Espósito,<br/> Guilherme Maia, Ilidio , João Victor Meirelles, Leonardo Campello,<br/> Maria Giulia , Pedro Reis, Augusto Amorim, Thaís Bustamante, Gabriel Oscar, Vitor Lobianco, Raphael Meres, João Curvelho, Thé    o Furtado, Rafael Neiva
                         </h2>
                         <h2 className="TituloSobre">
-                            O Projeto Heleno originou-se como um trabalho eletivo de Desenvolvimento Web, matéria curricular dos alunos em Análise e desenvolvimento de sistemas e dirigida por <i>Eduardo Mangeli</i>,
+                            O Projeto ibtech originou-se como o projeto semestral dos alunos de Análise e Desenvolvimento de Sistemas do Ibmec-Barra, dirigido e direcionado pelo professor <i>Eduardo Mangeli</i>,
                             visando facilitar a apresentação dos projetos feitos pelos alunos da instituição Ibmec nos cursos de tecnologia, 
                             tendo como base a apresentação de portifólios dos alunos bem como os resultados alcançados por eles.
-                        </h2>
-                        <h3 className="InfoSobre">
-                            Para saber mais sobre a documentação, clique aqui e veja o repositório Git.
-                        </h3>
+                        </h2>   
                     </div>
                 </div>
                 
