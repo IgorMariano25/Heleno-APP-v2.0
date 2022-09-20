@@ -17,7 +17,7 @@ export default function App(){
                                 {/*Ver documentação antiga*/}
                             </button>
                         </a>
-                        <a href="https://gitlab.com/projeto-multidisciplinar/heleno-app" target="_blank" rel="noreferrer">
+                        <a href="https://gitlab.com/EduardoMangeli/ibtech" target="_blank" rel="noreferrer">
                             <button className="btnImagem">
                                 <img src={fotoTurmaAntiga}  className="imagem"/>
                                 {/*Ver documentação antiga*/}
