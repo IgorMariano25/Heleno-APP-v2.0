@@ -4,6 +4,7 @@ const ConteudoPage = styled.div`
     min-height: 50vh;
     min-width: 80vw;
     width: 40vw;
+    z-index: 9;
 `;
 
 const Titulo = styled.h1`
@@ -11,6 +12,7 @@ const Titulo = styled.h1`
     font-size: 2em;
     color: #002555;
     text-align: left;
+    z-index: 8;
 `;
 
 const P = styled.p`

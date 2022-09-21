@@ -3,6 +3,9 @@ import { Card, Img, Textos } from "./styles.js";
 import {Link} from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
+
+
+
 const Topo = ( props ) => {
     const navigate = useNavigate();    
     return(
@@ -14,14 +17,27 @@ const Topo = ( props ) => {
                     onClick={()=>navigate("/")}
                 />
                 <Textos>
-                    <Link to="/portfolios">Portfólios</Link>
-                    <Link to="/alunos">Alunos</Link>
-                    <Link to="/contato">Contato</Link>
-                    <Link to="/sobre">Sobre</Link>
+                    <ul>
+                        <li><Link to="/portfolios">Portfólios</Link></li>
+                        <li><Link to="/alunos">Alunos</Link></li>
+                        <li><Link to="/contato">Contato</Link></li>
+                        <li><Link to="/sobre">Sobre</Link></li>
+                        <li id="li-educacao">Educação
+                            <ul id="menu-educacao">
+                                <li><Link to="/mba">MBA</Link></li>
+                                <li><Link to="/pos">Pós</Link></li>
+                                <li><Link to="/graduacao">Graduação</Link></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    
                 </Textos>
             </Card>
         </nav>
     );
 }
+
+
 
 export default Topo;

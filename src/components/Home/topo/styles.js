@@ -10,7 +10,7 @@ const Card = styled.div`
     a {
         text-decoration: none;
         color: white;
-        margin-right: 35px;
+        
         transition: --offset 300ms, text-decoration-color 300ms;
     }
     a:hover{
@@ -39,6 +39,36 @@ const Textos = styled.div`
     color:white;
     margin: 1%;
     margin-left: 10px;
+    ul{
+        list-style: none;
+    }
+    ul li{
+        display: inline;
+        margin-right: 35px;
+    }
+    ul li ul{
+        width: 200px;
+        text-align: center;
+        
+        margin-left: 300px;
+    }
+    ul li ul li{
+        background-color: grey;
+        display: none;
+        text-align: center;
+        margin-right: 0px;
+        padding: 10px;
+        box-shadow: 0 0 3px 0 black;
+    }
+
+    #li-educacao:hover{
+        cursor: pointer;
+        color: #F5AC00
+    }
+    
+    #li-educacao:hover > #menu-educacao li{
+        display: block;
+    }
 `;
 
 const DivRede = styled.div`
