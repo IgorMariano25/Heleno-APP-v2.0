@@ -14,13 +14,13 @@ export default function App(){
                         <a href="https://gitlab.com/projeto-multidisciplinar/heleno-app" target="_blank" rel="noreferrer">
                             <button className="btnImagem">
                                 <img src={fotoTurmaAntiga} className="imagem"/>
-                                Ver documentação antiga
+                                Documentação 
                             </button>
                         </a>
                         <a href="https://gitlab.com/EduardoMangeli/ibtech" target="_blank" rel="noreferrer">
                             <button className="btnImagem">
                                 <img src={fotoTurmaAntiga}  className="imagem"/>
-                                Ver documentação nova
+                                Nova Documentação
                             </button>
                         </a>     
                     </div>    
