@@ -18,6 +18,7 @@ const Topo = ( props ) => {
                     <Link to="/alunos">Alunos</Link>
                     <Link to="/contato">Contato</Link>
                     <Link to="/sobre">Sobre</Link>
+                    <Link to="/hubs">Hubs</Link>
                 </Textos>
             </Card>
         </nav>
