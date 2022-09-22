@@ -1,14 +1,16 @@
 import './App.css';
-import Home from './pages/home'
-import Index from './pages/hubs/index.js'
+import Home from './pages/home';
+import React from 'react';
+import { View } from  'react-native';
 
 function App() {
   return( 
-    <div>
-  {/* <Home/> */}
-  <Index/>
-   </div>
-  )
+    <View>
+
+     { <Home/> }
+
+    </View>
+  );
 }
 
 export default App;

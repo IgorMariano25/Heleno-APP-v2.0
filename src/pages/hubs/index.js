@@ -1,8 +1,11 @@
-<<<<<<< HEAD
 import React from 'react'
 import hubs from '../../assets/hubs.png'
+import { Img } from 'react-native';
+import { useNavigate } from "react-router-dom";
+
 
 const index = () => {
+  const navigate = useNavigate(); 
     return(
         <div>
             <img src={hubs} alt="logo-hubs" width="100px" height="100px"/>
@@ -14,7 +17,7 @@ const index = () => {
 export default index
 
 
-=======
 import Topo from "../../components/Hubs/topo";
 import RodaPe from "../../components/Hubs/footer";
->>>>>>> 1250549b10a7c2006fcf1c746bd8827e29d71e3a
+
+
