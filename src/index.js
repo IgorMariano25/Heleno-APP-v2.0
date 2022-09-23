@@ -8,6 +8,7 @@ import Portfolios from "./pages/portfolios/";
 import Alunos from "./pages/alunos/"
 import Contato from "./pages/contato/"
 import Sobre from "./pages/sobre/"
+import Hubs from "./pages/hubs/"
 
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -29,6 +30,7 @@ root.render(
         <Route path="alunos/:id" element={<InfoAluno />} />
         <Route path="contato" element={<Contato />} />
         <Route path="sobre" element={<Sobre />} />
+        <Route path="hubs" element={<Hubs />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

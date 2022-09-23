@@ -1,23 +1,22 @@
 import React from 'react'
-import hubs from '../../assets/hubs.png'
-import { Img } from 'react-native';
-import { useNavigate } from "react-router-dom";
+import hubs from '../../assets/hubsimg.png'
+import Topo from "../../components/Contato/topo";
+import Footer from "../../components/Contato/footer";
+import './styles.css';
 
 
-const index = () => {
-  const navigate = useNavigate(); 
-    return(
-        <div>
-            <img src={hubs} alt="logo-hubs" width="100px" height="100px"/>
-        </div>
-    )
 
+export default function App(){
+  return(
+    <div>
+        <Topo/>
+          <img    id='logohubs'
+                  src={hubs}
+                  alt={'primeira imagem hubs'}
+          />
+        <Footer/>
+    </div>
+  );
 }
-
-export default index
-
-
-import Topo from "../../components/Hubs/topo";
-import RodaPe from "../../components/Hubs/footer";
 
 
