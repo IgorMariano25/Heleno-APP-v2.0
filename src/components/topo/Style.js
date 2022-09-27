@@ -25,6 +25,7 @@ const Img = styled.img`
     margin-right: 0%;
     margin: 15px;
     margin-left: 10em;
+    cursor:pointer;
 `;
 
 const Textos = styled.div`
