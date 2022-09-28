@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const Footer = styled.footer`
-    bottom: 0;
     width: 100%;
     background-color: #F5AC00;
     position: absolute;
@@ -10,7 +9,6 @@ const Footer = styled.footer`
     justify-content: space-around;
 
     @media screen and (max-width: 1025px){
-        bottom: 0;
         width: 100%;
         background-color: #F5AC00;
         display: flex;
