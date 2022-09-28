@@ -6,6 +6,8 @@ const Card = styled.div`
     width: 100%;
     height: 4.6875em;
     background-color: #002555;
+    position : fixed;
+    left : 0;
     display:flex;
     a {
         text-decoration: none;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const ConteudoPage = styled.div`
+    margin-top: 100px;
     min-height: 50vh;
     min-width: 80vw;
     width: 40vw;
