@@ -51,7 +51,7 @@
 > 
 > ##### Fluxo de exceção
 > 
-> E1.Não ter acesso a internet durante o procedimento
+> E1. Não ter acesso a internet durante o procedimento
 >
 > a) O sistema informa a falta de acesso a internet
 >
