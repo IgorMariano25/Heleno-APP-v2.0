@@ -14,6 +14,7 @@ body {
 }
 
 .btnImagem {
+    margin: 10px;
     color:rgb(0, 37, 85);
     padding: 1.3em 3em;
     font-size: 12px;
