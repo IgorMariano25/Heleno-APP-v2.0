@@ -18,7 +18,8 @@ export default function App(){
                   alt={'primeira imagem hubs'}
           />  
         
-        <h1 className="Título">O que é o HUBs?</h1>        
+        <h1 className="Título1">Conectando empresas em busca de inovação a empreendedores e suas soluções</h1>
+        <h2 className="Título">O que é o HUBs?</h2>        
         <br></br>                
         <div className="Texto">
             <p>Um espaço colaborativo de inovação, presente nas quatro unidades Ibmec (BH, SP, RJ e Brasília), que busca estimular o networking e o empreendedorismo por meio da conexão entre empreendedores locais, mentores e empresas.
@@ -47,9 +48,18 @@ export default function App(){
         <br></br>
         <img   id='estrutura_hubs'
                  src={hubsEstrutura}
+                 alt={'sala hubs'}
         />
 
         <p id='unidade'>Unidade do Rio de Janeiro.</p>
+
+        <div className="AlinhamentoBtnHubs">
+            <a href="https://www.ibmec.br/ibmec-hubs" target="_blank" rel="noreferrer">
+                <button id="SiteHubs">
+                    Saiba Mais
+                </button>
+            </a>    
+        </div>  
 
         <Footer/>
     </div>
