@@ -1,248 +1,221 @@
+/*Created and developed exclusively by William Fagundes*/
+#logoibmecmenu {
+  visibility: hidden;
+  margin: -1000%;
+}
+/*Created and developed exclusively by William Fagundes*/
+#logoibmec {
+  height: 3em;
+  margin-right: 0%;
+  margin: 15px;
+  margin-left: 10em;
+  cursor:pointer;
+}
+/*Created and developed exclusively by William Fagundes*/
 
+@media screen and (max-width: 800px){
   #logoibmecmenu {
-    visibility: hidden;
-    margin: -1000%;
+    visibility: visible;
+    margin: 0;
+    margin-top: 30px;
+    margin-left: -50px;
+    height: 3em;
+    cursor: pointer;
   }
-
- #logoibmec {
+  #logoibmec {
     height: 3em;
     margin-right: 0%;
     margin: 15px;
-    margin-left: 10em;
+    margin-left: 40px;
     cursor:pointer;
-    z-index: 4;
- }
- @media screen and (max-width: 800px){
-      #logoibmecmenu {
-        visibility: visible;
-        margin: 0;
-        margin-top: 30px;
-        margin-left: -50px;
-        height: 3em;
-        cursor: pointer;
-      }
-      #logoibmec {
-        height: 3em;
-        margin-right: 0%;
-        margin: 15px;
-        margin-left: 40px;
-        cursor:pointer;
-      }
-    .botao{
-        margin-left: 40px;
-    }
-    body
-    {
-      margin: 0;
-      padding: 0;
-      
-      /* make it look decent enough */
-      color: #cdcdcd;
-      font-family: "Avenir Next", "Avenir", sans-serif;
-    }
+  }
+  .botao{
+      margin-left: 40px;
+  }
+  body
+  {
+    margin: 0;
+    padding: 0;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+  }
+
+  #menuToggle
+  {
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 50px;
     
-    #menuToggle
-    {
-      display: block;
-      position: relative;
-      top: 30px;
-      left: 50px;
-      
-      z-index: 2;
-      
-      -webkit-user-select: none;
-      user-select: none;
-    }
+    z-index: 2;
     
-    #menuToggle a
-    {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle a
+  {
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+  }
+
+  #menuToggle a:hover
+  {
+    color: #F5AC00;
+  }
+
+
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    margin-left: 350px;
+    cursor: pointer;
+    
+    opacity: 0; 
+    z-index: 3; 
+    
+    -webkit-touch-callout: none;
+  }
+
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    margin-left: 350px;
+    position: relative;
+    
+    background: #F5AC00;
+    border-radius: 3px;
+    
+    z-index: 2;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #F5AC00;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu
+  {
+    position: absolute;
+    width: 800px;
+    margin-left: -255px;
+    margin-top: -70px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Barlow';
+      font-weight: 500;
+      font-style: italic;
+      font-size: 18px;
+      border-radius: 0  8px  8px 0;
       text-decoration: none;
-      color: #232323;
-      
-      transition: color 0.3s ease;
-    }
+      color:white;
     
-    #menuToggle a:hover
-    {
-      color: #F5AC00;
-    }
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
     
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     
-    #menuToggle input
-    {
-      display: block;
-      width: 40px;
-      height: 32px;
-      position: absolute;
-      top: -7px;
-      left: -5px;
-      margin-left: 350px;
-      cursor: pointer;
-      
-      opacity: 0; /* hide this */
-      z-index: 3; /* and place it over the hamburger */
-      
-      -webkit-touch-callout: none;
-    }
-    
-    /*
-     * Just a quick hamburger
-     */
-    #menuToggle span
-    {
-      display: block;
-      width: 33px;
-      height: 4px;
-      margin-bottom: 5px;
-      margin-left: 350px;
-      position: relative;
-      
-      background: #F5AC00;
-      border-radius: 3px;
-      
-      z-index: 2;
-      
-      transform-origin: 4px 0px;
-      
-      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                  opacity 0.55s ease;
-    }
-    
-    #menuToggle span:first-child
-    {
-      transform-origin: 0% 0%;
-    }
-    
-    #menuToggle span:nth-last-child(2)
-    {
-      transform-origin: 0% 100%;
-    }
-    
-    /* 
-     * Transform all the slices of hamburger
-     * into a crossmark.
-     */
-    #menuToggle input:checked ~ span
-    {
-      opacity: 1;
-      transform: rotate(45deg) translate(-2px, -1px);
-      background: #F5AC00;
-    }
-    
-    /*
-     * But let's hide the middle one.
-     */
-    #menuToggle input:checked ~ span:nth-last-child(3)
-    {
-      opacity: 0;
-      transform: rotate(0deg) scale(0.2, 0.2);
-    }
-    
-    /*
-     * Ohyeah and the last one should go the other direction
-     */
-    #menuToggle input:checked ~ span:nth-last-child(2)
-    {
-      transform: rotate(-45deg) translate(0, -1px);
-    }
-    
-    /*
-     * Make this absolute positioned
-     * at the top left of the screen
-     */
-    #menu
-    {
-      position: absolute;
-      width: 800px;
-      margin-left: -255px;
-      margin-top: -70px;
-      padding: 50px;
-      padding-top: 125px;
-      background: #ededed;
-      list-style-type: none;
-      -webkit-font-smoothing: antialiased;
-      font-family: 'Barlow';
-        font-weight: 500;
-        font-style: italic;
-        font-size: 18px;
-        border-radius: 0  8px  8px 0;
-        text-decoration: none;
-        color:white;
-      /* to stop flickering of text in safari */
-      
-      transform-origin: 0% 0%;
-      transform: translate(-100%, 0);
-      
-      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-      
-    }
-    
-    #menu li
-    {
-      padding: 10px 0;
-      font-size: 22px;
-    }
-    
-    /*
-     * And let's slide it in from the left
-     */
-    #menuToggle input:checked ~ ul
-    {
-      transform: none;
-    }
-    }
-    @media screen and (min-width: 800px){
-    #menuToggle {
-      visibility : hidden;
-    }
-    li {
-        display:inline-block;
-    }
-    #menu {
-        visibility: visible;
-        font-family: 'Barlow';
-        width: 700px;
-        font-weight: 500;
-        font-style: italic;
-        font-size: 18px;
-        flex-grow: 1;
-        padding: 0.8em;
-        border-radius: 0  8px  8px 0;
-        text-decoration: none;
-        color:white;
-        margin: 1%;
-        margin-left: 10px;
-    }
-    }
-    @media screen and (max-width: 690px){
-      #menuToggle span
-    {
-      margin-left: 250px;
-    }
-    #menuToggle input
-    {
-      margin-left: 250px;
-    }
-    }
-    @media screen and (max-width: 580px){
-      #menuToggle span
-    {
-      margin-left: 170px;
-    }
-    #menuToggle input
-    {
-      margin-left: 170px;
-    }
-    }
-    @media screen and (max-width: 479px){
-      #menuToggle span
-    {
-      margin-left: 50px;
-    }
-    #menuToggle input
-    {
-      margin-left: 50px;
-    }
-    }
-    
+  }
+
+  #menu li
+  {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+} 
+
+@media screen and (min-width: 800px){
+  #menuToggle {
+    visibility : hidden;
+  }
+  li {
+    display:inline-block;
+  }
+  #menu {
+    visibility: visible;
+    font-family: 'Barlow';
+    width: 700px;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 18px;
+    flex-grow: 1;
+    padding: 0.8em;
+    border-radius: 0  8px  8px 0;
+    text-decoration: none;
+    color:white;
+    margin: 1%;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 690px){
+  #menuToggle span{
+    margin-left: 250px;
+  }
+  #menuToggle input{
+    margin-left: 250px;
+  }
+}
+@media screen and (max-width: 580px){
+  #menuToggle span{
+    margin-left: 170px;
+  }
+  #menuToggle input{
+    margin-left: 170px;
+  }
+}
+@media screen and (max-width: 479px){
+  #menuToggle span{
+    margin-left: 50px;
+  }
+  #menuToggle input{
+    margin-left: 50px;
+  }
+}
+
+/*Created and developed exclusively by William Fagundes*/
