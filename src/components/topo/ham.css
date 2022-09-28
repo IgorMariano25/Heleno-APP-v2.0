@@ -13,7 +13,7 @@
 }
 /*Created and developed exclusively by William Fagundes*/
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
   #logoibmecmenu {
     visibility: visible;
     margin: 0;
@@ -51,7 +51,7 @@
     -webkit-user-select: none;
     user-select: none;
   }
-
+/*Created and developed exclusively by William Fagundes*/
   #menuToggle a
   {
     text-decoration: none;
@@ -74,7 +74,7 @@
     position: absolute;
     top: -7px;
     left: -5px;
-    margin-left: 350px;
+    margin-left: 600px;
     cursor: pointer;
     
     opacity: 0; 
@@ -82,14 +82,14 @@
     
     -webkit-touch-callout: none;
   }
-
+/*Created and developed exclusively by William Fagundes*/
   #menuToggle span
   {
     display: block;
     width: 33px;
     height: 4px;
     margin-bottom: 5px;
-    margin-left: 350px;
+    margin-left: 600px;
     position: relative;
     
     background: #F5AC00;
@@ -113,7 +113,7 @@
   {
     transform-origin: 0% 100%;
   }
-
+/*Created and developed exclusively by William Fagundes*/
   #menuToggle input:checked ~ span
   {
     opacity: 1;
@@ -131,11 +131,11 @@
   {
     transform: rotate(-45deg) translate(0, -1px);
   }
-
+/*Created and developed exclusively by William Fagundes*/
   #menu
   {
     position: absolute;
-    width: 800px;
+    width: 1000px;
     margin-left: -255px;
     margin-top: -70px;
     padding: 50px;
@@ -157,7 +157,7 @@
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     
   }
-
+/*Created and developed exclusively by William Fagundes*/
   #menu li
   {
     padding: 10px 0;
@@ -170,7 +170,7 @@
   }
 } 
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1000px){
   #menuToggle {
     visibility : hidden;
   }
@@ -193,23 +193,48 @@
     margin-left: 10px;
   }
 }
-@media screen and (max-width: 690px){
+@media screen and (max-width: 920px){
   #menuToggle span{
-    margin-left: 250px;
+    margin-left: 500px;
   }
   #menuToggle input{
-    margin-left: 250px;
+    margin-left: 500px;
   }
 }
-@media screen and (max-width: 580px){
+@media screen and (max-width: 820px){
   #menuToggle span{
-    margin-left: 170px;
+    margin-left: 400px;
   }
   #menuToggle input{
-    margin-left: 170px;
+    margin-left: 400px;
   }
 }
-@media screen and (max-width: 479px){
+/*Created and developed exclusively by William Fagundes*/
+@media screen and (max-width: 720px){
+  #menuToggle span{
+    margin-left: 300px;
+  }
+  #menuToggle input{
+    margin-left: 300px;
+  }
+}
+@media screen and (max-width: 620px){
+  #menuToggle span{
+    margin-left: 200px;
+  }
+  #menuToggle input{
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 520px){
+  #menuToggle span{
+    margin-left: 100px;
+  }
+  #menuToggle input{
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 420px){
   #menuToggle span{
     margin-left: 50px;
   }
@@ -219,3 +244,52 @@
 }
 
 /*Created and developed exclusively by William Fagundes*/
+/*Created and developed exclusively by William Fagundes & Théo Furtado*/
+@media screen and (min-width: 1000px){
+  #bunda:hover #dropdown-educacao{
+    display: block;
+  }
+  #dropdown-educacao:hover #dropdown-educacao{
+    display: block;
+  }
+  #dropdown-educacao{
+    display: none;
+    flex-direction: column;
+    background-color: #F5AC00;
+    width: 300px;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 300px;
+    list-style: none;
+    height: 30px;
+    margin-top: 0px;
+  }
+  #dropdown-educacao a:hover {
+    color: black;
+  }
+}
+
+/*Created and developed exclusively by William Fagundes & Théo Furtado*/
+
+@media screen and (max-width: 1000px){
+  #bunda:hover #dropdown-educacao{
+    display: block;
+  }
+  #dropdown-educacao:hover #dropdown-educacao{
+    display: block;
+  }
+  #dropdown-educacao{
+    display: none;
+    width: 300px;
+    border-radius: 15px;
+    text-align: center;
+    list-style: none;
+    height: 30px;
+    margin-top: 0px;
+  }
+  #dropdown-educacao a:hover {
+    color: #F5AC00;
+  }
+}
+/*Created and developed exclusively by William Fagundes & Théo Furtado*/
+
