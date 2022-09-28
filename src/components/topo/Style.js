@@ -9,6 +9,7 @@ const Card = styled.div`
     position : fixed;
     left : 0;
     display:flex;
+    z-index: 4;
     a {
         text-decoration: none;
         color: white;
@@ -20,14 +21,6 @@ const Card = styled.div`
         text-underline-offset: 0.4em;
         color: #F5AC00
     }
-`;
-
-const Img = styled.img`
-    height: 3em;
-    margin-right: 0%;
-    margin: 15px;
-    margin-left: 10em;
-    cursor:pointer;
 `;
 
 const Textos = styled.div`
@@ -58,4 +51,4 @@ const IconeRedeSocial = styled.img`
     height: 18px;
 `;
 
-export { Card, Img, Textos, DivRede, ListaRede, IconeRedeSocial}
+export { Card, Textos, DivRede, ListaRede, IconeRedeSocial}

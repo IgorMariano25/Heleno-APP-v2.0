@@ -1,14 +1,33 @@
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
+
+  #logoibmecmenu {
+    visibility: hidden;
+    margin: -1000%;
+  }
+
+ #logoibmec {
+    height: 3em;
+    margin-right: 0%;
+    margin: 15px;
+    margin-left: 10em;
+    cursor:pointer;
+    z-index: 4;
+ }
  @media screen and (max-width: 800px){
+      #logoibmecmenu {
+        visibility: visible;
+        margin: 0;
+        margin-top: 30px;
+        margin-left: -50px;
+        height: 3em;
+        cursor: pointer;
+      }
+      #logoibmec {
+        height: 3em;
+        margin-right: 0%;
+        margin: 15px;
+        margin-left: 40px;
+        cursor:pointer;
+      }
     .botao{
         margin-left: 40px;
     }
@@ -29,7 +48,7 @@
       top: 30px;
       left: 50px;
       
-      z-index: 1;
+      z-index: 2;
       
       -webkit-user-select: none;
       user-select: none;
@@ -57,11 +76,11 @@
       position: absolute;
       top: -7px;
       left: -5px;
-      
+      margin-left: 350px;
       cursor: pointer;
       
       opacity: 0; /* hide this */
-      z-index: 2; /* and place it over the hamburger */
+      z-index: 3; /* and place it over the hamburger */
       
       -webkit-touch-callout: none;
     }
@@ -75,13 +94,13 @@
       width: 33px;
       height: 4px;
       margin-bottom: 5px;
-      margin-left: 40px;
+      margin-left: 350px;
       position: relative;
       
       background: #F5AC00;
       border-radius: 3px;
       
-      z-index: 1;
+      z-index: 2;
       
       transform-origin: 4px 0px;
       
@@ -135,8 +154,8 @@
     #menu
     {
       position: absolute;
-      width: 300px;
-      margin-left: -400px;
+      width: 800px;
+      margin-left: -255px;
       margin-top: -70px;
       padding: 50px;
       padding-top: 125px;
@@ -196,3 +215,34 @@
         margin-left: 10px;
     }
     }
+    @media screen and (max-width: 690px){
+      #menuToggle span
+    {
+      margin-left: 250px;
+    }
+    #menuToggle input
+    {
+      margin-left: 250px;
+    }
+    }
+    @media screen and (max-width: 580px){
+      #menuToggle span
+    {
+      margin-left: 170px;
+    }
+    #menuToggle input
+    {
+      margin-left: 170px;
+    }
+    }
+    @media screen and (max-width: 479px){
+      #menuToggle span
+    {
+      margin-left: 50px;
+    }
+    #menuToggle input
+    {
+      margin-left: 50px;
+    }
+    }
+    
