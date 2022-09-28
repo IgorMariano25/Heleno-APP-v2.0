@@ -1,6 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
 #logohubs {
     width: 25%;
     height: 25%;
-    padding-left: 3%;
-    margin-top: 0%;
+    margin-left: 70vw;
+    padding-top: 30px;
+    padding-top: 1.88em;
+}
+
+.Título{
+    display: block;
+    margin-left: 5vw;
+    font-family: 'Barlow';
+    margin-top: -15%;
+}
+
+.Texto{
+    width: 50vw;
+    margin-left: 5vw;
+    margin-top: -2em;
+    font-size: 1.1em;
+    font-family: 'Barlow';
+    text-align: left;
 }
