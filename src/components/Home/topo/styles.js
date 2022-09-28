@@ -14,21 +14,25 @@ const Card = styled.div`
     background-color: #002555;
 
     display:flex;
+    a{
+        margin: 35px;
+    }
 
-    a {
+    a, span {
 
         text-decoration: none;
 
         color: white;
 
-        margin-right: 35px;
-
         transition: --offset 300ms, text-decoration-color 300ms;
 
     }
+    span{
+        margin: 30px;
+    }
 
-    a:hover{
-
+    a:hover, span:hover, li:hover{
+        cursor: pointer;
         text-decoration: underline;
 
         text-underline-offset: 0.4em;
@@ -36,7 +40,29 @@ const Card = styled.div`
         color: #F5AC00
 
     }
-
+    span:hover #dropdown-educacao{
+        display: block;
+    }
+    #dropdown-educacao:hover #dropdown-educacao{
+        display: block;
+    }
+    #dropdown-educacao{
+        display: none;
+        flex-direction: column;
+        background-color: grey;
+        width: 200px;
+        text-align: center;
+        margin-left: 480px;
+        list-style: none;
+        margin-top: 0px;
+    }
+    #dropdown-educacao li{
+        margin: 0px;
+        margin-left: -40px;
+        box-shadow: 0 0 1px 0 black;
+        text-align: center;
+        padding: 10px;
+    }
 `;
 
 
@@ -76,6 +102,8 @@ const Textos = styled.div`
     margin: 1%;
 
     margin-left: 10px;
+
+    
 
 `;
 
