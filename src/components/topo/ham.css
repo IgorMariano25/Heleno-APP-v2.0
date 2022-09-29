@@ -141,6 +141,7 @@
     padding: 50px;
     padding-top: 125px;
     background: #ededed;
+    cursor: pointer;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     font-family: 'Barlow';
@@ -245,6 +246,7 @@
 
 /*Created and developed exclusively by William Fagundes*/
 /*Created and developed exclusively by William Fagundes & Théo Furtado*/
+
 @media screen and (min-width: 1000px){
   #bunda:hover #dropdown-educacao{
     display: block;
@@ -255,9 +257,8 @@
   #dropdown-educacao{
     display: none;
     flex-direction: column;
-    background-color: #F5AC00;
-    width: 300px;
-    border-radius: 15px;
+    background-color: #002555;
+    width: 250px;
     text-align: center;
     margin-left: 300px;
     list-style: none;
@@ -265,7 +266,7 @@
     margin-top: 0px;
   }
   #dropdown-educacao a:hover {
-    color: black;
+    color: #F5AC00;
   }
 }
 
