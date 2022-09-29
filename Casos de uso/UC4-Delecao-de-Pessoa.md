@@ -44,7 +44,7 @@
 > 
 > ##### Fluxo Alternativo:
 > 
-> A1. Pesquisar de forma mais eficiente o projeto
+> A1. Pesquisar de forma mais eficiente a pessoa
 > 
 > A1.1 Usuário clica na barra de pesquisa
 > 
