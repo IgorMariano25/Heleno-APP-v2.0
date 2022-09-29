@@ -1,6 +1,5 @@
 import './styles.css';
-import Topo from '../../components/Home/topo';
-import Footer from '../../components/Home/footer';
+import Master from '../masterPage'
 import { ConteudoPage, Titulo, P, SubTitulo} from '../../components/Home/styledComponents';
 import ProjetoCard from '../../components/Home/cardProjeto';
 import projetos from '../../projetos.json';
@@ -9,9 +8,9 @@ import dados from '../../dados.json'
 
 export default function App() {
   return (
-     <div>
-        <Topo/>
-        <ConteudoPage>
+
+    <Master tipoFooter="tipo1">
+       <ConteudoPage>
           <div className="IntroducaoHomePage">
             <div className="VideoIbmecHome">
               <iframe
@@ -78,7 +77,6 @@ export default function App() {
               </div>
         </div>
         </ConteudoPage>
-        <Footer/>
-     </div>
+    </Master>
   );
 }

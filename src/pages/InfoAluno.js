@@ -1,5 +1,4 @@
-import Topo from "../components/Alunos/topo";
-import RodaPe from "../components/Alunos/footer";
+import Master from './masterPage'
 import PessoaCardDetalhado from "../components/Alunos/cardPessoaDetalhado";
 import arquivo from "../dados.json";
 import { useParams } from "react-router-dom";
@@ -7,7 +6,7 @@ import { useParams } from "react-router-dom";
 import "../App.css";
 import { useState } from "react";
 
-const Perfil = () => {
+export default function App(){
   const [dados] = useState(arquivo);
   const { id } = useParams();
 
@@ -16,8 +15,7 @@ const Perfil = () => {
   );
   
   return (
-    <div>
-      <Topo/>  
+    <Master>
         <div className="PerfilAlunoDetalhado">
           {filtrados.map((p, ind) => (
             <PessoaCardDetalhado
@@ -34,9 +32,6 @@ const Perfil = () => {
           ))
           }       
       </div>
-      <RodaPe/>
-    </div>
+    </Master>
   );
-};
-
-export default Perfil;
+}

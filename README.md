@@ -37,46 +37,11 @@
 | RNF04   | Estar disponível para o usuário 24/7.       |
 | RNF05   | O sistema deve ser responsivo.        |
 
+<<<<<<< HEAD
+=======
 
 # Descrição de casos de uso:
 
-## Página dos Alunos:
-
-> Caso de uso:
->
-> Exibição do espaço individual (card) do aluno
-> <hr>
-> Referência:
->
-> RF11 e RF01 parcialmente
-> <hr>
-> Descrição geral:
->
-> Começa com o usuário do sistema querendo ver as informações de determinada pessoa dentro do sistema.
-> <hr>
-> Atores:
-> 
-> Usuário
-> <hr>
-> Pre-condições:
-> 
-> acessar o site
-> <hr>
-> Pós-condições:
-> 
-> Aparecer as informações do aluno na tela
-> <hr>
-> Campos:
->
-> Foto do aluno, nome do aluno, curso do aluno, semestre que começou o curso, ano em que deve terminar o curso, projetos em que participou e uma breve descrição escrita pelo proprio aluno
-> <hr>
-> Fluxo básico:
-> 
-> a) acessar a tela dos alunos
-> 
-> b) clicar no card de um aluno a fim de mostrar mais informações sobre o aluno
-> 
-> Fim de caso de uso
 
 ## UC01 fazer login
 > ##### Nome:
@@ -161,146 +126,478 @@
 >
 > RN1 Senha deve possuir ao menos 8 dígitos, sendo esses números ou caracteres
 
-## UC2 Buscar Pessoas
-> ##### Nome:
-> 
-> Buscar pessoas
-> <hr>
-> 
-> ##### Breve descrição:
-> 
-> Permitir a um ator buscar por informações de pessoas cadastradas
-><hr>
->
-> ##### Atores:
-> 
-> Pessoas
-><hr>
->
-> ##### Fluxo de eventos:
->
-> ##### Fluxo principal:
-> 
-> P1. o usuário clica na caixa de busca
->
-> P2. digita o nome de quem deseja procurar
->
-> P3. Exibe as informações da pessoa pesquisada
->
-> ##### Fluxo de exceção:
-> 
-> A1. O sistema não identificou o nome informado
->
-> a) Exibe mensagem informando que não foi identificado e pede para reescrever o nome da pessoa
+## Manter pessoas
 
-## UC3 Buscar projetos
+## UC4 Criar Pessoas
 > ##### Nome:
+>
+> Criar instancias de pessoas
+><hr>
 > 
-> Buscar Projetos
-> <hr>
-> 
-> ##### Breve descrição:
-> 
-> Permitir a um ator buscar por Projetos e portifólios cadastrados
+> ##### Referencia:
+>
+> RF01 parcial
+><hr>
+>
+> ##### Descrição geral:
+>
+> Administrador pretende inserir uma pessoa no sistema
 ><hr>
 >
 > ##### Atores:
-> 
-> Pessoas
+>
+> Administrdor
 ><hr>
 >
-> ##### Fluxo de eventos:
+> ##### Pré-condições:
 >
-> ##### Fluxo principal:
+> Estar logado no sistema
+><hr>
+>
+> ##### Fluxo Principal:
+>
+> P1. Administrador clica em cadastrar um pessoa
+>
+> P2. O administrador insere as informações(tais como nome, idade, e foto) da pessoa que se deseja inserir no sistema
+>
+> P3. Administrador clica no botão salvar
+>
+> ##### Fluxo Alternativo:
+>
+> A1. A pessoa inserida já está no sistema
+>
+> A1.1 O sistema exibe uma mensagem informando que a pessoa inserida já se encontra no sistema
+>
+> A1.2 O sistema pergunta se deseja atualizar o já existente ou criar uma outra pessoa com o mesmo nome
+>
+> A1.3 Se o administrador escolher atualizar vai para UC7 P2. Caso escolha salvar um novo, o sistema salva independentemente
+>
+> ##### Fluxo de Exceção:
+>
+> E1. As informações inseridas estão com o tipo errado(como ter letra na idade):
 > 
-> P1. o usuário clica na caixa de busca
+> E1.1 Exibe mensagem informando o erro e a localidade do erro
 >
-> P2. digita o nome do projeto que deseja procurar
+> E1.2 O administrador corrige a informação e clica novamente em salvar
+><hr>
 >
-> P3. Exibe as informações do projeto pesquisado
+> Pós-condição: 
 >
-> ##### Fluxo de exceção:
+> Uma nova pessoa está inserida no sistema
 > 
-> A1. O sistema não identificou o projeto informado
->
-> a) Exibe mensagem informando que não foi identificado e pede para reescrever o nome do projeto
 
-## UC4 Fazer cadastro
+## UC5 Exibir e buscar Pessoas:
+
+> ##### Caso de uso:
+>
+> Exibição e busca das pessoas cadastradas no sistema
+> <hr>
+>
+> ##### Referência:
+>
+> RF01 parcial
+> <hr>
+>
+> ##### Descrição geral:
+>
+> O usuário deseja ver e pesquisar as pessoas cadastradas no sistema
+> <hr>
+>
+> ##### Ator:
+> 
+> Usuário
+> <hr>
+>
+> ##### Pré-condições:
+> 
+> acessar o site
+> <hr>
+>
+> ##### Pós-condições:
+> 
+> Aparecer as informações da pessoa na tela
+> <hr>
+>
+> ##### Fluxo Principal:
+> 
+> P1. O usuário clica no link para ir à página das pessoas
+> 
+> P2. Procura na pagina geral pela pessoa que deseja procurar
+> 
+> P3. Clica na pessoa específica que deseja ver as informações
+> 
+> P4. O sistema exibe apenas as informações da pessoa selecionada
+> 
+> ##### Fluxo Alternativo:
+> 
+> A1. Pesquisar de forma mais eficiente o projeto
+> 
+> A1.1 Usuário clica na barra de pesquisa
+> 
+> A1.2 Usuário escreve o nome da pessoa que procura
+> 
+> A1.3 Sistema exibe as pessoas cadastradas com o nome digitado
+> 
+> A1.4 Usuário clica na pessoa que procura
+> 
+> ##### Fluxo de Exceção:
+> 
+> E1. O nome digitado não consta no sistema
+> 
+> E1.1 O sistema exibe mensagem informando que o nome digitado não consta no sistema
+
+## UC6 Deleção de Pessoa:
+
 > ##### Nome:
 > 
-> Fazer cadastro
+> Deleção de pessoa cadastrada no sistema
 > <hr>
->
-> ##### referências:
->
 > 
-><hr>
->
+> ##### Referencia:
+> 
+> RF01 parcial
+> <hr>
+> 
 > ##### Breve descrição:
 > 
-> O administrador do sistema deve preencher e validar os seus dados pessoais
-requeridos para o uso do sistema.
+> O administrador quer deletar uma pessoa do sistema
 > <hr>
->
-> ##### Atores:
+> 
+> ##### Ator:
 > 
 > Administrador
 > <hr>
->
-> ##### Fluxo de eventos:
 > 
-> ##### Fluxo principal:
+> ##### Pre-condições:
 > 
-> P1. O caso de uso começa quando o administrador clica em cadastrar no sistema
->
-> P2. O sistema exibe a tela com as informações que precisam ser preenchidas
->
-> P3.  O administrador preenche as informações requeridas pelo sistema
->
-> P4. O administrador clica em confirmar
->
-> P5.  O sistema valida as informações preenchidas pelo administrador
->
-> P6. O sistema armazena as informações inseridas
-> 
-> ##### Fluxo alternativo
->
-> A1. Preencheu o cadastro de maneira incorreta
->
-> a) O sistema exibe uma mensagem de erro
->
-> b) O sistema indica os campos que possuem as informações incorretas
->
-> c) O administrador corrige os campos com as informações corretas
-> 
-> d) O sistema valida as informações preenchidas pelo administrador
-> 
-> ##### Fluxo de exceção
->
+> Ter pessoas cadastradas no sistema e o administrador estar na pagina pessoas
 > <hr>
 > 
-> ##### Pré condições:
+> ##### Pós-condições:
 > 
-> a)  ter acesso a página inicial do sistema
+> A pessoa não estar mais constando no sistema
+> <hr>
+> 
+> ##### Fluxo Principal:
+> 
+> P1. O administrador clica em deletar pessoa
+> 
+> P2. O administrador escolhe, na lista, a pessoa que quer apagar
 >
+> P3. O sistema exibe uma tela para escrever o nome da pessoa que quer apagar
+> 
+> P4. O administrador escreve o nome da pessoa
+> 
+> P5. O sistema exibe uma mensagem informando que a pessoa foi apagada
+> 
+> ##### Fluxo Alternativo:
+> 
+> A1. Pesquisar de forma mais eficiente o projeto
+> 
+> A1.1 Usuário clica na barra de pesquisa
+> 
+> A1.2 Usuário escreve o nome da pessoa que procura
+> 
+> A1.3 Sistema exibe as pessoas cadastradas com o nome digitado
+> 
+> A1.4 Usuário clica na pessoa que procura
+> 
+> ##### Fluxo de exceção:
+> 
+> E1. O nome escrito não é o mesmo do nome da pessoa selecionada
+> 
+> E1.1 O sistema exibe mensagem de que o nome informado não é o mesmo do selecionado
+
+
+## UC7 Atualização de Pessoa
+> ##### Nome:
+> 
+> Atualização de informação de uma pessoa
+> <hr>
+> 
+> ##### Referencia:
+> 
+> RF01 parcial
+> <hr>
+> 
+> ##### Breve descrição:
+> 
+> O administrador quer atualizar as informações de uma pessoa
+> <hr>
+> 
+> ##### Ator:
+> 
+> Administrador
+> <hr>
+> 
+> ##### Pre-condições:
+> 
+> A pessoa estar cadastrada no sistema e o administrador estar na pagina pessoas
+> <hr>
+> 
+> ##### Pós-condições:
+> 
+> A pessoa está com as informações alteradas no sistema
+> <hr>
+> 
+> ##### Fluxo Principal:
+> 
+> P1. O administrador clica em alterar informações pessoais
+> 
+> P2. O administrador escolhe, na lista, a pessoa que quer alterar
+> 
+> P3. O adm altera as informações que desejar
+> 
+> P4. O sistema exibe a diferença de informações e pegunta se deseja salvar as alterações
+> 
+> ##### Fluxo Alternativo:
+> 
+> A1. Pesquisar de forma mais eficiente o projeto
+> 
+> A1.1 Usuário clica na barra de pesquisa
+> 
+> A1.2 Usuário escreve o nome da pessoa que procura
+> 
+> A1.3 Sistema exibe as pessoas cadastradas com o nome digitado
+> 
+> A1.4 Usuário clica na pessoa que procura
+
+
+## Manter Projetos
+## UC4 Criar projetos
+> ##### Nome:
+>
+> Criar instancias de projetos
 ><hr>
 > 
-> ##### pós-condições:
+> ##### Referencia:
 >
-> a) A pessoa é cadastrada no sistema e pode ter acesso
+> RF02 parcial
+><hr>
+>
+> ##### Descrição geral:
+>
+> Administrador pretende inserir um projeto no sistema
+><hr>
+>
+> ##### Atores:
+>
+> Administrdor
+><hr>
+>
+> ##### Pré-condições:
+>
+> Estar logado no sistema
+><hr>
+>
+> Pós-condição: 
+>
+> Um novo projeto está inserido no sistema
 > <hr>
 >
-> ##### Regras de negócio:
+> ##### Fluxo Principal:
 >
-> RN1 Registrar dados no cadastro
+> P1. Administrador clica em cadastrar um projeto
+>
+> P2. O administrador insere as informações(tais como nome, pessoas envolvidas, e foto representativa) do projeto que se deseja inserir no sistema
+>
+> P3. Administrador clica no botão salvar
+>
+> ##### Fluxo Alternativo:
+>
+> A1. O projeto inserido já está no sistema
+>
+> A1.1 O sistema exibe uma mensagem informando que o projeto inserida já se encontra no sistema
+>
+> A1.2 O sistema pergunta se deseja atualizar o já existente ou criar um outro projeto com o mesmo nome
+>
+> A1.3 Se o administrador escolher atualizar vai para UC7 P2. Caso escolha salvar um novo, o sistema salva independentemente
+>
+> ##### Fluxo de Exceção:
+
+## UC5 Exibir e buscar projetos:
+
+> ##### Caso de uso:
+>
+> Exibição e busca de projetos cadastrados no sistema
+> <hr>
+>
+> ##### Referência:
+>
+> RF02 parcial
+> <hr>
+>
+> ##### Descrição geral:
+>
+> O usuário deseja ver e pesquisar os projetos cadastrados no sistema
+> <hr>
+>
+> ##### Ator:
 > 
-> RN2 informações devem ser validas
+> Usuário
+> <hr>
+>
+> ##### Pré-condições:
+> 
+> acessar o site
+> <hr>
+>
+> ##### Pós-condições:
+> 
+> Aparecer as informações do projeto na tela
+> <hr>
+>
+> ##### Fluxo Principal:
+> 
+> P1. O usuário clica no link para ir à página dos projetos
+> 
+> P2. Procura na página geral pelo projeto que deseja procurar
+> 
+> P3. Clica no projeto específico que deseja ver as informações
+> 
+> P4. O sistema exibe apenas as informações do projeto selecionado
+> 
+> ##### Fluxo Alternativo:
+> 
+> A1. Pesquisar de forma mais eficiente o projeto
+> 
+> A1.1 Usuário clica na barra de pesquisa
+> 
+> A1.2 Usuário escreve o nome do projeto que procura
+> 
+> A1.3 Sistema exibe os projetos cadastrados com o nome digitado
+> 
+> A1.4 Usuário clica no projeto que procura
+> 
+> ##### Fluxo de Exceção:
+> 
+> E1. O nome digitado não consta no sistema
+> 
+> E1.1 O sistema exibe mensagem informando que o nome digitado não consta no sistema
 
-## UC5 Manter pessoas
+## UC6 Deleção de Projeto:
 
-> **A ser alterado**
+> ##### Nome:
+> 
+> Deleção de projeto cadastrado no sistema
+> <hr>
+> 
+> ##### Referencia:
+> 
+> RF02 parcial
+> <hr>
+> 
+> ##### Breve descrição:
+> 
+> O administrador quer deletar um projeto do sistema
+> <hr>
+> 
+> ##### Ator:
+> 
+> Administrador
+> <hr>
+> 
+> ##### Pre-condições:
+> 
+> Ter o projeto cadastrado no sistema e o administrador estar na pagina projetos
+> <hr>
+> 
+> ##### Pós-condições:
+> 
+> O projeto não estar mais constando no sistema
+> <hr>
+> 
+> ##### Fluxo Principal:
+> 
+> P1. O administrador clica em deletar projeto
+> 
+> P2. O administrador escolhe, na lista, o projeto que quer apagar
+>
+> P3. O sistema exibe uma tela para escrever o nome do projeto que quer apagar
+> 
+> P4. O administrador escreve o nome do projeto
+> 
+> P5. O sistema exibe uma mensagem informando que o projeto foi apagado
+> 
+> ##### Fluxo Alternativo:
+> 
+> A1. Pesquisar de forma mais eficiente o projeto
+> 
+> A1.1 Usuário clica na barra de pesquisa
+> 
+> A1.2 Usuário escreve o nome do projeto que procura
+> 
+> A1.3 Sistema exibe os projetos cadastrados com o nome digitado
+> 
+> A1.4 Usuário clica no projeto que procura
+> 
+> ##### Fluxo de exceção:
+> 
+> E1. O nome escrito não é o mesmo do nome do projeto selecionado
+> 
+> E1.1 O sistema exibe mensagem de que o nome informado não é o mesmo do selecionado
 
-## UC6 Manter sobre
 
-> **A ser alterado**
-
+## UC7 Atualização de projeto
+> ##### Nome:
+> 
+> Atualização de informação de um projeto
+> <hr>
+> 
+> ##### Referencia:
+> 
+> RF02 parcial
+> <hr>
+> 
+> ##### Breve descrição:
+> 
+> O administrador quer atualizar as informações de um projeto
+> <hr>
+> 
+> ##### Ator:
+> 
+> Administrador
+> <hr>
+> 
+> ##### Pre-condições:
+> 
+> O projeto estar cadastrado no sistema e o administrador estar na pagina Projetos
+> <hr>
+> 
+> ##### Pós-condições:
+> 
+> O projeto estar com as informações alteradas no sistema
+> <hr>
+> 
+> ##### Fluxo Principal:
+> 
+> P1. O administrador clica em alterar informações
+> 
+> P2. O administrador escolhe, na lista, o projeto que quer alterar
+> 
+> P3. O adm altera as informações que desejar
+> 
+> P4. O sistema exibe a diferença de informações e pegunta se deseja salvar as alterações
+>
+> P5. O sistema salva as informações
+> 
+> ##### Fluxo Alternativo:
+> 
+> A1. Pesquisar de forma mais eficiente o projeto
+> 
+> A1.1 Usuário clica na barra de pesquisa
+> 
+> A1.2 Usuário escreve o nome do projeto que procura
+> 
+> A1.3 Sistema exibe os projetos cadastrados com o nome digitado
+> 
+> A1.4 Usuário clica no projeto que procura
+>
+> ##### Fluxo de exceção:
+> 
+> E1. O administrador não quer salvar as alterações
+> 
+> E1.1 O administrador seleciona para não salvar as alterações
+> 
+> E1.2 O sistema ignora as alterações escritas
+>>>>>>> release

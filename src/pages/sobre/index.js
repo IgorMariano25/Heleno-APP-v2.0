@@ -1,20 +1,18 @@
-import Topo from "../../components/Sobre/topo";
-import RodaPe from "../../components/Sobre/footer";
+import Master from '../masterPage'
 import { Conteudo } from "../../components/Sobre/styledComponents";
 import fotoTurmaAntiga from "../../assets/imagens/fotoTurmaAntiga.jpg"
 import "./styles.css"
 
 export default function App(){
     return (
-        <div className="containerSobre">
-            <Topo/>
+        <Master tipoFooter="tipo3">
             <Conteudo>
                 <div>
                     <div className="ImagensGrupos">
                         <a href="https://gitlab.com/projeto-multidisciplinar/heleno-app" target="_blank" rel="noreferrer">
                             <button className="btnImagem">
                                 <img src={fotoTurmaAntiga} className="imagem"/>
-                                Documentação 
+                                Antiga Documentação 
                             </button>
                         </a>
                         <a href="https://gitlab.com/EduardoMangeli/ibtech" target="_blank" rel="noreferrer">
@@ -40,7 +38,6 @@ export default function App(){
                 </div>
                 
             </Conteudo>
-            <RodaPe/>
-        </div>
+        </Master>
     );
 }
