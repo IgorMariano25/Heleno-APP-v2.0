@@ -1,4 +1,4 @@
-## UC6 Deleção de Pessoa:
+## UC4 Deleção de Pessoa:
 
 > ##### Nome:
 > 
