@@ -1,12 +1,10 @@
-import Topo from "../../components/Contato/topo";
-import Footer from "../../components/Contato/footer";
+import Master from '../masterPage'
 import Formulario from "../../components/Contato/formulario";
 import { Img, Conteudo } from "../../components/Contato/styledComponents";
 
 export default function App(){
     return (
-        <div>
-            <Topo/>
+        <Master  tipoFooter="tipo2">
             <Conteudo>
                 <div className="ConteudoContato">
                     <Img
@@ -16,7 +14,6 @@ export default function App(){
                     <Formulario/>
                 </div>
             </Conteudo>
-            <Footer/>
-        </div>
+        </Master>
     );
 }

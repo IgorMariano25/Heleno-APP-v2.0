@@ -1,5 +1,4 @@
-import Topo from '../../components/Portfolios/topo';
-import RodaPe from '../../components/Portfolios/footer';
+import Master from '../masterPage'
 import ProjetoCard from '../../components/Portfolios/cardProjeto';
 import arquivo from "../../projetos.json";
 import { useState, useEffect, useRef, useCallback } from "react";
@@ -37,8 +36,7 @@ export default function App () {
     }, [filtra]);
 
     return (
-        <div className="container">
-            <Topo/>
+        <Master tipoFooter="tipo2">
             <div className="Pesquisa">
                 <form onSubmit={(e) => {
                     e.preventDefault();
@@ -68,7 +66,6 @@ export default function App () {
                         ))
                     }
             </div>
-            <RodaPe/>
-        </div>
+        </Master>
     );
 }

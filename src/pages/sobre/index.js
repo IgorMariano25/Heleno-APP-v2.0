@@ -1,13 +1,11 @@
-import Topo from "../../components/Sobre/topo";
-import RodaPe from "../../components/Sobre/footer";
+import Master from '../masterPage'
 import { Conteudo } from "../../components/Sobre/styledComponents";
 import fotoTurmaAntiga from "../../assets/imagens/fotoTurmaAntiga.jpg"
 import "./styles.css"
 
 export default function App(){
     return (
-        <div className="containerSobre">
-            <Topo/>
+        <Master tipoFooter="tipo3">
             <Conteudo>
                 <div>
                     <div className="ImagensGrupos">
@@ -40,7 +38,6 @@ export default function App(){
                 </div>
                 
             </Conteudo>
-            <RodaPe/>
-        </div>
+        </Master>
     );
 }
