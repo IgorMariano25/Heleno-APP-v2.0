@@ -1,4 +1,4 @@
-## UC5 Atualização de Pessoa
+## UC06 Atualização de Pessoa
 > ##### Nome:
 > 
 > Atualização de informação de uma pessoa

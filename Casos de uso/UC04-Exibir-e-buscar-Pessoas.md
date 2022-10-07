@@ -1,4 +1,4 @@
-## UC3 Exibir e buscar Pessoas:
+## UC04 Exibir e buscar Pessoas:
 
 > ##### Caso de uso:
 >

@@ -1,4 +1,4 @@
-## UC7 Exibir e buscar projetos:
+## UC08 Exibir e buscar projetos:
 
 > ##### Caso de uso:
 >
