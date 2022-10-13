@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+import { Card, Img, Textos } from "./styles.js";
+import {Link} from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+=======
 <<<<<<< HEAD:src/components/topo/topo.jsx
 import { Card, Img, Textos } from "./Style.js";
 =======
@@ -10,6 +15,7 @@ import './ham.css';
 /*Created and developed exclusively by William Fagundes*/
 /*Created and developed exclusively by William Fagundes*/
 /*Created and developed exclusively by William Fagundes*/
+>>>>>>> release
 
 <<<<<<< HEAD:src/components/Home/topo/index.jsx
 const Topo = ( props ) => {
@@ -19,6 +25,8 @@ export default function App(props){
     const navigate = useNavigate();    
     return(
         <nav>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD:src/components/topo/topo.jsx
             <Card>
                 <img    id="logoibmec"
@@ -52,6 +60,7 @@ export default function App(props){
                 </div>
             </Card>
 =======
+>>>>>>> release
         <Card>
             <Img
                     src={ `${process.env.PUBLIC_URL}/imagens/logoIBMECFundoAzul.png` }
@@ -73,12 +82,17 @@ export default function App(props){
                 
             </Textos>
         </Card>
+<<<<<<< HEAD
+=======
 >>>>>>> release:src/components/MasterPage/header/index.jsx
+>>>>>>> release
         </nav>
     );
 <<<<<<< HEAD:src/components/Home/topo/index.jsx
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD:src/components/topo/topo.jsx
 /*Created and developed exclusively by William Fagundes*/
 /*Created and developed exclusively by William Fagundes*/
@@ -86,8 +100,12 @@ export default function App(props){
 
 export default Topo;
 =======
+>>>>>>> release
 export default Topo;
 =======
 }
 >>>>>>> release:src/components/MasterPage/header/index.jsx
+<<<<<<< HEAD
+=======
 >>>>>>> release:src/components/MasterPage/header/index.jsx
+>>>>>>> release
