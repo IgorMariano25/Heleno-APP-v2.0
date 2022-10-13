@@ -37,6 +37,8 @@
 | RNF04   | Estar disponível para o usuário 24/7.       |
 | RNF05   | O sistema deve ser responsivo.        |
 
+<<<<<<< HEAD
+=======
 
 # Descrição de casos de uso:
 
@@ -598,3 +600,4 @@
 > E1.1 O administrador seleciona para não salvar as alterações
 > 
 > E1.2 O sistema ignora as alterações escritas
+>>>>>>> release
