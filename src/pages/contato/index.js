@@ -1,6 +1,6 @@
 import Master from '../masterPage'
-import Formulario from "../../components/Contato/formulario";
-import { Img, Conteudo } from "../../components/Contato/styledComponents";
+import Formulario from "../../components/contato/formulario";
+import { Img, Conteudo } from "../../components/contato/styledComponents";
 
 export default function App(){
     return (
