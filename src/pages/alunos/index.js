@@ -1,7 +1,6 @@
 import React from 'react';
 import './styles.css';
-import Topo from '../../components/Alunos/topo';
-import RodaPe from '../../components/Alunos/footer';
+import Master from '../masterPage'
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
 import PessoaCard from '../../components/Alunos/cardPessoa';
@@ -54,10 +53,7 @@ export default function App() {
 
   return (
 
-      <div>
-
-          <Topo/>
-
+      <Master  tipoFooter="tipo2">
           <div className="Pesquisa">
 
             <form onSubmit={(e) => {
@@ -103,10 +99,7 @@ export default function App() {
             }
 
           </div>
-
-          <RodaPe/>
-
-      </div>
+      </Master>
 
   );
 

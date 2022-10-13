@@ -2,7 +2,11 @@ import { Card, Img, Textos } from "./styles.js";
 import {Link} from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
+<<<<<<< HEAD:src/components/Home/topo/index.jsx
 const Topo = ( props ) => {
+=======
+export default function App(props){
+>>>>>>> release:src/components/MasterPage/header/index.jsx
     const navigate = useNavigate();    
     return(
         <nav>
@@ -29,6 +33,10 @@ const Topo = ( props ) => {
         </Card>
         </nav>
     );
+<<<<<<< HEAD:src/components/Home/topo/index.jsx
 }
 
 export default Topo;
+=======
+}
+>>>>>>> release:src/components/MasterPage/header/index.jsx
