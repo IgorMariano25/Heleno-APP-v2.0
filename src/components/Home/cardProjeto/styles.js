@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Card = styled.a`
+    margin-top: 100px;
     width: 15em;
     border-width: 1px;
     background-color: #002555;
