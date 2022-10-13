@@ -12,6 +12,13 @@ const Card = styled.div`
     height: 4.6875em;
 
     background-color: #002555;
+<<<<<<< HEAD:src/components/topo/Style.js
+    position : fixed;
+    left : 0;
+    display:flex;
+    z-index: 4;
+    a {
+=======
 
     display:flex;
     a{
@@ -20,6 +27,7 @@ const Card = styled.div`
 
     a, span {
 
+>>>>>>> release:src/components/MasterPage/header/styles.js
         text-decoration: none;
 
         color: white;
@@ -65,6 +73,8 @@ const Card = styled.div`
     }
 `;
 
+<<<<<<< HEAD:src/components/topo/Style.js
+=======
 
 const Img = styled.img`
 
@@ -79,6 +89,7 @@ const Img = styled.img`
 `;
 
 
+>>>>>>> release:src/components/MasterPage/header/styles.js
 const Textos = styled.div`
 
     font-family: 'Barlow';
@@ -132,5 +143,9 @@ const IconeRedeSocial = styled.img`
 
 `;
 
+<<<<<<< HEAD:src/components/topo/Style.js
+export { Card, Textos, DivRede, ListaRede, IconeRedeSocial}
+=======
 
 export { Card, Img, Textos, DivRede, ListaRede, IconeRedeSocial}
+>>>>>>> release:src/components/MasterPage/header/styles.js
