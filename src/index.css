@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
 
+html, body, #root{
+  height: 100%;
+}
+
+#root{
+  height: 100%;
+}
+
 input[type=text].section-readonly-input {
     outline: none !important;
     border-width: 0px !important;
     border: none !important;
     
-    &:hover {
+    /* &:hover {
       outline: none !important;
       border-width: 0px !important;
       border: none !important;
@@ -14,7 +22,7 @@ input[type=text].section-readonly-input {
       outline: none !important;
       border-width: 0px !important;
       border: none !important;
-    }
+    } */
   }
 
 .ContainerCardProjetos{
@@ -87,32 +95,4 @@ input[type=text].section-readonly-input {
 
 .AlinhamentoBtnSobre {
   text-align: center;
-}
-
-#DocumentacaoBtn {
-  padding: 1.3em 3em;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #fff;
-  background-color: #002555;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-  margin-top: 2em;
-}
-
-#DocumentacaoBtn:hover {
-  background-color: #F5AC0D;
-  box-shadow: 0px 15px 20px #997323;
-  color: #000;
-  transform: translateY(-7px);
-}
-
-#DocumentacaoBtn:active {
-  transform: translateY(-1px);
 }
