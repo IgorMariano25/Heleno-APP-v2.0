@@ -9,6 +9,9 @@ import Alunos from "./pages/alunos/"
 import Contato from "./pages/contato/"
 import Sobre from "./pages/sobre/"
 import Hubs from "./pages/hubs/"
+import Graduacao from "./pages/graduacao/"
+import MBA from "./pages/mba/"
+import Pos from "./pages/pos/"
 
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -31,11 +34,15 @@ root.render(
         <Route path="contato" element={<Contato />} />
         <Route path="sobre" element={<Sobre />} />
         <Route path="hubs" element={<Hubs />} />
+        <Route path="graduacao" element={<Graduacao />} />
+        <Route path="mba" element={<MBA />} />
+        <Route path="pos" element={<Pos />} />
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
 );
-//sdadsadasd
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

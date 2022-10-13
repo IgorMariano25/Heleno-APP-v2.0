@@ -1,8 +1,8 @@
 import { Footer, Logo, DivRede, DivLogo, ListaRede, IconeRedeSocial} from "./styles.js";
 
-export default function App(){
+export default function App(props){
     return(
-        <Footer>
+        <Footer tipo={props.tipo}>
             <DivLogo>
                 <a href={ window.location.href }>
                     <Logo
@@ -11,8 +11,7 @@ export default function App(){
                 /></a>
             </DivLogo>
 
-            <DivRede>
-                
+            <DivRede>             
                 <ListaRede>
                     <li>
                         <a href="https://www.instagram.com/ibmec/" target="_blank" rel="noreferrer" ><IconeRedeSocial

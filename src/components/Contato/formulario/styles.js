@@ -49,6 +49,7 @@ const Form = styled.input`
 `;
 
 const Conteudo = styled.div`
+    margin-top: 100px;
     display:flex;
 `;
 
