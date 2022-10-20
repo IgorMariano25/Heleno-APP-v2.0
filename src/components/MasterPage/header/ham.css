@@ -248,7 +248,7 @@
 /*Created and developed exclusively by William Fagundes & Théo Furtado*/
 
 @media screen and (min-width: 1000px){
-  #bunda:hover #dropdown-educacao{
+  #edu:hover #dropdown-educacao{
     display: block;
   }
   #dropdown-educacao:hover #dropdown-educacao{
@@ -273,7 +273,7 @@
 /*Created and developed exclusively by William Fagundes & Théo Furtado*/
 
 @media screen and (max-width: 1000px){
-  #bunda:hover #dropdown-educacao{
+  #edu:hover #dropdown-educacao{
     display: block;
   }
   #dropdown-educacao:hover #dropdown-educacao{
