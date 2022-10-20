@@ -27,7 +27,7 @@ const Topo = ( props ) => {
                         <a href="/sobre"><li>Sobre</li></a>
                         <a href="/portifolios"><li>Portifolios</li></a>
                         <a href="/hubs"><li>Hubs</li></a>
-                        <a id="bunda"><li>Educação</li>
+                        <a href="#" id="bunda"><li>Educação</li>
                             <ul id="dropdown-educacao">
                                 <a href="/mba">MBA</a>
                                 <a href="/pos">Pós</a>
