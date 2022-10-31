@@ -38,8 +38,6 @@
 | RNF05   | O sistema deve ser responsivo.        |
 
 
-=======
-
 # Descrição de casos de uso:
 
 
