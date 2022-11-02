@@ -4,7 +4,7 @@ import Master from '../masterPage'
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
 import PessoaCard from '../../components/Alunos/cardPessoa';
-import arquivo from '../../dados.json'
+import arquivo from '../../pessoas.json'
 
 
 export default function App() {

@@ -41,12 +41,4 @@ const TextoBanner = styled.p`
     text-align: center;
 `;
 
-const BotaoBusca = styled.button`
-
-`;
-
-const Busca = styled.textarea`
-    
-`;
-
-export { Banner, Espacamento, DivisoriaFoto, FotoBanner, SpanBanner, TextoBanner, Busca, BotaoBusca }
+export { Banner, Espacamento, DivisoriaFoto, FotoBanner, SpanBanner, TextoBanner }

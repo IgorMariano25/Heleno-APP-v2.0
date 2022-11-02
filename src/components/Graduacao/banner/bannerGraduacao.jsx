@@ -1,7 +1,7 @@
-import imgBanner from "../../assets/imagensGraduacao/bannerGraduacao.png";
-import { DivisoriaFoto, Banner, Espacamento, FotoBanner, SpanBanner, TextoBanner, Busca, BotaoBusca } from "./styles";
+import imgBanner from "../../../assets/imagensGraduacao/bannerGraduacao.png";
+import { DivisoriaFoto, Banner, Espacamento, FotoBanner, SpanBanner, TextoBanner } from "./styles";
 
-const Graduacao = () => {
+const ExportBanner = () => {
     return (
         <>
         <Espacamento/>
@@ -13,10 +13,8 @@ const Graduacao = () => {
             <SpanBanner>Graduação</SpanBanner>
             <TextoBanner>Transforme oportunidades em possibilidades</TextoBanner>
         </Banner>
-        <BotaoBusca>lupa</BotaoBusca>
-        <Busca></Busca>
         </>
     )
 }
 
-export default Graduacao;
+export default ExportBanner ;

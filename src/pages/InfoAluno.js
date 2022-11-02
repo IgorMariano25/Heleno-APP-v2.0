@@ -1,6 +1,6 @@
 import Master from './masterPage'
 import PessoaCardDetalhado from "../components/Alunos/cardPessoaDetalhado";
-import arquivo from "../dados.json";
+import arquivo from "../pessoas.json";
 import { useParams } from "react-router-dom";
 
 import "../App.css";
@@ -13,7 +13,7 @@ export default function App(){
   const filtrados = dados.filter(
     (e) => e.ID === parseInt(id)
   );
-  
+
   return (
     <Master>
         <div className="PerfilAlunoDetalhado">
@@ -30,7 +30,7 @@ export default function App(){
                 Projetos= {p.Projetos}
             />
           ))
-          }       
+          }
       </div>
     </Master>
   );

@@ -4,7 +4,7 @@ import { ConteudoPage, Titulo, P, SubTitulo} from '../../components/Home/styledC
 import ProjetoCard from '../../components/Home/cardProjeto';
 import projetos from '../../projetos.json';
 import PessoaCard from '../../components/Home/cardPessoa';
-import dados from '../../dados.json'
+import dados from '../../pessoas.json'
 
 export default function App() {
   return (
