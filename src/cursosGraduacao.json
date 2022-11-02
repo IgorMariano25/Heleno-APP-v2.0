@@ -2,87 +2,111 @@
     {
         "ID" : 1,
         "nome": "Administração",
-        "duracao": "4 anos",
+        "curso": "4 anos",
         "tipo": "bacharelado",
         "Categoria": "Presencial"
     }
     ,
     {
-        "ID" : 1,
-        "nome": "Administração",
-        "duracao": "4 anos",
+        "ID" : 2,
+        "nome": "Arquitetura e Urbanismo",
+        "curso": "5 anos",
         "tipo": "bacharelado",
         "Categoria": "Presencial"
     }
     ,
     {
-        "ID" : 1,
-        "nome": "Administração",
-        "duracao": "4 anos",
+        "ID" : 3,
+        "nome": "Ciência de Dados e Inteligência Artificial",
+        "curso": "4 anos",
         "tipo": "bacharelado",
         "Categoria": "Presencial"
     }
     ,
     {
-        "ID" : 1,
-        "nome": "Administração",
-        "duracao": "4 anos",
+        "ID" : 4,
+        "nome": "Ciências Contábeis",
+        "curso": "4 anos",
         "tipo": "bacharelado",
         "Categoria": "Presencial"
     }
     ,
     {
-        "ID" : 1,
-        "nome": "Administração",
-        "duracao": "4 anos",
+        "ID" : 5,
+        "nome": "Ciências Econômicas",
+        "curso": "4 anos",
         "tipo": "bacharelado",
         "Categoria": "Presencial"
     }
     ,
     {
-        "ID" : 1,
-        "nome": "Administração",
-        "duracao": "4 anos",
+        "ID" : 6,
+        "nome": "Comunicação Social - Publicidade e Propaganda",
+        "curso": "4 anos",
         "tipo": "bacharelado",
         "Categoria": "Presencial"
     }
     ,
     {
-        "ID" : 1,
-        "nome": "Administração",
-        "duracao": "4 anos",
+        "ID" : 7,
+        "nome": "Direito",
+        "curso": "5 anos",
         "tipo": "bacharelado",
         "Categoria": "Presencial"
     }
     ,
     {
-        "ID" : 1,
-        "nome": "Administração",
-        "duracao": "4 anos",
+        "ID" : 8,
+        "nome": "Engenharia Civil",
+        "curso": "5 anos",
         "tipo": "bacharelado",
         "Categoria": "Presencial"
     }
     ,
     {
-        "ID" : 1,
-        "nome": "Administração",
-        "duracao": "4 anos",
+        "ID" : 9,
+        "nome": "Engenharia da Computação",
+        "curso": "4 anos",
         "tipo": "bacharelado",
         "Categoria": "Presencial"
     }
     ,
     {
-        "ID" : 1,
-        "nome": "Administração",
-        "duracao": "4 anos",
+        "ID" : 10,
+        "nome": "Engenharia da Produção",
+        "curso": "5 anos",
         "tipo": "bacharelado",
         "Categoria": "Presencial"
     }
     ,
     {
-        "ID" : 1,
-        "nome": "Administração",
-        "duracao": "4 anos",
+        "ID" : 11,
+        "nome": "Engenharia de Software",
+        "curso": "4 anos",
+        "tipo": "bacharelado",
+        "Categoria": "Presencial"
+    }
+    ,
+    {
+        "ID" : 12,
+        "nome": "Engenharia Mecânica",
+        "curso": "5 anos",
+        "tipo": "bacharelado",
+        "Categoria": "Presencial"
+    }
+    ,
+    {
+        "ID" : 13,
+        "nome": "Full Stack Development",
+        "curso": "2,5 anos",
+        "tipo": "Tecnólogo",
+        "Categoria": "Presencial"
+    }
+    ,
+    {
+        "ID" : 14,
+        "nome": "Relações Internacionais",
+        "curso": "4 anos",
         "tipo": "bacharelado",
         "Categoria": "Presencial"
     }

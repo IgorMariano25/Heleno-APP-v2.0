@@ -48,7 +48,7 @@ const Nome = styled.p`
     font-style: Italic;
 `;
 
-const Duracao = styled.p`
+const Curso = styled.p`
      font-weight: 400;
 `;
 
@@ -57,7 +57,7 @@ const Bio = styled.p`
     font-style: Italic;
 `;
 
-const Tipo = styled.p`
+const Ingresso = styled.p`
     font-weight: 400;
     font-style: Italic;
 `;
@@ -67,9 +67,9 @@ const Projetos = styled.p`
     font-style: Italic;
 `;
 
-const Categoria = styled.p`
+const PrevFormatura = styled.p`
     font-weight: 400;
     font-style: Italic;
 `;
 
-export { Card, ContainerModal, Img, Textos, Nome, Duracao, Bio, Tipo, Categoria, Projetos};
+export { Card, ContainerModal, Img, Textos, Nome, Curso, Bio, Ingresso, PrevFormatura, Projetos};
