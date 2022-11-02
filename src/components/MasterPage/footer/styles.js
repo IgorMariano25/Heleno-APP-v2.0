@@ -1,78 +1,17 @@
 import styled from "styled-components";
 
-const styleTipo1 = `
-    bottom: 0;
-    width: 100%;
-    position: relative;
-    background-color: #F5AC00;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    @media screen and (max-width: 800px){
-        bottom: 0;
-        width: 100%;
-        background-color: #F5AC00;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-`
-
-const styleTipo2 = `
-    bottom: 0;
-    width: 100%;
-    background-color: #F5AC00;
+const Footer = styled.footer`
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    @media screen and (max-width: 1025px){
-        bottom: 0;
-        width: 100%;
-        background-color: #F5AC00;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-`
-
-const styleTipo3 = `
-bottom: 0;
-width: 100%;
-background-color: #F5AC00;
-position: relative;
-display: flex;
-align-items: center;
-justify-content: space-around;
-
-@media screen and (max-width: 1025px){
     bottom: 0;
     width: 100%;
     background-color: #F5AC00;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-`
-const Footer = styled.footer`
-    
-    ${(props) => {
-        switch (props.tipo) {
-            case "tipo1":
-                return styleTipo1
-        
-            case "tipo2":
-                return styleTipo2
-
-            default:
-                return styleTipo3
-        }
-    }}
+    @media screen and (min-width: 768px){
+        justify-content: space-around;
+    }
 `;
 
 const Logo = styled.img`

@@ -53,8 +53,7 @@ export default function App() {
 
   return (
 
-      <Master  tipoFooter="tipo1">
-          <div className='help-tipo'>
+      <Master>
           <div className="Pesquisa">
 
             <form onSubmit={(e) => {

@@ -14,7 +14,7 @@ import { Conteudo } from '../../components/Contato/styledComponents';
 export default function App(){
   return(
     <div>
-        <Master  tipoFooter="tipo3">
+        <Master>
             <Conteudo>
                 <img    id='logohubs'
                         src={hubs}

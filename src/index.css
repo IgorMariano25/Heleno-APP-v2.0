@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
 
-html, body{
+/* html, body, #root{
   height: 100%;
 }
 
 #root{
   height: 100%;
-}
+} */
 
 input[type=text].section-readonly-input {
     outline: none !important;
