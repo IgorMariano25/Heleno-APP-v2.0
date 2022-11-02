@@ -4,7 +4,7 @@ import { Img, Conteudo } from "../../components/Contato/styledComponents";
 
 export default function App(){
     return (
-        <Master  tipoFooter="tipo2">
+        <Master>
             <Conteudo>
                 <div className="ConteudoContato">
                     <Img

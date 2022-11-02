@@ -5,7 +5,7 @@ import "./styles.css"
 
 export default function App(){
     return (
-        <Master tipoFooter="tipo3">
+        <Master>
             <Conteudo>
                 <div>
                     <div className="ImagensGrupos">
