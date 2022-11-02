@@ -54,6 +54,7 @@ export default function App() {
   return (
 
       <Master>
+            <div>
           <div className="Pesquisa">
 
             <form onSubmit={(e) => {
