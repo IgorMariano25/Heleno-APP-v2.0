@@ -6,7 +6,7 @@ export default function App(props) {
     <>
         <Header/>
           {props.children}
-        <Footer tipo={props.tipoFooter}/> 
+        <Footer tipo={props.tipoFooter}/>
     </>
   );
 }

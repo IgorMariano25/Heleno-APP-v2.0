@@ -1,5 +1,5 @@
-import fotoTurmaAntiga from "../../assets/imagens/fotoTurmaAntiga.jpg"
-import fotoTurmaNova from "../../assets/imagens/fotoTurmaNova.jpg"
+import fotoTurmaAntiga from "../../assets/imagensSobre/fotoTurmaAntiga.jpg"
+import fotoTurmaNova from "../../assets/imagensSobre/fotoTurmaNova.jpg"
 import "./styles.css"
 
 const Sobre = () => {
@@ -13,15 +13,15 @@ const Sobre = () => {
             </h2>
             <h2 className="TituloSobre">
                 O Projeto ibtech originou-se como o projeto semestral dos alunos de Análise e Desenvolvimento de Sistemas do Ibmec-Barra, dirigido e direcionado pelo professor <i>Eduardo Mangeli</i>,
-                visando facilitar a apresentação dos projetos feitos pelos alunos da instituição Ibmec nos cursos de tecnologia, 
+                visando facilitar a apresentação dos projetos feitos pelos alunos da instituição Ibmec nos cursos de tecnologia,
                 tendo como base a apresentação de portifólios dos alunos bem como os resultados alcançados por eles.
-            </h2>   
+            </h2>
         </div>
         <div className="ImagensGrupos">
             <a href="https://gitlab.com/projeto-multidisciplinar/heleno-app" target="_blank" rel="noreferrer">
             <button className="btnImagem">
             <img src={fotoTurmaAntiga} className="imagem"/>
-                        Antiga Documentação 
+                        Antiga Documentação
                 </button>
             </a>
             <a href="https://gitlab.com/EduardoMangeli/ibtech" target="_blank" rel="noreferrer">
@@ -29,7 +29,7 @@ const Sobre = () => {
                     <img src={fotoTurmaNova}  className="imagem"/>
                     Nova Documentação
                 </button>
-            </a>     
+            </a>
         </div>
     </div>
     )
