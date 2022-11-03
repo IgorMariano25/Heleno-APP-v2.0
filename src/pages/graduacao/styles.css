@@ -1,7 +1,11 @@
-
 body {
+    text-align: center;
+}
+
+.container {
     display: grid;
-    grid: auto-flow / 1fr, 1fr, 1fr;
+    grid: repeat(5, 350px) / auto-flow 400px;
+    gap: 30px;
 }
 
 .Pesquisa{

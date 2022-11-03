@@ -85,7 +85,7 @@ export default function App(){
 
                 </div>
 
-                <div className="ContainerCardAlunos">
+                <div className="container">
 
                 {
                     dados.map( (p, ind) => (
