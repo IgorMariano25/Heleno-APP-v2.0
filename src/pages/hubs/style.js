@@ -36,9 +36,8 @@ const TituloImagem = styled.h1`
     font-size: 50px;
     color: white;
     top: -8em;
-    padding-left: 10%;
-    
-
+    padding-left: 25%;
+    width: 50%;
 `
 
 const Titulo = styled.h1`
