@@ -1,10 +1,22 @@
 import styled from "styled-components";
+import hubs from '../../assets/imagens/hubs2.jpeg';
+
 
 const PrimeiraSection = styled.section`
     width: 100%;
     height: 675px;
     background-color: #002555;
+    background-image: url(${hubs});
+    opacity: 70%;
+
 `
+const Container = styled.div`
+       background-color: #002555;
+       width: 100%;
+       height: 675px;
+`
+
+
 const Img = styled.img`
     width: 70% !important;
     height: 600px;
@@ -18,6 +30,16 @@ const Conteudo = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
 
 `;
+
+const TituloImagem = styled.h1`
+    position: relative;
+    font-size: 50px;
+    color: white;
+    top: -8em;
+    padding-left: 10%;
+    
+
+`
 
 const Titulo = styled.h1`
     font-family: Barlow;
@@ -42,5 +64,6 @@ const Lista = styled.ul`
     font-family: Barlow;
 `
 
-export {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista};
+
+export {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container};
 

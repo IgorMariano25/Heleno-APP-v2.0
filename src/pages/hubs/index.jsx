@@ -1,17 +1,20 @@
 import React from 'react'
 import hubs from '../../assets/hubsimg.png'
 import hubsEstrutura from '../../assets/hubs_ibmec_rio.jpg'
-import hubsAbertura from '../../assets/hubs2.jpeg'
 import Master from '../masterPage'
-import {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista} from './style';
+import {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container} from './style';
 
 export default function HUBS(){
     return(
         <Master> 
+            <>
+            <Container>
             <PrimeiraSection>
-                <Img  id="hubs_abertura" src={hubsAbertura} alt={'imagem de abertura'}/>
-
             </PrimeiraSection>
+            <TituloImagem>CONECTANDO EMPRESAS EM BUSCA DE INOVAÇÃO A EMPREENDEDORES E SUAS SOLUÇÕES.</TituloImagem>
+            </Container>
+            </>
+           
 
             <ImgLogo id="logo" src={hubs} alt={'primeira imagem hubs'}/>  
             <Conteudo>  
@@ -43,10 +46,8 @@ export default function HUBS(){
                     
                 </div>
             </Conteudo>
-
-            <PrimeiraSection>
-
-            </PrimeiraSection>
+            <br/>
+            <br/>
         </Master>
     )
 }
