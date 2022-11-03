@@ -2,22 +2,26 @@ import styled from "styled-components";
 
 const PrimeiraSection = styled.section`
     width: 100%;
-    height: 600px;
+    height: 675px;
     background-color: #002555;
 `
 const Img = styled.img`
-    width: 59%;
-    margin-left: 10em;
+    width: 70% !important;
+    height: 600px;
+    margin-top:75px;
+    margin-left: 14%;
 `
 
-const Titulo = styled.p`
-    color: white;
-    font-family: Verdana;
-`
 
 const Conteudo = styled.div`
     margin-bottom: 20em;
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
 `;
+
+const Titulo = styled.h1`
+    font-family: Barlow;
+`
 
 const ImgLogo = styled.img`
     width: 22%;
@@ -26,8 +30,17 @@ const ImgLogo = styled.img`
 `
 
 const P = styled.p`
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20pt;
+    font-family: Barlow;
+    font-size: 15pt;
 `
-export {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P};
+
+const Subtitulo = styled.h3`
+    font-family: Barlow;
+`
+
+const Lista = styled.ul`
+    font-family: Barlow;
+`
+
+export {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista};
 
