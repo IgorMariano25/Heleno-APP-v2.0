@@ -1,6 +1,6 @@
 import Master from '../masterPage'
 import banner from './assets/bannerMBA.png';
-import './style.css';
+import './styles.css';
 
 import CardCurso from '../../components/Mba/cardCursos'
 
