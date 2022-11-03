@@ -1,10 +1,8 @@
-body {
-    text-align: center;
-}
+
 
 .container {
     display: grid;
-    grid: repeat(5, 350px) / auto-flow 400px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
 }
 
@@ -47,3 +45,5 @@ body {
 .BotaoFiltro:hover{
     background-color: #061c38;
 }
+
+

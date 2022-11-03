@@ -1,4 +1,4 @@
-import { Card, Textos, Nome , Img, Curso} from "./styles";
+import { Card, Textos, Nome, Curso} from "./styles";
 import { useNavigate } from "react-router-dom";
 
 
@@ -10,6 +10,8 @@ export default function App(props) {
                 <Nome> {props.nome} </Nome>
                 <Curso>{ props.curso} </Curso>
                 <Curso>{ props.duracao} </Curso>
+                <Curso>{ props.tipo} </Curso>
+                <Curso>{ props.Categoria} </Curso>
             </Textos>
         </Card>
     )
