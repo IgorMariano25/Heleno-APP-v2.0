@@ -1,9 +1,4 @@
 import styled from "styled-components";
- WebFont.load({
-    google: {
-        families: ['https://fonts.google.com/specimen/Barlow?query=barlo']
-    }
-});
 
 const PrimeiraSection = styled.section`
     width: 100%;
