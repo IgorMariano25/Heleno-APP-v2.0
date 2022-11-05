@@ -33,11 +33,13 @@ const Conteudo = styled.div`
 
 const TituloImagem = styled.h1`
     position: relative;
-    font-size: 50px;
+    font: italic 55px Impact;
     color: white;
     top: -8em;
-    padding-left: 25%;
-    width: 50%;
+    padding-left: 24%;
+    width: 56%;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #061c38;
 `
 
 const Titulo = styled.h1`
