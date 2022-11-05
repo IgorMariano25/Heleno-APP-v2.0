@@ -28,14 +28,14 @@ const Img = styled.img`
 const Conteudo = styled.div`
     margin-bottom: 20em;
     @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
-
 `;
 
-const TituloImagem = styled.h1`
+
+const TituloImagem = styled.h1` 
     position: relative;
     font: italic 55px Impact;
     color: white;
-    top: -8em;
+    top: -63%;
     padding-left: 24%;
     width: 56%;
     -webkit-text-stroke-width: 2px;
@@ -44,25 +44,48 @@ const TituloImagem = styled.h1`
 
 const Titulo = styled.h1`
     font-family: Barlow;
-`
-
-const ImgLogo = styled.img`
-    width: 22%;
-    margin-left: 70vw;
-    margin-top: 5em;
+    padding-left: 7%;
+    font-size: 29pt;
+    padding-top: 3%;
+    color: #061c38;
+    
 `
 
 const P = styled.p`
     font-family: Barlow;
-    font-size: 15pt;
+    font-size: 19pt;
+    padding-left: 7%;
+    padding-top: 0%;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: black;
+    color: #061c38;
+    
 `
 
-const Subtitulo = styled.h3`
+const Subtitulo = styled.h3`   
     font-family: Barlow;
+    padding-left: 7%;
+    font-size: 29pt;
+    padding-top: 0%;
+    color: #061c38;
 `
 
 const Lista = styled.ul`
     font-family: Barlow;
+    font: italic;
+    font-size: 19pt;
+    padding-left: 8%;
+    padding-top: 0%;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: black;
+    color: #061c38;
+`
+const ImgLogo = styled.img`
+    width: 28%;
+    margin-left: 64%;
+    margin-right: 3%;
+    margin-top: -20%;
+    margin-bottom: -7%;
 `
 
 

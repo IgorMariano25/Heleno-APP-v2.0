@@ -15,37 +15,39 @@ export default function HUBS(){
             </Container>
             </>
            
-
-            <ImgLogo id="logo" src={hubs} alt={'primeira imagem hubs'}/>  
-            <Conteudo>  
-
-                <Titulo>O que é o HUBs?</Titulo>        
-                <br></br>                
+            
+            <Conteudo>                         
                 <div className="Texto">
-                    <P>Um espaço colaborativo de inovação, presente nas quatro unidades Ibmec (BH, SP, RJ e Brasília), que busca estimular o networking e o empreendedorismo por meio da conexão entre empreendedores locais, mentores e empresas.
+                <Titulo>O que é o HUBs?</Titulo>
+                    <P>
+                        Um espaço colaborativo de inovação, presente nas quatro <br/>
+                        unidades Ibmec (BH, SP, RJ e Brasília), que busca estimular <br/>
+                        o networking e o empreendedorismo por meio da conexão <br/>
+                        entre empreendedores locais, mentores e empresas.
                     </P>
+                    
+                    <ImgLogo id="logo" src={hubs} alt={'primeira imagem hubs'}/>
 
                     <Subtitulo>Fazendo parte do HUBs você pode:</Subtitulo>
                     <Lista>
                         <li>
-                            Contar com uma infraestrutura moderna e confortável dotada de espaço de coworking, salas de trabalho individuais e sala de reunião;
+                            Contar com uma infraestrutura moderna e confortável <br/> dotada de espaço de coworking, salas de trabalho <br/> individuais e sala de reunião;
                         </li>
                         <li>
-                            Participar de mentoria com empreendedores e profissionais de mercado;
+                            Participar de mentoria com empreendedores e profissionais <br/> de mercado;
                         </li>
                         <li>
-                            Participar de palestras, minicursos e workshops com professores do Ibmec;
+                            Participar de palestras, minicursos e workshops com <br/> professores do Ibmec;
                         </li>
                         <li>
-                            Participar de desafios de negócios do Hubs e de empresas parceiras;
+                            Participar de desafios de negócios do Hubs e de empresas <br/> parceiras;
                         </li>
                         <li>
                             Fazer networking.
                         </li>
                     </Lista>
-                    
                 </div>
-            </Conteudo>
+            </Conteudo>     
             <br/>
             <br/>
         </Master>
