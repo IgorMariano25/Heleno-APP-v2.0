@@ -88,6 +88,61 @@ const ImgLogo = styled.img`
     margin-bottom: -7%;
 `
 
+const SegundaSection = styled.div`
+    background-color: #002555;
+    height: 48em;
+    width: auto;
+    margin-top: 3em;
 
-export {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container};
+    h1 {
+        font-family: Barlow;
+        color: white;
+        text-align: center;
+        padding-top: .8em;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 55em;
+        margin: auto;
+        padding: 1em;
+        gap: 1.5em;   
+    }
+
+    .container > *:nth-child(3n-2):nth-last-of-type(1) {
+        grid-column: span 3;
+    }
+
+    @media (max-width: 1024px) {
+        height: 62.5em;
+        .container{
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 40em; 
+        }
+        .container > *:nth-child(3n-2):nth-last-of-type(1) {
+            grid-column: auto;
+        }
+    }
+
+    @media screen and (max-width: 680px){
+        height: 103em;
+        .container {
+            grid-template-columns: repeat(1, 1fr);
+            width: 75%;
+            max-width: 18em; 
+        }
+    }
+
+    /* @media screen and (max-width: 420px){
+        .container {
+            max-width: 20em;
+        }
+    } */
+`;
+
+
+
+
+export {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection};
 

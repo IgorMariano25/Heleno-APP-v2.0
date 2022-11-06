@@ -1,10 +1,17 @@
 import React from 'react'
 import hubs from '../../assets/hubsimg.png'
+import { useState} from "react";
 import hubsEstrutura from '../../assets/hubs_ibmec_rio.jpg'
 import Master from '../masterPage'
-import {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container} from './style';
+import {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection} from './style';
+import arquivo from '../../startups.json'
+import Startup from '../../components/Hubs/Startup';
 
-export default function HUBS(){
+
+
+export default function Hubs(){
+    const [dados, setDados] = useState(arquivo);
+
     return(
         <Master> 
             <>
@@ -46,6 +53,24 @@ export default function HUBS(){
                             Fazer networking.
                         </li>
                     </Lista>
+                    <SegundaSection>
+                        <h1>STARTUPS</h1>
+                        <div className='container'>
+                        {
+                            dados.map( (p, ind) => (
+                                <Startup 
+                                    key={ind}
+                                    imagem = {p.imagem}
+                                    nome = {p.nome}
+                                    texto={p.texto}
+                                    ID = {p.ID}
+                                />
+
+                            ))
+                        }
+                        </div> 
+
+                    </SegundaSection>       
                 </div>
             </Conteudo>     
             <br/>
