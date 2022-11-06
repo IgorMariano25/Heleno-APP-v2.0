@@ -19,15 +19,15 @@ export default function HUBS(){
 
              
             <Conteudo>  
-
-                <DivImagem>
-                <ImgLogo id="logo" src={hubs} alt={'primeira imagem hubs'}/> 
-                </DivImagem>
-
-                <DivConteudo>
+                <div className="Texto">
+                
                 <Titulo>O que é o HUBs?</Titulo>        
                 <br></br>                
-                    <P>Um espaço colaborativo de inovação, presente nas quatro unidades Ibmec (BH, SP, RJ e Brasília), que busca estimular o networking e o empreendedorismo por meio da conexão entre empreendedores locais, mentores e empresas.
+                    <P>
+                        Um espaço colaborativo de inovação, presente nas quatro <br/> 
+                        unidades Ibmec (BH, SP, RJ e Brasília), que busca estimular <br/>
+                        o networking e o empreendedorismo por meio da conexão <br/>
+                        entre empreendedores locais, mentores e empresas.
                     </P>
                     
                     <ImgLogo id="logo" src={hubs} alt={'primeira imagem hubs'}/>
@@ -51,7 +51,7 @@ export default function HUBS(){
                         </li>
                     </Lista>
                     
-                </DivConteudo>
+                </div>
             </Conteudo>
             <br/>
             <br/>

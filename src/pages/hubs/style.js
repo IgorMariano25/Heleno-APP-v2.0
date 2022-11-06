@@ -57,13 +57,12 @@ const TituloImagem = styled.h1`
 
 const Titulo = styled.h1`
     font-family: Barlow;
+    padding-left: 7%;
+    font-size: 29pt;
+    padding-top: 3%;
+    color: #061c38;
 `
 
-const ImgLogo = styled.img`
-    width: 30%;
-    margin-left: 60vw;
-    margin-top: 5%;
-`
 
 const P = styled.p`
     font-family: Barlow;
@@ -94,14 +93,14 @@ const Lista = styled.ul`
     -webkit-text-stroke-color: black;
     color: #061c38;
 `
+
 const ImgLogo = styled.img`
     width: 28%;
-    margin-left: 64%;
+    margin-left: 80%;
     margin-right: 3%;
     margin-top: -20%;
     margin-bottom: -7%;
 `
-
 
 
 export {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, DivImagem, DivConteudo};
