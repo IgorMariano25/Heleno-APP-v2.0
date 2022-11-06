@@ -26,10 +26,22 @@ const Img = styled.img`
 
 
 const Conteudo = styled.div`
-    margin-bottom: 20em;
+    margin-bottom: 40%;
     @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+`
 
-`;
+const DivImagem = styled.div`
+    margin-left: 14%;
+`
+
+const DivConteudo = styled.div`
+    margin-right: 30%;
+    margin-left: 3%;
+    padding-bottom: 20%;
+`
 
 const TituloImagem = styled.h1`
     position: relative;
@@ -45,9 +57,9 @@ const Titulo = styled.h1`
 `
 
 const ImgLogo = styled.img`
-    width: 22%;
-    margin-left: 70vw;
-    margin-top: 5em;
+    width: 30%;
+    margin-left: 60vw;
+    margin-top: 5%;
 `
 
 const P = styled.p`
@@ -64,5 +76,6 @@ const Lista = styled.ul`
 `
 
 
-export {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container};
+
+export {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, DivImagem, DivConteudo};
 
