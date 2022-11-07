@@ -39,11 +39,10 @@ const Nome = styled.p`
     text-transform: uppercase;
     font-weight: 600;
     font-style: Italic;
-
 `;
 
 const Curso = styled.p`
-    font-weight: 400;
+      font-weight: 400;
 `;
 
 const Icone = styled.div`
