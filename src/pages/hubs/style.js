@@ -50,7 +50,7 @@ const TituloImagem = styled.h1`
     font: italic 50px Impact;
     color: white;
     top: -85%;
-    padding-left: 15%;
+    padding-left: 18%;
     width: 60%;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #061c38;
@@ -176,8 +176,64 @@ const SegundaSection = styled.div`
     } */
 `;
 
+const Botao = styled.button`
+    margin-left: 35%;
+    min-width: 35%;
+    min-height: 75px;
+    font: normal 55px Arial;
+    font-size: 108%;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 550;
+    color: white;
+    background: #002555;
+    border-radius: 1000px;
+    border-color: #002555;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    cursor: pointer;
+    position: relative;
+        
+
+    @media screen and (min-width: 1224px) {
+        margin-left: 43%;
+        min-width: 14%;
+        min-height: 60px;
+        font: normal 50px Arial;
+        font-size: 100%;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 550;
+        color: white;
+        background: #002555;
+        border-radius: 1000px;
+        border-color: #002555;
+        box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+        cursor: pointer;
+        position: relative;
+    }
+
+    @media screen and (min-width: 680px) {
+        margin-left: 43%;
+        min-width: 14%;
+        min-height: 60px;
+        font: normal 50px Arial;
+        font-size: 100%;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 550;
+        color: white;
+        background: #002555;
+        border-radius: 1000px;
+        border-color: #002555;
+        box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+        cursor: pointer;
+        position: relative; 
+    }
+
+`
 
 
 
-export {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection};
+
+export {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, Botao};
 
