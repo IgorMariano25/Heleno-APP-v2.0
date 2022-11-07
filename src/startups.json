@@ -1,0 +1,50 @@
+[
+    {
+        "ID" : 1,
+        "texto": "Startup de tecnologia focada na criação de experiências de voz cognitiva super humanizadas.",
+        "nome": "Loud Voice Services",
+        "imagem" : "loud.jpg"
+    }
+    ,
+    {
+        "ID" : 2,
+        "texto": "Marketplace destinado à compra, venda, doação e futuramente troca e aluguel de livros.",
+        "nome": "Nosso Livro",
+        "imagem" : "nossolivro.jpg"
+    }
+    ,
+    {
+        "ID" : 3,
+        "texto": "Startup de marketing digital, com planos por assinatura customizados.",
+        "nome": "MyPubli.Digital",
+        "imagem" : "mypubli.jpg"
+    }
+    ,
+    {
+        "ID" : 4,
+        "texto": "Plataforma de organização e modelagem de negócios, utilizando as melhores metodologias do mercado.",
+        "nome": "businesspal",
+        "imagem" : "businesspal.jpg"
+    }
+    ,
+    {
+        "ID" : 5,
+        "texto": "Startup com o objetivo de repensar processos de fabricação industrial, com um olhar mais moderno.",
+        "nome": "DiamongBigger",
+        "imagem" : "diamondbigger.jpg"
+    }
+    ,
+    {
+        "ID" : 6,
+        "texto": "Startup que conecta pessoas por meio da gameficação e distribuição de recompensas.",
+        "nome": "PrismaApp",
+        "imagem" : "prismapp.png"
+    }
+    ,
+    {
+        "ID" : 7,
+        "texto": "Auxilia na validação de documentos como laudos remotos com segurança, de modo acessível e prático para profissionais da saúde e de outras áreas.",
+        "nome": "EuLaudo",
+        "imagem" : "eulado.png"
+    }
+]
