@@ -10,7 +10,7 @@ const Card = styled.a`
     padding: .5em;
     text-decoration: none;
     color: black;
-    height: fit-content;
+    height: 21em;
 
 
     &:hover{
