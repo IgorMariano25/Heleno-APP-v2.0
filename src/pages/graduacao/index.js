@@ -32,7 +32,7 @@ export default function App(){
 
             const filtrados = dados.filter(
 
-                (e) => e.nome.toLowerCase().includes(parametro.toLocaleLowerCase()) || e.curso.toLowerCase().includes(parametro.toLocaleLowerCase()) || e.tipo.toLowerCase().includes(parametro.toLowerCase()) || e.categoria.toLowerCase().includes(parametro.toLowerCase())
+                (e) => e.nome.toLowerCase().includes(parametro.toLocaleLowerCase()) || e.duracao.toLowerCase().includes(parametro.toLocaleLowerCase()) || e.tipo.toLowerCase().includes(parametro.toLowerCase()) || e.categoria.toLowerCase().includes(parametro.toLowerCase())
 
             );
 
@@ -84,7 +84,7 @@ export default function App(){
 
                 </form>
 
-                </div>  
+                </div>
                 <div className="container">
 
                 {
@@ -92,7 +92,7 @@ export default function App(){
                         <CardGraduacao
                             key = { ind }
                             nome = {p.nome}
-                            curso = {p.curso}
+                            duracao = {p.duracao}
                             tipo = {p.tipo}
                             categoria = {p.categoria}
                             ID = {p.ID}

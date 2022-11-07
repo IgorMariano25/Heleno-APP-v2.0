@@ -1,5 +1,6 @@
-import { Card, Textos, Nome, Curso} from "./styles";
-
+import { Card, Textos, Nome, Curso, Icone, Linha} from "./styles";
+import { TbCertificate, TbClock } from "react-icons/tb";
+import { BiMoviePlay } from "react-icons/bi";
 
 
 export default function App(props) {
@@ -8,10 +9,16 @@ export default function App(props) {
         <Card>
             <Textos>
                 <Nome> { props.nome } </Nome>
-                <Curso>{ props.curso } </Curso>
-                <Curso>{ props.duracao } </Curso>
-                <Curso>{ props.tipo } </Curso>
-                <Curso>{ props.categoria } </Curso>
+
+                    <Icone><TbClock/></Icone>
+                    <Curso> { props.duracao } </Curso>
+
+                    <Icone><TbCertificate/></Icone>
+                    <Curso> { props.tipo } </Curso>
+
+                    <Icone><BiMoviePlay/></Icone>
+                    <Curso> { props.categoria } </Curso>
+
             </Textos>
         </Card>
         </a>

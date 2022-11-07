@@ -10,6 +10,7 @@ const Card = styled.a`
     padding: .5em;
     text-decoration: none;
     color: black;
+    height: fit-content;
 
 
     &:hover{
@@ -25,16 +26,13 @@ const ContainerModal = styled.div`
 `;
 
 const Textos = styled.div`
-     font-family: "Barlow";
-     background-color: #F5AC00;
-     flex-grow: 1;
-     padding: 1em;
-     text-align: center;
-     bottom: 0;
-     margin: 0;
-     width: auto;
-     border-bottom-left-radius: 5%;
-     border-bottom-right-radius: 5%;
+    height: 100%;
+    padding: 1em;
+    font-family: "Barlow";
+    background-color: #F5AC00;
+    flex-direction: column-reverse;
+    text-align: center;
+    border-radius: 4%;
 `;
 
 const Nome = styled.p`
@@ -45,7 +43,15 @@ const Nome = styled.p`
 `;
 
 const Curso = styled.p`
-     font-weight: 400;
+    font-weight: 400;
 `;
 
-export { Card, ContainerModal, Textos, Nome, Curso};
+const Icone = styled.div`
+    font-weight: 600;
+`;
+
+const Linha = styled.div`
+
+`;
+
+export { Card, ContainerModal, Textos, Nome, Curso, Icone, Linha};
