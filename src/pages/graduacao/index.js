@@ -32,7 +32,7 @@ export default function App(){
 
             const filtrados = dados.filter(
 
-                (e) => e.nome.toLowerCase().includes(parametro.toLocaleLowerCase()) || e.curso.toLowerCase().includes(parametro.toLocaleLowerCase())
+                (e) => e.nome.toLowerCase().includes(parametro.toLocaleLowerCase()) || e.curso.toLowerCase().includes(parametro.toLocaleLowerCase()) || e.tipo.toLowerCase().includes(parametro.toLowerCase()) || e.categoria.toLowerCase().includes(parametro.toLowerCase())
 
             );
 
@@ -55,8 +55,9 @@ export default function App(){
 
     return (
         <Master tipoFooter="tipo3">
-            <ExportBanner/>
+        <ExportBanner/>
 
+        <div className='conteudo'>
             <div className="Pesquisa">
 
                 <form onSubmit={(e) => {
@@ -83,8 +84,7 @@ export default function App(){
 
                 </form>
 
-                </div>
-
+                </div>  
                 <div className="container">
 
                 {
@@ -94,7 +94,7 @@ export default function App(){
                             nome = {p.nome}
                             curso = {p.curso}
                             tipo = {p.tipo}
-                            Categoria = {p.Categoria}
+                            categoria = {p.categoria}
                             ID = {p.ID}
                         />
 
@@ -102,6 +102,7 @@ export default function App(){
 
                 }
 
+                </div>
             </div>
         </Master>
     );

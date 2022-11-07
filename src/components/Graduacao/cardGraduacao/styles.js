@@ -21,12 +21,7 @@ const Card = styled.a`
 const ContainerModal = styled.div`
     width: 100%;
     padding: 15px;
-`;
 
-const Img = styled.img`
-      width: 10em;
-      border-radius: 50%;
-      margin: auto;
 `;
 
 const Textos = styled.div`
@@ -46,30 +41,11 @@ const Nome = styled.p`
     text-transform: uppercase;
     font-weight: 600;
     font-style: Italic;
+
 `;
 
 const Curso = styled.p`
      font-weight: 400;
 `;
 
-const Bio = styled.p`
-    font-weight: 400;
-    font-style: Italic;
-`;
-
-const Ingresso = styled.p`
-    font-weight: 400;
-    font-style: Italic;
-`;
-
-const Projetos = styled.p`
-    font-weight: 400;
-    font-style: Italic;
-`;
-
-const PrevFormatura = styled.p`
-    font-weight: 400;
-    font-style: Italic;
-`;
-
-export { Card, ContainerModal, Img, Textos, Nome, Curso, Bio, Ingresso, PrevFormatura, Projetos};
+export { Card, ContainerModal, Textos, Nome, Curso};

@@ -4,7 +4,7 @@
         "nome": "Administração",
         "curso": "4 anos",
         "tipo": "bacharelado",
-        "Categoria": "Presencial"
+        "categoria": "Presencial"
     }
     ,
     {
@@ -12,7 +12,7 @@
         "nome": "Arquitetura e Urbanismo",
         "curso": "5 anos",
         "tipo": "bacharelado",
-        "Categoria": "Presencial"
+        "categoria": "Presencial"
     }
     ,
     {
@@ -20,7 +20,7 @@
         "nome": "Ciência de Dados e Inteligência Artificial",
         "curso": "4 anos",
         "tipo": "bacharelado",
-        "Categoria": "Presencial"
+        "categoria": "Presencial"
     }
     ,
     {
@@ -28,7 +28,7 @@
         "nome": "Ciências Contábeis",
         "curso": "4 anos",
         "tipo": "bacharelado",
-        "Categoria": "Presencial"
+        "categoria": "Presencial"
     }
     ,
     {
@@ -36,7 +36,7 @@
         "nome": "Ciências Econômicas",
         "curso": "4 anos",
         "tipo": "bacharelado",
-        "Categoria": "Presencial"
+        "categoria": "Presencial"
     }
     ,
     {
@@ -44,7 +44,7 @@
         "nome": "Comunicação Social - Publicidade e Propaganda",
         "curso": "4 anos",
         "tipo": "bacharelado",
-        "Categoria": "Presencial"
+        "categoria": "Presencial"
     }
     ,
     {
@@ -52,7 +52,7 @@
         "nome": "Direito",
         "curso": "5 anos",
         "tipo": "bacharelado",
-        "Categoria": "Presencial"
+        "categoria": "Presencial"
     }
     ,
     {
@@ -60,7 +60,7 @@
         "nome": "Engenharia Civil",
         "curso": "5 anos",
         "tipo": "bacharelado",
-        "Categoria": "Presencial"
+        "categoria": "Presencial"
     }
     ,
     {
@@ -68,7 +68,7 @@
         "nome": "Engenharia da Computação",
         "curso": "4 anos",
         "tipo": "bacharelado",
-        "Categoria": "Presencial"
+        "categoria": "Presencial"
     }
     ,
     {
@@ -76,7 +76,7 @@
         "nome": "Engenharia da Produção",
         "curso": "5 anos",
         "tipo": "bacharelado",
-        "Categoria": "Presencial"
+        "categoria": "Presencial"
     }
     ,
     {
@@ -84,7 +84,7 @@
         "nome": "Engenharia de Software",
         "curso": "4 anos",
         "tipo": "bacharelado",
-        "Categoria": "Presencial"
+        "categoria": "Presencial"
     }
     ,
     {
@@ -92,7 +92,7 @@
         "nome": "Engenharia Mecânica",
         "curso": "5 anos",
         "tipo": "bacharelado",
-        "Categoria": "Presencial"
+        "categoria": "Presencial"
     }
     ,
     {
@@ -100,7 +100,7 @@
         "nome": "Full Stack Development",
         "curso": "2,5 anos",
         "tipo": "Tecnólogo",
-        "Categoria": "Presencial"
+        "categoria": "Presencial"
     }
     ,
     {
@@ -108,7 +108,7 @@
         "nome": "Relações Internacionais",
         "curso": "4 anos",
         "tipo": "bacharelado",
-        "Categoria": "Presencial"
+        "categoria": "Presencial"
     }
 
 ]

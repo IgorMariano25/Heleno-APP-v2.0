@@ -22,7 +22,7 @@ const FotoBanner = styled.div`
     opacity: 0.30;
 `;
 
-const SpanBanner = styled.span`
+const SpanBanner = styled.h1`
     position: relative;
     top: -5.7em;
     left: 0%;
