@@ -19,26 +19,31 @@ const Banner = styled.div`
 `;
 
 const FotoBanner = styled.div`
-    opacity: 0.30;
+    opacity: 0.3;
+    img{
+        object-fit: fill;
+    }
 `;
 
 const SpanBanner = styled.h1`
     position: relative;
-    top: -5.7em;
+    top: -6em;
     left: 0%;
     font-weight: bolder;
     font-size: 4.9em;
     color: rgb(255, 255, 255);
+    font-family: "Barlow";
 `;
 
 const TextoBanner = styled.p`
     color: rgb(255, 255, 255);
     position: relative;
-    top: -9.3em;
+    top: -11em;
     left: 0%;
     font-size: 3em;
     width: 9em;
     text-align: center;
+    font-family: "Barlow";
 `;
 
 export { Banner, Espacamento, DivisoriaFoto, FotoBanner, SpanBanner, TextoBanner }
