@@ -33,19 +33,17 @@ const Textos = styled.div`
      bottom: 0;
      margin: 0;
      width: auto;
-     border-bottom-left-radius: 5%;
-     border-bottom-right-radius: 5%;
+     border-radius: 5%;
 `;
 
 const Nome = styled.p`
     text-transform: uppercase;
     font-weight: 600;
     font-style: Italic;
-
 `;
 
 const Curso = styled.p`
-     font-weight: 400;
+       font-weight: 400;
 `;
 
 export { Card, ContainerModal, Textos, Nome, Curso};
