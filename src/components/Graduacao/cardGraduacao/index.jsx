@@ -1,12 +1,11 @@
 import { Card, Textos, Nome, Curso} from "./styles";
-import { useNavigate } from "react-router-dom";
 
 
 
 export default function App(props) {
-    const navigate = useNavigate();
-    return (
-        <Card onClick={()=>navigate(`/graduacao/${props.ID}`)}>
+    return(
+        <a href={`${props.ID}`}>
+        <Card>
             <Textos>
                 <Nome> { props.nome } </Nome>
                 <Curso>{ props.curso } </Curso>
@@ -15,5 +14,6 @@ export default function App(props) {
                 <Curso>{ props.categoria } </Curso>
             </Textos>
         </Card>
+        </a>
     )
 }

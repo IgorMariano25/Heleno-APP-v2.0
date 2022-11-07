@@ -1,6 +1,6 @@
 [
     {
-        "ID" : 1,
+        "ID" : "https://www.ibmec.br/graduacao/administracao",
         "nome": "Administração",
         "curso": "4 anos",
         "tipo": "bacharelado",
@@ -8,7 +8,7 @@
     }
     ,
     {
-        "ID" : 2,
+        "ID" : "https://www.ibmec.br/graduacao/arquitetura-e-urbanismo",
         "nome": "Arquitetura e Urbanismo",
         "curso": "5 anos",
         "tipo": "bacharelado",
@@ -16,7 +16,7 @@
     }
     ,
     {
-        "ID" : 3,
+        "ID" : "https://www.ibmec.br/graduacao/ciencia-de-dados",
         "nome": "Ciência de Dados e Inteligência Artificial",
         "curso": "4 anos",
         "tipo": "bacharelado",
@@ -24,7 +24,7 @@
     }
     ,
     {
-        "ID" : 4,
+        "ID" : "https://www.ibmec.br/graduacao/ciencias-contabeis",
         "nome": "Ciências Contábeis",
         "curso": "4 anos",
         "tipo": "bacharelado",
@@ -32,7 +32,7 @@
     }
     ,
     {
-        "ID" : 5,
+        "ID" : "https://www.ibmec.br/graduacao/ciencias-economicas",
         "nome": "Ciências Econômicas",
         "curso": "4 anos",
         "tipo": "bacharelado",
@@ -40,7 +40,7 @@
     }
     ,
     {
-        "ID" : 6,
+        "ID" : "https://www.ibmec.br/graduacao/publicidade-e-propaganda",
         "nome": "Comunicação Social - Publicidade e Propaganda",
         "curso": "4 anos",
         "tipo": "bacharelado",
@@ -48,7 +48,7 @@
     }
     ,
     {
-        "ID" : 7,
+        "ID" : "https://www.ibmec.br/graduacao/direito",
         "nome": "Direito",
         "curso": "5 anos",
         "tipo": "bacharelado",
@@ -56,7 +56,7 @@
     }
     ,
     {
-        "ID" : 8,
+        "ID" : "https://www.ibmec.br/graduacao/engenharia-civil",
         "nome": "Engenharia Civil",
         "curso": "5 anos",
         "tipo": "bacharelado",
@@ -64,7 +64,7 @@
     }
     ,
     {
-        "ID" : 9,
+        "ID" : "https://www.ibmec.br/graduacao/engenharia-da-computacao",
         "nome": "Engenharia da Computação",
         "curso": "4 anos",
         "tipo": "bacharelado",
@@ -72,7 +72,7 @@
     }
     ,
     {
-        "ID" : 10,
+        "ID" : "https://www.ibmec.br/graduacao/engenharia-de-producao",
         "nome": "Engenharia da Produção",
         "curso": "5 anos",
         "tipo": "bacharelado",
@@ -80,7 +80,7 @@
     }
     ,
     {
-        "ID" : 11,
+        "ID" : "https://www.ibmec.br/graduacao/engenharia-de-software",
         "nome": "Engenharia de Software",
         "curso": "4 anos",
         "tipo": "bacharelado",
@@ -88,7 +88,7 @@
     }
     ,
     {
-        "ID" : 12,
+        "ID" : "https://www.ibmec.br/graduacao/engenharia-mecanica",
         "nome": "Engenharia Mecânica",
         "curso": "5 anos",
         "tipo": "bacharelado",
@@ -96,7 +96,7 @@
     }
     ,
     {
-        "ID" : 13,
+    "ID" : "https://www.ibmec.br/graduacao/full-stack-development",
         "nome": "Full Stack Development",
         "curso": "2,5 anos",
         "tipo": "Tecnólogo",
@@ -104,7 +104,7 @@
     }
     ,
     {
-        "ID" : 14,
+        "ID" : "https://www.ibmec.br/graduacao/relacoes-internacionais",
         "nome": "Relações Internacionais",
         "curso": "4 anos",
         "tipo": "bacharelado",
