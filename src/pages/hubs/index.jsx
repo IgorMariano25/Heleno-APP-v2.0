@@ -77,7 +77,7 @@ export default function Hubs(){
                 </SegundaSection>  
             <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
            
-            <a href="https://estude.ibmec.br/ibmec-hubs"><Botao>
+            <a href="https://estude.ibmec.br/ibmec-hubs" target="_blank"><Botao>
                 Saiba Mais
             </Botao></a>
 

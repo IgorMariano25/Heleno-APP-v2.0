@@ -4,7 +4,7 @@ import hubs from '../../assets/imagens/hubs2.jpeg';
 
 const PrimeiraSection = styled.section`
     width: 100%;
-    height: 675px;
+    height: 512px;
     background-color: #002555;
     background-image: url(${hubs});
     opacity: 70%;
@@ -13,14 +13,14 @@ const PrimeiraSection = styled.section`
 const Container = styled.div`
        background-color: #002555;
        width: 100%;
-       height: 675px;
+       height: 512px;
 `
 
 
 const Img = styled.img`
     width: 70% !important;
-    height: 600px;
-    margin-top:75px;
+    height: 512px;
+    margin-top: 75px;
     margin-left: 14%;
 `
 
@@ -60,8 +60,8 @@ const TituloImagem = styled.h1`
         top: -63%;
     }
 
-    @media screen and (min-width: 680px) {
-        font: italic 55px Impact;
+    @media screen and (max-width: 680px) {
+        font: italic 35px Impact;
         top: -68%;
     }
 `
