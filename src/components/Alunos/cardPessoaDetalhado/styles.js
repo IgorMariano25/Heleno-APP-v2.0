@@ -11,12 +11,6 @@ const Card = styled.a`
     padding: .5em;
     text-decoration: none;
     color: black;
-    
-
-    &:hover{
-        transform: scale(1.05);
-        transition: transform 0.3s ease;
-    }
 `;
 
 const CardDetalhado = styled.div`
@@ -29,12 +23,6 @@ const CardDetalhado = styled.div`
     padding: .5em;
     text-decoration: none;
     color: black;
-    
-
-    &:hover{
-        transform: scale(1.05);
-        transition: transform 0.3s ease;
-    }
 `;
 
 const Img = styled.img`
