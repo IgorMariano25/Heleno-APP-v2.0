@@ -1,6 +1,7 @@
 [
     {
-        "ID" : "https://www.ibmec.br/graduacao/administracao",
+        "ID": 1,
+        "link" : "https://www.ibmec.br/graduacao/administracao",
         "nome": "Administração",
         "duracao": "4 anos",
         "tipo": "bacharelado",
@@ -8,15 +9,18 @@
     }
     ,
     {
-        "ID" : "https://www.ibmec.br/graduacao/arquitetura-e-urbanismo",
+        "ID": 2,
+        "link" : "https://www.ibmec.br/graduacao/arquitetura-e-urbanismo",
         "nome": "Arquitetura e Urbanismo",
         "duracao": "5 anos",
         "tipo": "bacharelado",
         "categoria": "Presencial"
+
     }
     ,
     {
-        "ID" : "https://www.ibmec.br/graduacao/ciencia-de-dados",
+        "ID": 3,
+        "link" : "https://www.ibmec.br/graduacao/ciencia-de-dados",
         "nome": "Ciência de Dados e Inteligência Artificial",
         "duracao": "4 anos",
         "tipo": "bacharelado",
@@ -24,7 +28,8 @@
     }
     ,
     {
-        "ID" : "https://www.ibmec.br/graduacao/ciencias-contabeis",
+        "ID": 4,
+        "link" : "https://www.ibmec.br/graduacao/ciencias-contabeis",
         "nome": "Ciências Contábeis",
         "duracao": "4 anos",
         "tipo": "bacharelado",
@@ -32,7 +37,8 @@
     }
     ,
     {
-        "ID" : "https://www.ibmec.br/graduacao/ciencias-economicas",
+        "ID": 5,
+        "link" : "https://www.ibmec.br/graduacao/ciencias-economicas",
         "nome": "Ciências Econômicas",
         "duracao": "4 anos",
         "tipo": "bacharelado",
@@ -40,7 +46,8 @@
     }
     ,
     {
-        "ID" : "https://www.ibmec.br/graduacao/publicidade-e-propaganda",
+        "ID": 6,
+        "link" : "https://www.ibmec.br/graduacao/publicidade-e-propaganda",
         "nome": "Comunicação Social - Publicidade e Propaganda",
         "duracao": "4 anos",
         "tipo": "bacharelado",
@@ -48,7 +55,8 @@
     }
     ,
     {
-        "ID" : "https://www.ibmec.br/graduacao/direito",
+        "ID": 7,
+        "link" : "https://www.ibmec.br/graduacao/direito",
         "nome": "Direito",
         "duracao": "5 anos",
         "tipo": "bacharelado",
@@ -56,7 +64,8 @@
     }
     ,
     {
-        "ID" : "https://www.ibmec.br/graduacao/engenharia-civil",
+        "ID": 8,
+        "link" : "https://www.ibmec.br/graduacao/engenharia-civil",
         "nome": "Engenharia Civil",
         "duracao": "5 anos",
         "tipo": "bacharelado",
@@ -64,7 +73,8 @@
     }
     ,
     {
-        "ID" : "https://www.ibmec.br/graduacao/engenharia-da-computacao",
+        "ID": 9,
+        "link" : "https://www.ibmec.br/graduacao/engenharia-da-computacao",
         "nome": "Engenharia da Computação",
         "duracao": "4 anos",
         "tipo": "bacharelado",
@@ -72,7 +82,8 @@
     }
     ,
     {
-        "ID" : "https://www.ibmec.br/graduacao/engenharia-de-producao",
+        "ID": 10,
+        "link" : "https://www.ibmec.br/graduacao/engenharia-de-producao",
         "nome": "Engenharia da Produção",
         "duracao": "5 anos",
         "tipo": "bacharelado",
@@ -80,7 +91,8 @@
     }
     ,
     {
-        "ID" : "https://www.ibmec.br/graduacao/engenharia-de-software",
+        "ID": 11,
+        "link" : "https://www.ibmec.br/graduacao/engenharia-de-software",
         "nome": "Engenharia de Software",
         "duracao": "4 anos",
         "tipo": "bacharelado",
@@ -88,7 +100,8 @@
     }
     ,
     {
-        "ID" : "https://www.ibmec.br/graduacao/engenharia-mecanica",
+        "ID": 12,
+        "link" : "https://www.ibmec.br/graduacao/engenharia-mecanica",
         "nome": "Engenharia Mecânica",
         "duracao": "5 anos",
         "tipo": "bacharelado",
@@ -96,7 +109,8 @@
     }
     ,
     {
-    "ID" : "https://www.ibmec.br/graduacao/full-stack-development",
+        "ID": 13,
+        "link" : "https://www.ibmec.br/graduacao/full-stack-development",
         "nome": "Full Stack Development",
         "duracao": "2,5 anos",
         "tipo": "Tecnólogo",
@@ -104,7 +118,8 @@
     }
     ,
     {
-        "ID" : "https://www.ibmec.br/graduacao/relacoes-internacionais",
+        "ID": 14,
+        "link" : "https://www.ibmec.br/graduacao/relacoes-internacionais",
         "nome": "Relações Internacionais",
         "duracao": "4 anos",
         "tipo": "bacharelado",

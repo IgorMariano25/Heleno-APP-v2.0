@@ -10,7 +10,7 @@ const Card = styled.a`
     padding: .5em;
     text-decoration: none;
     color: black;
-    height: 21em;
+    height: 13.5em;
 
 
     &:hover{
@@ -25,7 +25,7 @@ const ContainerModal = styled.div`
 
 `;
 
-const Textos = styled.div`
+const CaixaTextos = styled.div`
     height: 100%;
     padding: 1em;
     font-family: "Barlow";
@@ -41,16 +41,23 @@ const Nome = styled.p`
     font-style: Italic;
 `;
 
-const Curso = styled.p`
-      font-weight: 400;
+const Curso = styled.div`
+    font-weight: 400;
 `;
 
 const Icone = styled.div`
-    font-weight: 600;
+    font-weight: 700;
 `;
 
-const Linha = styled.div`
-
+const CaixaGrid = styled.div`
+    margin-left: 13%;
 `;
 
-export { Card, ContainerModal, Textos, Nome, Curso, Icone, Linha};
+const Grid = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    width: fit-content;
+`;
+
+export { Card, ContainerModal, CaixaTextos, Nome, Curso, Icone, CaixaGrid, Grid };

@@ -91,11 +91,12 @@ export default function App(){
                     dados.map( (p, ind) => (
                         <CardGraduacao
                             key = { ind }
-                            nome = {p.nome}
-                            duracao = {p.duracao}
-                            tipo = {p.tipo}
-                            categoria = {p.categoria}
-                            ID = {p.ID}
+                            ID = { p.Id }
+                            nome = { p.nome }
+                            duracao = { p.duracao }
+                            tipo = { p.tipo }
+                            categoria = { p.categoria }
+                            link = { p.link }
                         />
 
                     ))
