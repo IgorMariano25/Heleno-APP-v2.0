@@ -6,7 +6,7 @@ export default function App(props) {
     <div style={{position: 'relative', minHeight: '100vh'}}>
         <Header/>
           {props.children}
-        <Footer tipo={props.tipoFooter}/> 
+        <Footer/> 
     </div>
   );
 }

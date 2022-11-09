@@ -46,7 +46,7 @@ const ListaRede = styled.ul`
 const IconeRedeSocial = styled.img`
     margin-left: 5px;
     padding: 10px;
-    height: 25px;
+    height: 45px;
 `;
 
 export { Footer, Logo, DivRede, DivLogo, ListaRede, IconeRedeSocial}
