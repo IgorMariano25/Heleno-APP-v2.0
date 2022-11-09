@@ -8,7 +8,7 @@ export const Container = styled.div`
 
 export const Imagem = styled.div`
     width: 100% !important;
-    height: 400px !important;
+    height: 1000px !important;
     margin: 75px auto 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,6 +18,8 @@ export const Imagem = styled.div`
 
 export const TituloBanner = styled.h1`
     text-align: center;
+    display:flex;
+    justify-content: center;
     padding: 30px;
     font-size: 40pt;
     font-family: open sans;
@@ -31,4 +33,5 @@ export const TextoBanner = styled.p`
     font-family: montserrat;
     color: white;
     font-weight: bolder;
+    margin-top: 100px;
 `;
