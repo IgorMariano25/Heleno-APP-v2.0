@@ -3,7 +3,8 @@ import hubs from '../../assets/hubsimg.png'
 import { useState} from "react";
 import hubsEstrutura from '../../assets/hubs_ibmec_rio.jpg'
 import Master from '../masterPage'
-import {PrimeiraSection, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, Botao} from './style';
+import {PrimeiraSection, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, Botao, 
+    TerceiraSection} from './style';
 import arquivo from '../../startups.json'
 import Startup from '../../components/Hubs/Startup';
 
@@ -75,9 +76,12 @@ export default function Hubs(){
                         }
                         </div> 
                 </SegundaSection>  
-            <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
-           
-            <a href="https://estude.ibmec.br/ibmec-hubs"><Botao>
+
+            <TerceiraSection>
+                <p>Meu deeeus, meu senhooor, me ajudaaa</p>
+            </TerceiraSection>
+
+            <a href="https://estude.ibmec.br/ibmec-hubs" target='blanck'><Botao>
                 Saiba Mais
             </Botao></a>
 

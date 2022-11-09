@@ -231,9 +231,17 @@ const Botao = styled.button`
     }
 
 `
+const TerceiraSection = styled.section`
+    width: 40%;
+    height: 350px;
+    background-color: #002555;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+`
 
 
 
-
-export {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, Botao};
+export {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, 
+    Botao, TerceiraSection};
 
