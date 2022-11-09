@@ -11,7 +11,7 @@ export default function App(){
         <Carousel pause={"hover"} className="carousel-container">
             <Carousel.Item interval={2000}>
                 <img
-                    className="d-block w-50"
+                    className="d-block w-100"
                     src={image4}
                     alt="Primeiro Curso"
                 />
@@ -23,7 +23,7 @@ export default function App(){
 
             <Carousel.Item interval={2000}>
                 <img
-                    className="d-block w-50"
+                    className="d-block w-100"
                     src={image3}
                     alt="Segundo Curso"
                 />
@@ -35,7 +35,7 @@ export default function App(){
 
             <Carousel.Item interval={2000}>
                 <img
-                    className="d-block w-50"
+                    className="d-block w-100"
                     src={image2}
                     alt="Terceiro Curso"
                 />
@@ -49,7 +49,7 @@ export default function App(){
 
             <Carousel.Item interval={2000}>
                 <img
-                    className="d-block w-50"
+                    className="d-block w-100"
                     src={image1}
                     alt="Quarto Curso"
                 />
