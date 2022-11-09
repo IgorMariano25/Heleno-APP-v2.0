@@ -99,11 +99,15 @@ export default function MBA(){
             </div>
 
             <div className="cursos">
-                <h2>Conheça nossos cursos</h2>
-                <CardCurso
-                nomeCurso="Teste1" 
-                descricaoCurso="testedesc"/>
 
+                <h2>Conheça nossos cursos</h2>
+                <div className="boxCursos">
+                    <CardCurso
+                        nomeCurso="Teste1" 
+                        duracaoCurso="420 Horas"
+                        tipoCurso="Presencial"
+                    />
+                </div>
 
             </div>
 
