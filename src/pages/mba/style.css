@@ -44,6 +44,8 @@ h2{
     color: white;
     margin-left: 50px;
     margin-right: 50px;
+    width: 400px;
+    height: 450px;
     
 }
 
@@ -54,7 +56,7 @@ h2{
 
 .box-diferencial p{
     text-align: justify;
-    margin: 12%;
+    margin: 20px;
     margin-top: 0px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -82,12 +84,57 @@ h2{
 
 }
 
-#bt-ingresse{
+.bt-ingresse{
     text-align: center;
     padding: 10px;
-    margin-top: 10px;
+    
     width: 500px;
     height: 60px;
     border-radius: 50px;
+    border: none;
+    box-shadow: 0 0 5px 0.5px black;
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #002555;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
     
+    
+}
+#white{
+    background-color: white;
+    color: #002555;
+}
+.bt-ingresse:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 1px #F5AC00;
+    color: rgb(188, 188, 188);
+}
+.cursos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    column-gap: 1px;
+    row-gap: 15px;
+    justify-items: center;
+    margin-bottom: 10px;
+}
+.container-cursos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#bt1{
+    color: #002555;
+    text-decoration: none;
+}
+
+#bt2{
+    color: white;
+    text-decoration: none;
 }
