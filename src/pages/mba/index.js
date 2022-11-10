@@ -1,10 +1,64 @@
+import React from 'react';
 import Master from '../masterPage'
 import banner from './assets/bannerMBA.png';
-import './styles.css';
+import diferencial1 from './assets/1.png';
+import diferencial2 from './assets/2.png';
+import diferencial3 from './assets/3.png';
+
+
+import { useState, useEffect, useRef, useCallback } from "react";
+import { useSearchParams } from "react-router-dom";
+
+import './style.css';
+import arquivo from '../../cursosMba.json'
 
 import CardCurso from '../../components/Mba/cardCursos'
+import { TbDiamonds } from 'react-icons/tb';
 
 export default function MBA(){
+    const [dados, setDados] = useState(arquivo);
+
+    const [parametros, setParametros] = useSearchParams();
+
+    const entrada = useRef();
+
+
+    const filtra = useCallback((dados) => {
+
+        const parametro = parametros.get("busca");
+
+
+        if (!parametro) {
+
+            return dados;
+
+
+        } else {
+
+            const filtrados = dados.filter(
+
+                (e) => e.nome.toLowerCase().includes(parametro.toLocaleLowerCase()) || e.duracao.toLowerCase().includes(parametro.toLocaleLowerCase()) || e.tipo.toLowerCase().includes(parametro.toLowerCase()) || e.categoria.toLowerCase().includes(parametro.toLowerCase())
+
+            );
+
+            return filtrados;
+
+        }
+
+
+    }, [parametros]);
+
+
+    useEffect(() => {
+
+        const dadosFiltrados = filtra(arquivo);
+
+        setDados(dadosFiltrados);
+
+
+    }, [filtra]);
+
+
     return(
         <Master>
             
@@ -23,16 +77,15 @@ export default function MBA(){
                     <div className="box-diferencial">
                             <img
                                 className='imgDiferencial'
-                                src={banner}
-                                alt={'teste1'}
+                                src={diferencial1}
+                                alt={'jornada empreendedora'}
                             />
                             <h4>Jornada Empreendedora</h4>
                             <p>
-                            lorem Ipsum is simply dummy text of the printing and 
-                            typesetting industry. Lorem Ipsum has been the industry's 
-                            standard dummy text ever since the 1500s, when an unknown 
-                            printer took a galley of type and scrambled it to make a 
-                            type specimen book. 
+                            No Ibmec Hubs você tira suas ideias do papel e constrói sua start-up com o 
+                            apoio de profissionais experientes. Mentores do Ibmec Hubs do Rio de Janeiro 
+                            ensina e auxilia nos primeiros passos para aqueles que querem iniciar sua jornada empreendedora
+                            de sucesso.  
 
                             </p>
                     </div>
@@ -40,16 +93,16 @@ export default function MBA(){
                     <div className="box-diferencial">
                             <img
                                 className='imgDiferencial'
-                                src={banner}
-                                alt={'teste2'}
+                                src={diferencial2}
+                                alt={'soft skills'}
                             />
-                            <h4>Jornada Empreendedora</h4>
+                            <h4>Soft skills na prática</h4>
                             <p>
-                            lorem Ipsum is simply dummy text of the printing and 
-                            typesetting industry. Lorem Ipsum has been the industry's 
-                            standard dummy text ever since the 1500s, when an unknown 
-                            printer took a galley of type and scrambled it to make a 
-                            type specimen book. 
+                            O Ibmec Carreiras oferece serviços com equipe especializada com o objetivo 
+                            de orientar alunos e ex-alunos de graduação e pós-graduação no planejamento 
+                            de suas carreiras, tanto no mercado de trabalho como empreendendo,
+                            com autonomia e visão de futuro. 
+        
 
                             </p>
                     </div>  
@@ -57,16 +110,15 @@ export default function MBA(){
                     <div className="box-diferencial">
                             <img
                                 className='imgDiferencial'
-                                src={banner}
-                                alt={'teste3'}
+                                src={diferencial3}
+                                alt={'liderança'}
                             />
-                            <h4>Jornada Empreendedora</h4>
+                            <h4>Seja um lider</h4>
                             <p>
-                            lorem Ipsum is simply dummy text of the printing and 
-                            typesetting industry. Lorem Ipsum has been the industry's 
-                            standard dummy text ever since the 1500s, when an unknown 
-                            printer took a galley of type and scrambled it to make a 
-                            type specimen book. 
+                            Você terá acesso ao CEI, Centro de Empreendedorismo e 
+                            Inovação, um conjunto de células e projetos para você 
+                            exercitar suas competências e habilidades com liberdade e 
+                            autonomia. Seja um lider diferenciado em um mercado competitivo.
 
                             </p>
                     </div>      
@@ -77,16 +129,15 @@ export default function MBA(){
             <div className="metodologia">
                 <h2>Metodologia na prática</h2>
                 <p>
-                    lorem Ipsum is simply dummy text of the printing and 
-                    typesetting industry. Lorem Ipsum has been the industry's 
-                    standard dummy text ever since the 1500s, when an unknown 
-                    printer took a galley of type and scrambled it to make a 
-                    type specimen book.
+                A proposta pedagógica dos cursos propõe o 
+                desenvolvimento das competências e habilidades 
+                exigidas aos profissionais do futuro.
                 </p>
                 <button
-                    id="bt-ingresse"
+                    className="bt-ingresse"
+                    id="white"
                 >
-                    Ingresse Agora
+                    <a id="bt1" href="https://www.ibmec.br/pos-graduacao/mba">Ingresse Agora</a>
                 </button>
 
                 <div className="container">
@@ -98,13 +149,30 @@ export default function MBA(){
 
             </div>
 
-            <div className="cursos">
+            <div className="container-cursos">
                 <h2>Conheça nossos cursos</h2>
-                <CardCurso
-                nomeCurso="Teste1" 
-                descricaoCurso="testedesc"/>
+
+                <div className="cursos">
+                    
+                    {
+                        dados.map( (p, ind) => (
+                            <CardCurso
+                                key = { ind }
+                                ID = { p.Id }
+                                nome = { p.nome }
+                                duracao = { p.duracao }
+                                tipo = { p.tipo }
+                                categoria = { p.categoria }
+                                link = { p.link }
+                            />
 
 
+                        ))
+                    }
+                </div>
+                <button className="bt-ingresse">
+                    <a id="bt2" href="https://www.ibmec.br/pos-graduacao/mba">Ingresse Agora</a>
+                </button>
             </div>
 
         </Master>
