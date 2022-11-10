@@ -175,9 +175,7 @@
   #menuToggle {
     visibility : hidden;
   }
-  li {
-    display:inline-block;
-  }
+
   #menu {
     visibility: visible;
     font-family: 'Barlow';
@@ -192,6 +190,8 @@
     color:white;
     margin: 1%;
     margin-left: 10px;
+    list-style-type: none;
+    display: flex;
   }
 }
 @media screen and (max-width: 920px){
