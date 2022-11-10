@@ -1,42 +1,42 @@
 import React from 'react'
-import hubs from '../../assets/hubsimg.png'
+import hubs from '../../assets/imagensHubs/hubsimg.png'
 import { useState} from "react";
-import hubsEstrutura from '../../assets/hubs_ibmec_rio.jpg'
+import hubsEstrutura from '../../assets/imagensHubs/hubs_ibmec_rio.jpg'
 import Master from '../masterPage'
-import {PrimeiraSection, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, Botao, 
+import {PrimeiraSection, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, Botao,
     SectionNoticia, PrimeiraNoticia, TextoNoticia, SegundaNoticia, Texto2, ImgDiv, TerceiraSection} from './style';
 import arquivo from '../../startups.json'
 import Startup from '../../components/Hubs/Startup';
-import noticia1 from '../../assets/imagens/destaques.jpg';
-import noticia2 from '../../assets/imagens/noticia.jpg';
+import noticia1 from '../../assets/imagensHubs/destaques.jpg';
+import noticia2 from '../../assets/imagensHubs/noticia.jpg';
 
 
 export default function Hubs(){
     const [dados, setDados] = useState(arquivo);
 
     return(
-        <Master> 
-            
+        <Master>
+
             <Container>
                 <PrimeiraSection />
                 <TituloImagem>CONECTANDO EMPRESAS EM BUSCA DE INOVAÇÃO A EMPREENDEDORES E SUAS SOLUÇÕES.</TituloImagem>
             </Container>
-            
-           
 
-             
-            <Conteudo>  
+
+
+
+            <Conteudo>
                 <div className="Textinho">
-                
-                <Titulo>O que é o HUBs?</Titulo>        
-                <br></br>                
+
+                <Titulo>O que é o HUBs?</Titulo>
+                <br></br>
                     <P>
-                        Um espaço colaborativo de inovação, presente nas quatro <br/> 
+                        Um espaço colaborativo de inovação, presente nas quatro <br/>
                         unidades Ibmec (BH, SP, RJ e Brasília), que busca estimular <br/>
                         o networking e o empreendedorismo por meio da conexão <br/>
                         entre empreendedores locais, mentores e empresas.
                     </P>
-                    
+
                     <ImgLogo id="logo" src={hubs} alt={'primeira imagem hubs'}/>
 
                     <Subtitulo>Fazendo parte do HUBs você pode:</Subtitulo>
@@ -56,16 +56,16 @@ export default function Hubs(){
                         <li>
                             Fazer networking.
                         </li>
-                    </Lista>     
+                    </Lista>
                 </div>
-                
+
             </Conteudo>
             <SegundaSection>
                         <h1>STARTUPS</h1>
                         <div className='container'>
                         {
                             dados.map( (p, ind) => (
-                                <Startup 
+                                <Startup
                                     key={ind}
                                     imagem = {p.imagem}
                                     nome = {p.nome}
@@ -75,8 +75,8 @@ export default function Hubs(){
 
                             ))
                         }
-                        </div> 
-                </SegundaSection>  
+                        </div>
+                </SegundaSection>
 
             <TerceiraSection>
                 <SectionNoticia>
@@ -95,12 +95,12 @@ export default function Hubs(){
                         <h3>Todas as notícias</h3>
                     </a>
                 </SectionNoticia>
-                
+
                 <ImgDiv>
                     <img src={hubsEstrutura} alt={'Estrutura do hubs'}/>
                     <p>Unidade do Rio de Janeiro</p>
                 </ImgDiv>
-            
+
             </TerceiraSection>
 
             <a href="https://estude.ibmec.br/ibmec-hubs" target="_blank"><Botao>

@@ -9,7 +9,7 @@ import diferencial3 from './assets/3.png';
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
 
-import './style.css';
+import './styles.css';
 import arquivo from '../../cursosMba.json'
 
 import CardCurso from '../../components/Mba/cardCursos'
@@ -61,7 +61,7 @@ export default function MBA(){
 
     return(
         <Master>
-            
+
             <div className="banner">
                 <img
                     id='bannerMBA'
@@ -69,7 +69,7 @@ export default function MBA(){
                     alt={'MBA Ibmec'}
                 />
             </div>
-            
+
             <div className="diferenciais">
                 <h2>Nossos Diferenciais</h2>
 
@@ -82,10 +82,10 @@ export default function MBA(){
                             />
                             <h4>Jornada Empreendedora</h4>
                             <p>
-                            No Ibmec Hubs você tira suas ideias do papel e constrói sua start-up com o 
-                            apoio de profissionais experientes. Mentores do Ibmec Hubs do Rio de Janeiro 
+                            No Ibmec Hubs você tira suas ideias do papel e constrói sua start-up com o
+                            apoio de profissionais experientes. Mentores do Ibmec Hubs do Rio de Janeiro
                             ensina e auxilia nos primeiros passos para aqueles que querem iniciar sua jornada empreendedora
-                            de sucesso.  
+                            de sucesso.
 
                             </p>
                     </div>
@@ -98,14 +98,14 @@ export default function MBA(){
                             />
                             <h4>Soft skills na prática</h4>
                             <p>
-                            O Ibmec Carreiras oferece serviços com equipe especializada com o objetivo 
-                            de orientar alunos e ex-alunos de graduação e pós-graduação no planejamento 
+                            O Ibmec Carreiras oferece serviços com equipe especializada com o objetivo
+                            de orientar alunos e ex-alunos de graduação e pós-graduação no planejamento
                             de suas carreiras, tanto no mercado de trabalho como empreendendo,
-                            com autonomia e visão de futuro. 
-        
+                            com autonomia e visão de futuro.
+
 
                             </p>
-                    </div>  
+                    </div>
 
                     <div className="box-diferencial">
                             <img
@@ -115,13 +115,13 @@ export default function MBA(){
                             />
                             <h4>Seja um lider</h4>
                             <p>
-                            Você terá acesso ao CEI, Centro de Empreendedorismo e 
-                            Inovação, um conjunto de células e projetos para você 
-                            exercitar suas competências e habilidades com liberdade e 
+                            Você terá acesso ao CEI, Centro de Empreendedorismo e
+                            Inovação, um conjunto de células e projetos para você
+                            exercitar suas competências e habilidades com liberdade e
                             autonomia. Seja um lider diferenciado em um mercado competitivo.
 
                             </p>
-                    </div>      
+                    </div>
                 </div>
 
             </div>
@@ -129,8 +129,8 @@ export default function MBA(){
             <div className="metodologia">
                 <h2>Metodologia na prática</h2>
                 <p>
-                A proposta pedagógica dos cursos propõe o 
-                desenvolvimento das competências e habilidades 
+                A proposta pedagógica dos cursos propõe o
+                desenvolvimento das competências e habilidades
                 exigidas aos profissionais do futuro.
                 </p>
                 <button
@@ -153,7 +153,7 @@ export default function MBA(){
                 <h2>Conheça nossos cursos</h2>
 
                 <div className="cursos">
-                    
+
                     {
                         dados.map( (p, ind) => (
                             <CardCurso

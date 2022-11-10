@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import hubs from '../../assets/imagens/hubs2.jpeg';
+import hubs from '../../assets/imagensHubs/hubs2.jpeg';
 
 
 
@@ -37,7 +37,7 @@ const Conteudo = styled.div`
 `
 
 
-const TituloImagem = styled.h1` 
+const TituloImagem = styled.h1`
     position: relative;
     font: italic 40px Impact;
     color: white;
@@ -73,10 +73,10 @@ const P = styled.p`
     -webkit-text-stroke-width: 0.2px;
     -webkit-text-stroke-color: black;
     color: #061c38;
-    
+
 `
 
-const Subtitulo = styled.h3`   
+const Subtitulo = styled.h3`
     font-family: Barlow;
     font-size: 29pt;
     padding-top: 0%;
@@ -111,7 +111,7 @@ const ImgLogo = styled.img`
         margin-left: 85%;
         margin-right: 3%;
         margin-top: -20%;
-        margin-bottom: -7%; 
+        margin-bottom: -7%;
     }
 `
 
@@ -134,7 +134,7 @@ const SegundaSection = styled.div`
         max-width: 55em;
         margin: auto;
         padding: 1em;
-        gap: 1.5em;   
+        gap: 1.5em;
     }
 
     .container > *:nth-child(3n-2):nth-last-of-type(1) {
@@ -145,7 +145,7 @@ const SegundaSection = styled.div`
         height: 62.5em;
         .container{
             grid-template-columns: repeat(2, 1fr);
-            max-width: 40em; 
+            max-width: 40em;
         }
         .container > *:nth-child(3n-2):nth-last-of-type(1) {
             grid-column: auto;
@@ -157,7 +157,7 @@ const SegundaSection = styled.div`
         .container {
             grid-template-columns: repeat(1, 1fr);
             width: 75%;
-            max-width: 18em; 
+            max-width: 18em;
         }
     }
 
@@ -179,7 +179,7 @@ const Botao = styled.button`
     box-shadow: 12px 12px 24px rgba(79,209,197,.64);
     cursor: pointer;
     position: relative;
-        
+
 
     @media screen and (min-width: 1224px) {
         margin-left: 43%;
@@ -214,7 +214,7 @@ const Botao = styled.button`
         border-color: #002555;
         box-shadow: 12px 12px 24px rgba(79,209,197,.64);
         cursor: pointer;
-        position: relative; 
+        position: relative;
     }
 
 `
@@ -292,7 +292,7 @@ const SegundaNoticia = styled.img`
     width: 40%;
     height: 220px;
     margin-left: 50px;
-  
+
 
     @media screen and (min-width: 1224px) {
         width: 40%;
@@ -312,7 +312,7 @@ const Texto2 = styled.p`
 `
 
 const ImgDiv = styled.div`
-    
+
     img {
         width: 95%;
         margin-bottom: 5%;
@@ -331,7 +331,7 @@ const ImgDiv = styled.div`
 `
 
 const TerceiraSection = styled.section`
-   
+
     @media screen and (min-width: 1224px) {
         display: flex;
     }
@@ -344,6 +344,6 @@ const TerceiraSection = styled.section`
 
 
 
-export {PrimeiraSection, ImgDiv, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, 
+export {PrimeiraSection, ImgDiv, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection,
     Botao, SectionNoticia, PrimeiraNoticia, TextoNoticia, SegundaNoticia, Texto2, TerceiraSection};
 
