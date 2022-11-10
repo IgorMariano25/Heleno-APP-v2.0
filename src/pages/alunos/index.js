@@ -2,8 +2,13 @@ import React from 'react';
 import './estilo.css';
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
+<<<<<<< HEAD
+import PessoaCard from '../../components/Alunos/cardPessoa';
+import arquivo from '../../pessoas.json'
+=======
 import CardPessoa from '../../components/Alunos/cardPessoa';
 import arquivo from '../../dados.json'
+>>>>>>> release
 
 import Master from "../masterPage";
 

@@ -20,7 +20,10 @@ const CardDetalhado = styled.div`
     padding: .5em;
     text-decoration: none;
     color: black;
+<<<<<<< HEAD
+=======
 
+>>>>>>> release
 `;
 
 const Img = styled.img`

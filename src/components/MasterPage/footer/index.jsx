@@ -2,7 +2,7 @@ import { Footer, Logo, DivRede, DivLogo, ListaRede, IconeRedeSocial} from "./sty
 
 export default function App(props){
     return(
-        <Footer tipo={props.tipo}>
+        <Footer>
             <DivLogo>
                 <a href={ window.location.href }>
                     <Logo

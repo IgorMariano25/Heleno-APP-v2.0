@@ -1,12 +1,16 @@
 import Master from '../masterPage'
 import { Conteudo } from "../../components/Sobre/styledComponents";
-import fotoTurmaAntiga from "../../assets/imagens/fotoTurmaAntiga.jpg"
-import "./styles.css"
+import Sobre from '../../components/Sobre/sobre';
 
 export default function App(){
+
     return (
+
         <Master tipoFooter="tipo3">
             <Conteudo>
+<<<<<<< HEAD
+                <Sobre/>
+=======
                 <div>
                     
                         <div id='bannerSobre'>
@@ -83,6 +87,7 @@ export default function App(){
                     </div>    
                 </div>
                 
+>>>>>>> release
             </Conteudo>
         </Master>
     );

@@ -1,6 +1,6 @@
 import React from 'react'
-import hubs from '../../assets/hubsimg.png'
-import hubsEstrutura from '../../assets/hubs_ibmec_rio.jpg'
+import hubs from '../../assets/imagensHubs/hubsimg.png'
+import hubsEstrutura from '../../assets/imagensHubs/hubs_ibmec_rio.jpg'
 import Topo from "../../components/Hubs/topo";
 import Footer from "../../components/Hubs/footer";
 import Master from '../masterPage';
@@ -19,11 +19,11 @@ export default function App(){
                 <img    id='logohubs'
                         src={hubs}
                         alt={'primeira imagem hubs'}
-                />  
-                
+                />
+
                 <h1 className="Título1">Conectando empresas em busca de inovação a empreendedores e suas soluções</h1>
-                <h2 className="Título">O que é o HUBs?</h2>        
-                <br></br>                
+                <h2 className="Título">O que é o HUBs?</h2>
+                <br></br>
                 <div className="Texto">
                     <p>Um espaço colaborativo de inovação, presente nas quatro unidades Ibmec (BH, SP, RJ e Brasília), que busca estimular o networking e o empreendedorismo por meio da conexão entre empreendedores locais, mentores e empresas.
                     </p>
@@ -46,7 +46,7 @@ export default function App(){
                             Fazer networking.
                         </li>
                     </ul>
-                    
+
                 </div>
                 <br></br>
                 <img   id='estrutura_hubs'
@@ -61,8 +61,8 @@ export default function App(){
                         <button id="SiteHubs">
                             Saiba Mais
                         </button>
-                    </a>    
-                </div>  
+                    </a>
+                </div>
             </Conteudo>
         </Master>
     </div>
