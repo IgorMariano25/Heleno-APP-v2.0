@@ -1,0 +1,49 @@
+[
+    {   
+        "ID" : 1,
+        "nome": "Clarissa Proença",
+        "imagem" : "clarissa.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "202002422789",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Sou formada na UFRJ 2019 em Design e agora sou aluna de full-stack no Ibmec",
+        "Projetos": "Projeto Heleno, machine learning usando Python, Framework Django, Banco de Dados"
+    }
+    ,
+    {
+        "ID" : 2,
+        "nome": "Igor Mariano",
+        "imagem" : "Igor.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "202051724821",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Uma pessoa muito simpática, confia",
+        "Projetos": "Projeto Heleno, machine learning usando Python, Framework Django, Banco de Dados"
+    }
+    ,
+    {
+        "ID" : 3,
+        "nome": "Guilherme Felix",
+        "imagem" : "gui.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "2022",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Deve ser o Gui",
+        "Projetos": "Projeto Heleno, machine learning usando Python, Framework Django, Banco de Dados"
+    }
+    ,
+    {
+        "ID" : 4,
+        "nome": "Felipe Castelhano",
+        "imagem" : "felipe.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "202203287702",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Lutador e estudante",
+        "Projetos": "Projeto Heleno, machine learning usando Python, Framework Django, Banco de Dados"
+    }
+]

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import banner from '../../../assets/imagens/banner.jpg'
+import banner from '../../../assets/imagensPosGrad/banner.jpg'
 
 export const Container = styled.div`
     background-color: rgb(0, 37, 85);
@@ -12,7 +12,7 @@ export const Imagem = styled.div`
     margin: 75px auto 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(${banner}); 
+    background-image: url(${banner});
     opacity: 0.5;
 `;
 

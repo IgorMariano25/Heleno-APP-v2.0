@@ -54,7 +54,7 @@ export default function App(){
     }, [filtra]);
 
     return (
-        <Master tipoFooter="tipo3">
+        <Master>
         <ExportBanner/>
 
         <div className='conteudo'>

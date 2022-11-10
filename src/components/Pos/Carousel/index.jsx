@@ -1,16 +1,15 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import image1 from '../../../assets/imagens/avatar.png'
-import image2 from '../../../assets/imagens/pos_1.jpg'
-import image3 from '../../../assets/imagens/pos_2.jpg'
-import image4 from '../../../assets/imagens/pos_3.jpg'
+import image2 from '../../../assets/imagensPosGrad/pos_1.jpg'
+import image3 from '../../../assets/imagensPosGrad/pos_2.jpg'
+import image4 from '../../../assets/imagensPosGrad/pos_3.jpg'
 import { hover } from "@testing-library/user-event/dist/hover";
 
 
 
 export default function App(){
     return (
-           
+
         <Carousel pause={"hover"} className="carousel-container" indicators={false} variant={"dark"}>
             <Carousel.Item interval={200000}>
                 <img

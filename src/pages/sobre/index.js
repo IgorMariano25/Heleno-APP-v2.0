@@ -8,11 +8,8 @@ export default function App(){
 
         <Master tipoFooter="tipo3">
             <Conteudo>
-<<<<<<< HEAD
-                <Sobre/>
-=======
                 <div>
-                    
+
                         <div id='bannerSobre'>
                         <div id='fundoAzul'>
                             </div>
@@ -22,7 +19,7 @@ export default function App(){
                             <p id='descricaoSobre' className='sobreTitulo'>
                                 IBTECH - O projeto desenvolvido por alunos do IBMEC
                             </p>
-                        
+
                     </div>
                      <div className="containerDescricao">
                         <h2 className="TituloSobre">
@@ -32,9 +29,9 @@ export default function App(){
                         </h2>
                         <h2 className="TituloSobre">
                             O Projeto ibtech originou-se como o projeto semestral dos alunos de Análise e Desenvolvimento de Sistemas do Ibmec-Barra, dirigido e direcionado pelo professor <i>Eduardo Mangeli</i>,
-                            visando facilitar a apresentação dos projetos feitos pelos alunos da instituição Ibmec nos cursos de tecnologia, 
+                            visando facilitar a apresentação dos projetos feitos pelos alunos da instituição Ibmec nos cursos de tecnologia,
                             tendo como base a apresentação de portifólios dos alunos bem como os resultados alcançados por eles.
-                        </h2> 
+                        </h2>
                      </div>
                      <div className='ListaAlunos'>
                         <ul className='AlunosAntigos'>
@@ -75,7 +72,7 @@ export default function App(){
                         <a href="https://gitlab.com/projeto-multidisciplinar/heleno-app" target="_blank" rel="noreferrer">
                             <button className="btnImagem">
                                 <img src={fotoTurmaAntiga} className="imagem"/>
-                                Antiga Documentação 
+                                Antiga Documentação
                             </button>
                         </a>
                         <a href="https://gitlab.com/EduardoMangeli/ibtech" target="_blank" rel="noreferrer">
@@ -83,11 +80,10 @@ export default function App(){
                                 <img src={fotoTurmaAntiga}  className="imagem"/>
                                 Nova Documentação
                             </button>
-                        </a>     
-                    </div>    
+                        </a>
+                    </div>
                 </div>
-                
->>>>>>> release
+
             </Conteudo>
         </Master>
     );
