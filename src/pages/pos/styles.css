@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+
+#bannerMBA{
+    width: 100%;
+    height: 512px;
+    margin-bottom: -5px;
+}
+
+/*Diferenciais*/
+h2{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+}
+
+.diferenciais{
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.imgDiferencial{
+    width: 100%;
+    margin: 10px;
+    margin-top: 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+.box-diferencial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    background-color: #2541C0;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+.box-diferencial h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+}
+
+.box-diferencial p{
+    text-align: justify;
+    margin: 12%;
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*METODOLOGIA*/
+.metodologia{
+    background-color: #002555;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-top: 10px;
+    
+}
+
+.metodologia p{
+    margin: 20%;
+    margin-top: 0px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family:  'Montserrat', sans-serif;
+
+}
+
+#bt-ingresse{
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    width: 500px;
+    height: 60px;
+    border-radius: 50px;
+    
+}

@@ -1,106 +1,120 @@
 import React from 'react';
-import './styles.css';
-import Master from '../masterPage'
+import './estilo.css';
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
+<<<<<<< HEAD
 import PessoaCard from '../../components/Alunos/cardPessoa';
 import arquivo from '../../pessoas.json'
+=======
+import CardPessoa from '../../components/Alunos/cardPessoa';
+import arquivo from '../../dados.json'
+>>>>>>> release
+
+import Master from "../masterPage";
 
 
-export default function App() {
-  const [dados, setDados] = useState(arquivo);
+export default function App(){
 
-  const [parametros, setParametros] = useSearchParams();
+    const [dados, setDados] = useState(arquivo);
 
-  const entrada = useRef();
+    const [parametros, setParametros] = useSearchParams();
 
-
-  const filtra = useCallback((dados) => {
-
-      const parametro = parametros.get("busca");
+    const entrada = useRef();
 
 
-      if (!parametro) {
+    const filtra = useCallback((dados) => {
 
-          return dados;
-
-
-      } else {
-
-          const filtrados = dados.filter(
-
-              (e) => e.nome.toLowerCase().includes(parametro.toLocaleLowerCase()) || e.curso.toLowerCase().includes(parametro.toLocaleLowerCase())
-
-          );
-
-          return filtrados;
-
-      }
+        const parametro = parametros.get("busca");
 
 
-  }, [parametros]);
+        if (!parametro) {
+
+            return dados;
 
 
-  useEffect(() => {
+        } else {
 
-      const dadosFiltrados = filtra(arquivo);
+            const filtrados = dados.filter(
 
-      setDados(dadosFiltrados);
+                (e) => e.nome.toLowerCase().includes(parametro.toLocaleLowerCase()) || e.curso.toLowerCase().includes(parametro.toLocaleLowerCase())
+
+            );
+
+            return filtrados;
+
+        }
 
 
-  }, [filtra]);
+    }, [parametros]);
 
 
-  return (
+    useEffect(() => {
 
-      <Master  tipoFooter="tipo2">
-          <div className="Pesquisa">
+        const dadosFiltrados = filtra(arquivo);
 
-            <form onSubmit={(e) => {
+        setDados(dadosFiltrados);
 
-                e.preventDefault();
 
-                setParametros({"busca": `${entrada.current.value}`})
+    }, [filtra]);
 
-                }}>
+    return (
+        <Master tipoFooter="tipo1">
+        
 
-                <input
+        <div className='conteudo'>
+            <div className="Pesquisa">
 
-                    type="text"
+                <form onSubmit={(e) => {
 
-                    ref={entrada}
+                    e.preventDefault();
 
-                    className="Filtro"
+                    setParametros({"busca": `${entrada.current.value}`})
 
-                    placeholder="Buscar"
+                    }}>
 
-                    />
+                    <input
 
-                <button type='submit' className="BotaoFiltro">Pesquisar</button>
+                        type="text"
 
-            </form>
+                        ref={entrada}
 
-          </div>
+                        className="Filtro"
 
-          <div className="ContainerCardAlunos">
+                        placeholder="Buscar"
 
-            {
-                dados.map( (p, ind) => (
-                    <PessoaCard
-                        key = { ind }
-                        imagem = {p.imagem}
-                        nome = {p.nome}
-                        curso = {p.curso}
-                        ID = {p.ID}
-                    />
+                        />
 
-                ))
+                    <button type='submit' className="BotaoFiltro">Pesquisar</button>
 
-            }
+                </form>
 
-          </div>
-      </Master>
+                </div>
+                <div className="containerAlunos">
 
-  );
+                {
+                    dados.map( (p, ind) => (
+                        <CardPessoa
+                                key = { ind }
+                                imagem = {p.imagem}
+                                nome = {p.nome}
+                                curso = {p.curso}
+                                ID = {p.ID}
+                        />
+                    ))
 
+                }
+
+                </div>
+            </div>
+            <div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+            </div>
+        </Master>
+    );
 }

@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
 const Card = styled.a`
-    margin-top: 100px;
-    width: 15em;
+    margin-top: 75px;
     border-width: 1px;
     background-color: #002555;
     display: flex;
-    border-radius: 5%;
     flex-flow: column;
     padding: .5em;
     text-decoration: none;
@@ -14,21 +12,26 @@ const Card = styled.a`
 `;
 
 const CardDetalhado = styled.div`
-    width: 15em;
+    margin-top:75px;
     border-width: 1px;
     background-color: #002555;
     display: flex;
-    border-radius: 5%;
     flex-flow: column;
     padding: .5em;
     text-decoration: none;
     color: black;
+<<<<<<< HEAD
+=======
+
+>>>>>>> release
 `;
 
 const Img = styled.img`
       width: 10em;
       border-radius: 50%;
       margin: auto;
+      margin-top: 35px;
+      margin-bottom: 35px;
 `;
 
 const Textos = styled.div`
@@ -40,8 +43,6 @@ const Textos = styled.div`
      bottom: 0;
      margin: 0;
      width: auto;
-     border-bottom-left-radius: 5%;
-     border-bottom-right-radius: 5%;
 `;
 
 const Nome = styled.p`

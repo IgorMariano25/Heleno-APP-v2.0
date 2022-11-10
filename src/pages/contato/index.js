@@ -5,7 +5,7 @@ import './styles.css';
 
 export default function App(){
     return (
-        <Master  tipoFooter="tipo2">
+        <Master>
             <Conteudo>
                 <div className="ConteudoContato">
                     <Img
