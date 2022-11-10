@@ -1,5 +1,5 @@
 import imgBanner from "../../../assets/imagensGraduacao/bannerGraduacao.png";
-import { DivisoriaFoto, Banner, Espacamento, FotoBanner, SpanBanner, TextoBanner } from "./styles";
+import { DivisoriaFoto, Banner, Espacamento, FotoBanner, H1Banner, TextoBanner } from "./styles";
 
 const ExportBanner = () => {
     return (
@@ -7,10 +7,8 @@ const ExportBanner = () => {
         <Espacamento/>
         <DivisoriaFoto/>
         <Banner>
-            <FotoBanner>
-                <img src={imgBanner}/>
-            </FotoBanner>
-            <SpanBanner>Graduação</SpanBanner>
+            <FotoBanner src={imgBanner}/>
+            <H1Banner>Graduação</H1Banner>
             <TextoBanner>Transforme oportunidades em possibilidades</TextoBanner>
         </Banner>
         </>
