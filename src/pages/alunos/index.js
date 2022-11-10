@@ -53,7 +53,8 @@ export default function App() {
 
   return (
 
-      <Master  tipoFooter="tipo2">
+      <Master>
+            <div>
           <div className="Pesquisa">
 
             <form onSubmit={(e) => {
@@ -98,6 +99,7 @@ export default function App() {
 
             }
 
+          </div>
           </div>
       </Master>
 

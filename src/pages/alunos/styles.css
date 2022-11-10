@@ -1,8 +1,10 @@
-body {
+.help-tipo {
     margin: 0;
+    min-height: 750px;
 }
 
 .Pesquisa{
+    margin-top: 100px;
     text-align: center;
 }
 

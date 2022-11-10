@@ -9,7 +9,7 @@ import dados from '../../dados.json'
 export default function App() {
   return (
 
-    <Master tipoFooter="tipo1">
+    <Master>
        <ConteudoPage>
           <div className="IntroducaoHomePage">
             <div className="VideoIbmecHome">

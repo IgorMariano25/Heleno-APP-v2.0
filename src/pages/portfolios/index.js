@@ -36,7 +36,8 @@ export default function App () {
     }, [filtra]);
 
     return (
-        <Master tipoFooter="tipo2">
+        <Master>
+            <div>
             <div className="Pesquisa">
                 <form onSubmit={(e) => {
                     e.preventDefault();
@@ -65,6 +66,7 @@ export default function App () {
                             />
                         ))
                     }
+            </div>
             </div>
         </Master>
     );
