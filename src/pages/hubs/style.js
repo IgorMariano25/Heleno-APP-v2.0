@@ -2,9 +2,10 @@ import styled from "styled-components";
 import hubs from '../../assets/imagens/hubs2.jpeg';
 
 
+
 const PrimeiraSection = styled.section`
     width: 100%;
-    height: 675px;
+    height: 512px;
     background-color: #002555;
     background-image: url(${hubs});
     opacity: 70%;
@@ -13,17 +14,8 @@ const PrimeiraSection = styled.section`
 const Container = styled.div`
        background-color: #002555;
        width: 100%;
-       height: 675px;
+       height: 512px;
 `
-
-
-const Img = styled.img`
-    width: 70% !important;
-    height: 600px;
-    margin-top:75px;
-    margin-left: 14%;
-`
-
 
 const Conteudo = styled.div`
     // margin-bottom: 40%;
@@ -47,9 +39,9 @@ const Conteudo = styled.div`
 
 const TituloImagem = styled.h1` 
     position: relative;
-    font: italic 50px Impact;
+    font: italic 40px Impact;
     color: white;
-    top: -85%;
+    top: -80%;
     padding-left: 18%;
     width: 60%;
     -webkit-text-stroke-width: 2px;
@@ -61,7 +53,7 @@ const TituloImagem = styled.h1`
     }
 
     @media screen and (min-width: 680px) {
-        font: italic 55px Impact;
+        font: italic 45px Impact;
         top: -68%;
     }
 `
@@ -169,11 +161,6 @@ const SegundaSection = styled.div`
         }
     }
 
-    /* @media screen and (max-width: 420px){
-        .container {
-            max-width: 20em;
-        }
-    } */
 `;
 
 const Botao = styled.button`
@@ -231,17 +218,132 @@ const Botao = styled.button`
     }
 
 `
-const TerceiraSection = styled.section`
-    width: 40%;
-    height: 350px;
+
+
+const SectionNoticia = styled.section`
+    width: 45%;
+    height: 380px;
     background-color: #002555;
-    margin-left: 10%;
-    margin-top: 5%;
+    margin-left: 5%;
+    margin-top: 7%;
     margin-bottom: 15%;
+
+    h1 {
+        font-family: Barlow;
+        color: white;
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+
+    h3 {
+        font-family: Arial;
+        color: white;
+        margin-left: 30px;
+    }
+
+    @media screen and (min-width: 1224px){
+        width: 45%;
+        height: 380px;
+        margin-left: 5%;
+        margin-top: 7%;
+        margin-bottom: 15%;
+    }
+
+    @media screen and (min-width: 680px) {
+        width: 45%;
+        height: 380px;
+        margin-left: 5%;
+        margin-top: 7%;
+        margin-bottom: 15%;
+    }
+`
+
+
+const PrimeiraNoticia = styled.img`
+    position: relative;
+    width: 40%;
+    height: 220px;
+    margin-left: 120px;
+
+    @media screen and (min-width: 1224px) {
+        margin-left: 40px;
+    }
+`
+const TextoNoticia = styled.p`
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    width: 18%;
+    margin-left: 40px;
+    margin-top: -70px;
+
+    @media screen and (min-width: 1224px) {
+        font-size: 18px;
+        width: 18%;
+        margin-left: 40px;
+        margin-top: -70px;
+    }
+`
+
+const SegundaNoticia = styled.img`
+    position: relative;
+    width: 40%;
+    height: 220px;
+    margin-left: 50px;
+  
+
+    @media screen and (min-width: 1224px) {
+        width: 40%;
+        height: 220px;
+        margin-left: 50px;
+    }
+`
+
+const Texto2 = styled.p`
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    width: 18%;
+    margin-left: 363px;
+    margin-top: -70px;
+`
+
+const ImgDiv = styled.div`
+    
+    img {
+        width: 95%;
+        margin-bottom: 5%;
+        margin-left: 13%;
+        margin-top: 18%;
+        position: relative;
+
+    }
+
+    p {
+        margin-left: 35%;
+        margin-bottom: 40%;
+        position: absolute;
+    }
+
+`
+
+const TerceiraSection = styled.section`
+   
+    @media screen and (min-width: 1224px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 680px) {
+        display: flex;
+    }
 `
 
 
 
-export {PrimeiraSection, Img, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, 
-    Botao, TerceiraSection};
+
+export {PrimeiraSection, ImgDiv, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, 
+    Botao, SectionNoticia, PrimeiraNoticia, TextoNoticia, SegundaNoticia, Texto2, TerceiraSection};
 

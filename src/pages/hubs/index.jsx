@@ -4,10 +4,11 @@ import { useState} from "react";
 import hubsEstrutura from '../../assets/hubs_ibmec_rio.jpg'
 import Master from '../masterPage'
 import {PrimeiraSection, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, Botao, 
-    TerceiraSection} from './style';
+    SectionNoticia, PrimeiraNoticia, TextoNoticia, SegundaNoticia, Texto2, ImgDiv, TerceiraSection} from './style';
 import arquivo from '../../startups.json'
 import Startup from '../../components/Hubs/Startup';
-
+import noticia1 from '../../assets/imagens/destaques.jpg';
+import noticia2 from '../../assets/imagens/noticia.jpg';
 
 
 export default function Hubs(){
@@ -78,12 +79,30 @@ export default function Hubs(){
                 </SegundaSection>  
 
             <TerceiraSection>
-                <p>Meu deeeus, meu senhooor, me ajudaaa</p>
+                <SectionNoticia>
+                    <h1>Notícias</h1>
+                <a href="https://blog.ibmec.br/noticias/ex-aluno-de-administracao-do-ibmec-rj-e-aprovado-no-mba-do-mit-nos-eua/?_ga=2.199914926.147188793.1668013948-108964509.1651693829" target="blank">
+                        <PrimeiraNoticia src={noticia1} alt={'primeira notícia do hubs'}/>
+                        <TextoNoticia>Ex-aluno de Administração do Ibmec RJ é aprovado no MBA do MIT, nos EUA</TextoNoticia>
+                    </a>
+
+                    <a href="https://blog.ibmec.br/conteudo-gratuito/ibmec-rj-cria-ecossistema-de-inovacao-para-desenvolver-startups/?_ga=2.233389726.147188793.1668013948-108964509.1651693829" target="blank">
+                        <SegundaNoticia src={noticia2} alt={'segunda notícia do hubs'}/>
+                        <Texto2>Ibmec RJ cria ecossistema de inovação para desenvolver startups</Texto2>
+                    </a>
+
+                    <a href="https://blog.ibmec.br/noticias/?_ga=2.25384637.147188793.1668013948-108964509.1651693829" target="blank">
+                        <h3>Todas as notícias</h3>
+                    </a>
+                </SectionNoticia>
+                
+                <ImgDiv>
+                    <img src={hubsEstrutura} alt={'Estrutura do hubs'}/>
+                    <p>Unidade do Rio de Janeiro</p>
+                </ImgDiv>
+            
             </TerceiraSection>
 
-            <a href="https://estude.ibmec.br/ibmec-hubs" target='blanck'><Botao>
-            <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
-           
             <a href="https://estude.ibmec.br/ibmec-hubs" target="_blank"><Botao>
                 Saiba Mais
             </Botao></a>
