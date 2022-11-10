@@ -1,108 +1,115 @@
 import React from 'react';
-import './styles.css';
-import Master from '../masterPage'
+import './estilo.css';
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
-import PessoaCard from '../../components/Alunos/cardPessoa';
+import CardPessoa from '../../components/Alunos/cardPessoa';
 import arquivo from '../../dados.json'
 
-
-export default function App() {
-  const [dados, setDados] = useState(arquivo);
-
-  const [parametros, setParametros] = useSearchParams();
-
-  const entrada = useRef();
+import Master from "../masterPage";
 
 
-  const filtra = useCallback((dados) => {
+export default function App(){
 
-      const parametro = parametros.get("busca");
+    const [dados, setDados] = useState(arquivo);
 
+    const [parametros, setParametros] = useSearchParams();
 
-      if (!parametro) {
-
-          return dados;
-
-
-      } else {
-
-          const filtrados = dados.filter(
-
-              (e) => e.nome.toLowerCase().includes(parametro.toLocaleLowerCase()) || e.curso.toLowerCase().includes(parametro.toLocaleLowerCase())
-
-          );
-
-          return filtrados;
-
-      }
+    const entrada = useRef();
 
 
-  }, [parametros]);
+    const filtra = useCallback((dados) => {
+
+        const parametro = parametros.get("busca");
 
 
-  useEffect(() => {
+        if (!parametro) {
 
-      const dadosFiltrados = filtra(arquivo);
-
-      setDados(dadosFiltrados);
+            return dados;
 
 
-  }, [filtra]);
+        } else {
+
+            const filtrados = dados.filter(
+
+                (e) => e.nome.toLowerCase().includes(parametro.toLocaleLowerCase()) || e.curso.toLowerCase().includes(parametro.toLocaleLowerCase())
+
+            );
+
+            return filtrados;
+
+        }
 
 
-  return (
+    }, [parametros]);
 
-      <Master>
+
+    useEffect(() => {
+
+        const dadosFiltrados = filtra(arquivo);
+
+        setDados(dadosFiltrados);
+
+
+    }, [filtra]);
+
+    return (
+        <Master tipoFooter="tipo1">
+
+
+        <div className='conteudo'>
+            <div className="Pesquisa">
+
+                <form onSubmit={(e) => {
+
+                    e.preventDefault();
+
+                    setParametros({"busca": `${entrada.current.value}`})
+
+                    }}>
+
+                    <input
+
+                        type="text"
+
+                        ref={entrada}
+
+                        className="Filtro"
+
+                        placeholder="Buscar"
+
+                        />
+
+                    <button type='submit' className="BotaoFiltro">Pesquisar</button>
+
+                </form>
+
+                </div>
+                <div className="containerAlunos">
+
+                {
+                    dados.map( (p, ind) => (
+                        <CardPessoa
+                                key = { ind }
+                                imagem = {p.imagem}
+                                nome = {p.nome}
+                                curso = {p.curso}
+                                ID = {p.ID}
+                        />
+                    ))
+
+                }
+
+                </div>
+            </div>
             <div>
-          <div className="Pesquisa">
-
-            <form onSubmit={(e) => {
-
-                e.preventDefault();
-
-                setParametros({"busca": `${entrada.current.value}`})
-
-                }}>
-
-                <input
-
-                    type="text"
-
-                    ref={entrada}
-
-                    className="Filtro"
-
-                    placeholder="Buscar"
-
-                    />
-
-                <button type='submit' className="BotaoFiltro">Pesquisar</button>
-
-            </form>
-
-          </div>
-
-          <div className="ContainerCardAlunos">
-
-            {
-                dados.map( (p, ind) => (
-                    <PessoaCard
-                        key = { ind }
-                        imagem = {p.imagem}
-                        nome = {p.nome}
-                        curso = {p.curso}
-                        ID = {p.ID}
-                    />
-
-                ))
-
-            }
-
-          </div>
-          </div>
-      </Master>
-
-  );
-
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+            </div>
+        </Master>
+    );
 }
