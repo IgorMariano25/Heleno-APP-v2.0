@@ -1,12 +1,15 @@
-import { Container, TituloBanner, TextoBanner,Imagem } from "./styles";
+import { Container, TituloBanner, TextoBanner, Imagem } from "./styles";
 
-export default function App(){
+export default function App() {
     return (
 
         <Container>
             <Imagem>
-                <TituloBanner>Pós Graduação</TituloBanner>
-                <TextoBanner>Transforme oportunidades em possibilidades</TextoBanner>
+                <TituloBanner>.</TituloBanner>
+                <TextoBanner>
+                    <h1>Pós Graduação</h1><br></br>
+                    <p>Transforme oportunidades em possibilidades</p>
+                </TextoBanner>
             </Imagem>
         </Container>
     )
