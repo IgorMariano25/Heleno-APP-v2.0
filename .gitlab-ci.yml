@@ -7,8 +7,8 @@ build:
   stage: build
   variables: 
     # Replace this with your site URL
-    PUBLIC_URL: http://projeto-multidisciplinar.gitlab.io/heleno-app
-    REACT_APP_BASE_NAME: /heleno-app
+    PUBLIC_URL: https://ibtech.sendodigital.com/
+    REACT_APP_BASE_NAME: /
   script:
     - npm install      
     - npm run build
