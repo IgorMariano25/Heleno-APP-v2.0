@@ -1,0 +1,101 @@
+[
+    {   
+        "ID" : 1,
+        "nome": "MBA em direito agrário e ambiental",
+        "imagem" : "",
+        "duracao" : "420 Horas",
+        "tipo" : "Presencial"
+    },
+    {   
+        "ID" : 2,
+        "nome": "MBA em gestão do agronegócio",
+        "imagem" : "",
+        "duracao" : "420 Horas",
+        "tipo" : "Presencial"
+    },
+    {   
+        "ID" : 3,
+        "nome": "MBA em gestão de pessoas",
+        "imagem" : "",
+        "duracao" : "420 Horas",
+        "tipo" : "Presencial"
+    },
+    {   
+        "ID" : 4,
+        "nome": "MBA em gestão de MKT, Branding e Consumo Digital",
+        "imagem" : "",
+        "duracao" : "420 Horas",
+        "tipo" : "EAD"
+    },
+    {   
+        "ID" : 5,
+        "nome": "MBA em gestão de processos e metodologias ágeis",
+        "imagem" : "",
+        "duracao" : "420 Horas",
+        "tipo" : "Presencial"
+    },
+    {   
+        "ID" : 6,
+        "nome": "MBA em finanças",
+        "imagem" : "",
+        "duracao" : "420 Horas",
+        "tipo" : "Presencial"
+    },
+    {   
+        "ID" : 7,
+        "nome": "MBA em gestão de negócios",
+        "imagem" : "",
+        "duracao" : "420 Horas",
+        "tipo" : "Presencial"
+    },
+    {   
+        "ID" : 8,
+        "nome": "MBA em BIG Data",
+        "imagem" : "",
+        "duracao" : "420 Horas",
+        "tipo" : "Presencial"
+    },
+    {   
+        "ID" : 9,
+        "nome": "MBA em Controladoria",
+        "imagem" : "",
+        "duracao" : "420 Horas",
+        "tipo" : "Presencial"
+    },
+    {   
+        "ID" : 10,
+        "nome": "MBA em gerenciamento de projetos",
+        "imagem" : "",
+        "duracao" : "420 Horas",
+        "tipo" : "Presencial"
+    },
+    {   
+        "ID" : 11,
+        "nome": "MBA em Integencia artificial",
+        "imagem" : "",
+        "duracao" : "420 Horas",
+        "tipo" : "Presencial" 
+    },
+    {   
+        "ID" : 12,
+        "nome": "Master em digital manager & metaverso",
+        "imagem" : "",
+        "duracao" : "",
+        "tipo" : "Presencial"
+    },
+    {   
+        "ID" : 13,
+        "nome": "MBA em ESG - Environmental, social & governance",
+        "imagem" : "",
+        "duracao" : "",
+        "tipo" : "Presencial"
+    },
+    {   
+        "ID" : 14,
+        "nome": "MBA em Criptofincanças",
+        "imagem" : "",
+        "duracao" : "",
+        "tipo" : "Presencial"
+    }
+
+]

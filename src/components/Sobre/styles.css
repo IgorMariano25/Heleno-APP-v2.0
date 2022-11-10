@@ -1,0 +1,128 @@
+#fundoAzul{
+    width: 100%;
+    height: 512px;
+    background-color: blue;
+    opacity: 0.1;
+}
+
+#bannerSobre {
+    background-size: cover;
+    width: 100%;
+    height: 512px;
+    position: relative;
+}
+
+.sobreTitulo{
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Barlow";
+}
+
+#sobre{
+    text-align: center;
+    font-size: 50px;
+    top: 40%;
+}
+
+#descricaoSobre{
+    text-align: center;
+    font-size: 30px;
+    top: 50%;
+}
+
+body {
+    margin: 0;
+}
+
+.containerSobre{
+    width: 100%;
+}
+
+.containerDescricao{
+    background-color: rgb(0, 37, 85);
+    padding: 30px;
+    padding-right: 5em;
+    margin: 0px;
+    color: rgb(245, 172, 20);
+
+}
+
+.TituloSobre {
+    text-align: left;
+    
+}
+
+.ListaAlunos {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 0px;
+    font-size: 25px;
+    font-family: "Barlow";
+    font-weight: bold;
+    color: rgb(0, 37, 85);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.ListaAlunos ul {
+    list-style-type: none;
+}
+
+.ListaAlunos ul li {
+    display: block;
+}
+
+.btnImagem {
+    color:rgb(0, 37, 85);
+    padding: 1.3em 3em;
+    font-size: 12px;
+    font-style: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 1000;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 2em;
+  }
+  
+  .btnImagem:hover {
+    background-color: #F5AC0D;
+    box-shadow: 0px 15px 20px #997323;
+    color: #000;
+    transform: translateY(-7px);
+  }
+  
+  .btnImagem:active {
+    transform: translateY(-1px);
+  }
+
+.botaoAntigos{
+    display: flex;
+}
+
+.botaoNovos{
+    left: 40px;
+}
+
+.ImagensGrupos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.imagem{
+    width: 100%;
+    border-radius: 5%;
+    height:350px;
+}

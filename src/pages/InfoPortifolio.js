@@ -1,13 +1,11 @@
-
-import Topo from "../components/topo/topo";
-import RodaPe from "../components/footer/footer";
-import ProjetoCardDetalhado from "../components/CardProjetos/ProjetoCardDetalhado";
+import Master from './masterPage'
+import ProjetoCardDetalhado from "../components/Portfolios/cardProjetoDetalhado";
 import arquivo from "../projetos.json";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 
 
-const ProjetoDetalhado = () => {
+export default function App() {
     const [dadosProjeto] = useState(arquivo)
     const { id } = useParams();
 
@@ -17,12 +15,11 @@ const ProjetoDetalhado = () => {
 
 
     return(  
-    <div>
-        <Topo/>
-        <div className="ContainerCardProjetos">
-            {filtrados.map( (p, ind) => (
+        <Master>
+            <div className="ContainerCardProjetos">
+                {filtrados.map( (p, ind) => (
                     <ProjetoCardDetalhado
-                     key = { ind }
+                    key = { ind }
                     fotoProjeto = {p.fotoProjeto}
                     titulo = {p.titulo}
                     tecnologias = {p.tecnologias}
@@ -30,10 +27,7 @@ const ProjetoDetalhado = () => {
                         />
                     ))
                 }
-         </div>
-        <RodaPe/>
-    </div>
-)
+            </div>
+        </Master>
+    )
 }
-
-export default ProjetoDetalhado;

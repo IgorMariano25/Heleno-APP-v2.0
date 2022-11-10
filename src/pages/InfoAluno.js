@@ -1,23 +1,21 @@
-import Topo from "../components/topo/topo";
-import RodaPe from "../components/footer/footer";
-import PessoaCardDetalhado from "../components/Card/PessoaCardDetalhado";
-import arquivo from "../dados.json";
+import Master from './masterPage'
+import PessoaCardDetalhado from "../components/Alunos/cardPessoaDetalhado";
+import arquivo from "../pessoas.json";
 import { useParams } from "react-router-dom";
 
 import "../App.css";
 import { useState } from "react";
 
-const Perfil = () => {
+export default function App(){
   const [dados] = useState(arquivo);
   const { id } = useParams();
 
   const filtrados = dados.filter(
     (e) => e.ID === parseInt(id)
   );
-  
+
   return (
-    <div>
-      <Topo/>  
+    <Master>
         <div className="PerfilAlunoDetalhado">
           {filtrados.map((p, ind) => (
             <PessoaCardDetalhado
@@ -32,11 +30,8 @@ const Perfil = () => {
                 Projetos= {p.Projetos}
             />
           ))
-          }       
+          }
       </div>
-      <RodaPe/>
-    </div>
+    </Master>
   );
-};
-
-export default Perfil;
+}
