@@ -8,7 +8,7 @@ build:
   variables: 
     # Replace this with your site URL
     PUBLIC_URL: https://ibtech.sendodigital.com
-    REACT_APP_BASE_NAME: /
+    # REACT_APP_BASE_NAME: /
   script:
     - npm install      
     - npm run build
