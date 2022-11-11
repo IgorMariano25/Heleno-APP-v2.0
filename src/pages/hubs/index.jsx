@@ -71,6 +71,7 @@ export default function Hubs(){
                                     nome = {p.nome}
                                     texto={p.texto}
                                     ID = {p.ID}
+                                    link = {p.link}
                                 />
 
                             ))

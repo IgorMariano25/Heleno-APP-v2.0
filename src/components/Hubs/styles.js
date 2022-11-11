@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+const Link = styled.a`
+     text-decoration: none;
+     color: black;
+
+     &:hover{
+        transform: scale(1.007);
+        transition: transform 0.3s ease;
+    }
+`;
+
 const Card = styled.div` 
     height: 11.5em;
     width: auto;
@@ -29,4 +39,4 @@ const Img = styled.img`
 `;
 
 
-export { Conteudo, Texto, Img, Card };
+export { Conteudo, Texto, Img, Card, Link };
