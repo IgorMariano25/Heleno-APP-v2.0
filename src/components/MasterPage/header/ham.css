@@ -192,6 +192,7 @@
     margin-left: 10px;
     list-style-type: none;
     display: flex;
+    margin-top: -10px;
   }
 }
 @media screen and (max-width: 920px){
@@ -258,12 +259,13 @@
     display: none;
     flex-direction: column;
     background-color: #002555;
-    width: 250px;
+    width: 300px;
     text-align: center;
-    margin-left: 300px;
+    margin-left: 0px;
     list-style: none;
     height: 30px;
     margin-top: 0px;
+    border-radius: 10px;
   }
   #dropdown-educacao a:hover {
     color: #F5AC00;
