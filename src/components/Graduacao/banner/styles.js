@@ -20,7 +20,6 @@ const Banner = styled.div`
 
 const FotoBanner = styled.img`
     opacity: 0.3;
-    height: 100%;
 `;
 
 const H1Banner = styled.h1`
