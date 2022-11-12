@@ -1,4 +1,4 @@
-import imgBanner from "../../../assets/imagensGraduacao/bannerGraduacao.png";
+import imgBanner from "../../../assets/imagensGraduacao/bannerGraduacao.jpg";
 import { DivisoriaFoto, Banner, Espacamento, FotoBanner, H1Banner, TextoBanner } from "./styles";
 
 const ExportBanner = () => {
