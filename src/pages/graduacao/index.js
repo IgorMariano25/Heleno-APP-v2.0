@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import './stylesGraduacao.css';
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
 import CardGraduacao from '../../components/Graduacao/cardGraduacao';
