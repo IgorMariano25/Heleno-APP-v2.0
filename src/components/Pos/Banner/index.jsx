@@ -2,7 +2,6 @@ import { Container, TituloBanner, TextoBanner, Imagem } from "./styles";
 
 export default function App() {
     return (
-
         <Container>
             <Imagem>
                 <TituloBanner>.</TituloBanner>
