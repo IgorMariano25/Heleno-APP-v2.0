@@ -1,0 +1,82 @@
+[
+    {
+        "ID": 1,
+        "link" : "https://www.ibmec.br/pos-graduacao/llm-em-direito-empresarial",
+        "nome": "LL.M. Direito Empresarial",
+        "duracao": "15 meses",
+        "tipo": "LL.M",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 2,
+        "link" : "https://www.ibmec.br/pos-graduacao/llm-em-arbitragem-comercial",
+        "nome": "LL.M. em Arbitragem Comercial",
+        "duracao": "15 meses",
+        "tipo": "LL.M",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 3,
+        "link" : "https://www.ibmec.br/pos-graduacao/llm-em-direito-corporativo",
+        "nome": "LL.M. em Direito Corporativo",
+        "duracao": "12 meses",
+        "tipo": "LL.M",
+        "categoria": "Ao vivo, Presencial"
+    }
+    ,
+    {
+        "ID": 4,
+        "link" : "https://www.ibmec.br/pos-graduacao/llm-em-direito-societario-e-mercado-de-capitais",
+        "nome": "LL.M. em Direito Societário e Mercado de Capitais",
+        "duracao": "15 meses",
+        "tipo": "LL.M",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 5,
+        "link" : "https://www.ibmec.br/pos-graduacao/llm-direito-tributario-e-contabilidade-tributaria",
+        "nome": "LL.M. em Direito Tributário e Contabilidade Tributária",
+        "duracao": "15 meses",
+        "tipo": "LL.M",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 6,
+        "link" : "https://www.ibmec.br/pos-graduacao/master-em-compliance",
+        "nome": "Master em Compliance",
+        "duracao": "12 meses",
+        "tipo": "Master",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 7,
+        "link" : "https://www.ibmec.br/pos-graduacao/master-em-compliance",
+        "nome": "Master em Compliance",
+        "duracao": "12 meses",
+        "tipo": "Master",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 8,
+        "link" : "https://www.ibmec.br/pos-graduacao/master-em-direito-corporativo",
+        "nome": "Master em Direito Corporativo",
+        "duracao": "12 meses",
+        "tipo": "Master",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 9,
+        "link" : "https://www.ibmec.br/pos-graduacao/master-em-direito-e-gestao-juridica",
+        "nome": "Master em Direito e Gestão Jurídica",
+        "duracao": "12 meses",
+        "tipo": "Master",
+        "categoria": "Presencial"
+    }
+]
