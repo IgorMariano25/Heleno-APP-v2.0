@@ -38,6 +38,7 @@ const Textos = styled.div`
      text-align: center;
      bottom: 0;
      margin: 0;
+     border-radius: 20px;
      width: auto;
 `;
 
