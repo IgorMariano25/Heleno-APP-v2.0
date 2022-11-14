@@ -123,20 +123,20 @@ const SegundaSection = styled.div`
     padding-bottom: 1.5em;
 
     h1 {
+        text-transform: uppercase;
         font-family: Barlow;
         color: white;
         text-align: center;
         padding-top: .8em;
-        text-transform: uppercase;
     }
 
     .containerStartups {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5em;
         max-width: 55em;
         margin: auto;
         padding: 1em;
-        gap: 1.5em;
     }
 
     .containerStartups > *:nth-child(3n-2):nth-last-of-type(1) {
@@ -170,14 +170,13 @@ const SegundaSectionCards = styled.div`
     height: auto;
     width: 100%;
     padding-bottom: 1.5em;
-    
 
     h1 {
+        text-transform: uppercase;
         font-family: Barlow;
         color: black;
         text-align: center;
         padding-top: .8em;
-        text-transform: uppercase;
     }
 
     .containerCards {
@@ -198,6 +197,8 @@ const SegundaSectionCards = styled.div`
     }
 
     @media screen and (max-width: 680px){
+        padding-bottom: 0;
+        
         .containerCards {
             grid-template-columns: repeat(1, 1fr);
             width: 75%;
