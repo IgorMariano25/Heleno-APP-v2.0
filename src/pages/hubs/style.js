@@ -117,18 +117,20 @@ const ImgLogo = styled.img`
 
 const SegundaSection = styled.div`
     background-color: #002555;
-    height: 48em;
+    height: auto;
     width: 100%;
-    margin-top: 3em;
+    margin-top: 2em;
+    padding-bottom: 1.5em;
 
     h1 {
         font-family: Barlow;
         color: white;
         text-align: center;
         padding-top: .8em;
+        text-transform: uppercase;
     }
 
-    .container {
+    .containerStartups {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 55em;
@@ -137,93 +139,89 @@ const SegundaSection = styled.div`
         gap: 1.5em;
     }
 
-    .container > *:nth-child(3n-2):nth-last-of-type(1) {
+    .containerStartups > *:nth-child(3n-2):nth-last-of-type(1) {
         grid-column: span 3;
     }
 
     @media screen and (max-width: 1024px) {
-        height: 62.5em;
-        .container{
+        .containerStartups{
             grid-template-columns: repeat(2, 1fr);
             max-width: 40em;
         }
-        .container > *:nth-child(3n-2):nth-last-of-type(1) {
-            grid-column: auto;
+        .containerStartups > *:nth-child(3n-2):nth-last-of-type(1) {
+            grid-column: span 2;
         }
     }
 
-    @media (max-width: 680px){
-        height: 103em;
-        .container {
+    @media screen and (max-width: 680px){
+        .containerStartups {
+            grid-template-columns: repeat(1, 1fr);
+            width: 75%;
+            max-width: 18em;
+        }
+        .containerStartups > *:nth-child(3n-2):nth-last-of-type(1) {
+            grid-column: span 1;
+        }
+    }
+`;
+
+const SegundaSectionCards = styled.div`
+    background-color: white;
+    height: auto;
+    width: 100%;
+    padding-bottom: 1.5em;
+    
+
+    h1 {
+        font-family: Barlow;
+        color: black;
+        text-align: center;
+        padding-top: .8em;
+        text-transform: uppercase;
+    }
+
+    .containerCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 55em;
+        margin: auto;
+        padding: 1em;
+        gap: 1.5em;
+        justify-items: center;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .containerCards{
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 40em;
+        }
+    }
+
+    @media screen and (max-width: 680px){
+        .containerCards {
             grid-template-columns: repeat(1, 1fr);
             width: 75%;
             max-width: 18em;
         }
     }
+    `; 
 
-`;
-
-const Botao = styled.button`
-    margin-left: 35%;
-    min-width: 35%;
-    min-height: 75px;
-    font: normal 55px Arial;
-    font-size: 108%;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 550;
-    color: white;
-    background: #002555;
-    border-radius: 1000px;
-    border-color: #002555;
-    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
-    cursor: pointer;
-    position: relative;
-
+const TerceiraSection = styled.section`
+    background-color: #002555;
 
     @media screen and (min-width: 1224px) {
-        margin-left: 43%;
-        min-width: 14%;
-        min-height: 60px;
-        font: normal 50px Arial;
-        font-size: 100%;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        font-weight: 550;
-        color: white;
-        background: #002555;
-        border-radius: 1000px;
-        border-color: #002555;
-        box-shadow: 12px 12px 24px rgba(79,209,197,.64);
-        cursor: pointer;
-        position: relative;
+        display: flex;
     }
 
     @media screen and (min-width: 680px) {
-        margin-left: 43%;
-        min-width: 14%;
-        min-height: 60px;
-        font: normal 50px Arial;
-        font-size: 100%;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        font-weight: 550;
-        color: white;
-        background: #002555;
-        border-radius: 1000px;
-        border-color: #002555;
-        box-shadow: 12px 12px 24px rgba(79,209,197,.64);
-        cursor: pointer;
-        position: relative;
+        display: flex;
     }
-
 `
-
 
 const SectionNoticia = styled.section`
     width: 45%;
     height: 380px;
-    background-color: #002555;
+    background-color: white;
     margin-left: 5%;
     margin-top: 7%;
     margin-bottom: 15%;
@@ -330,20 +328,64 @@ const ImgDiv = styled.div`
 
 `
 
-const TerceiraSection = styled.section`
+const Botao = styled.button`
+    margin-left: 35%;
+    min-width: 35%;
+    min-height: 75px;
+    font: normal 55px Arial;
+    font-size: 108%;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 550;
+    color: white;
+    background: #002555;
+    border-radius: 1000px;
+    border-color: #002555;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    cursor: pointer;
+    position: relative;
+
 
     @media screen and (min-width: 1224px) {
-        display: flex;
+        margin-left: 43%;
+        min-width: 14%;
+        min-height: 60px;
+        font: normal 50px Arial;
+        font-size: 100%;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 550;
+        color: white;
+        background: #002555;
+        border-radius: 1000px;
+        border-color: #002555;
+        box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+        cursor: pointer;
+        position: relative;
     }
 
     @media screen and (min-width: 680px) {
-        display: flex;
+        margin-left: 43%;
+        min-width: 14%;
+        min-height: 60px;
+        font: normal 50px Arial;
+        font-size: 100%;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 550;
+        color: white;
+        background: #002555;
+        border-radius: 1000px;
+        border-color: #002555;
+        box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+        cursor: pointer;
+        position: relative;
     }
-`
+
+`;
 
 
 
-
-export {PrimeiraSection, ImgDiv, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection,
+export {PrimeiraSection, ImgDiv, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, SegundaSectionCards,
     Botao, SectionNoticia, PrimeiraNoticia, TextoNoticia, SegundaNoticia, Texto2, TerceiraSection};
 

@@ -3,16 +3,19 @@ import hubs from '../../assets/imagensHubs/hubsimg.png'
 import { useState} from "react";
 import hubsEstrutura from '../../assets/imagensHubs/hubs_ibmec_rio.jpg'
 import Master from '../masterPage'
-import {PrimeiraSection, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, Botao,
+import {PrimeiraSection, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, SegundaSectionCards, Botao,
     SectionNoticia, PrimeiraNoticia, TextoNoticia, SegundaNoticia, Texto2, ImgDiv, TerceiraSection} from './style';
 import arquivo from '../../startups.json'
-import Startup from '../../components/Hubs/Startup';
+import arquivo2 from '../../parceirosHubs.json'
+import Startup from '../../components/Hubs/startup/Startup';
+import Integrantes from '../../components/Hubs/integrantes/Integrantes';
 import noticia1 from '../../assets/imagensHubs/destaques.jpg';
 import noticia2 from '../../assets/imagensHubs/noticia.jpg';
 
 
 export default function Hubs(){
     const [dados, setDados] = useState(arquivo);
+    const [info, setInfo] = useState(arquivo2);
 
     return(
         <Master>
@@ -61,24 +64,39 @@ export default function Hubs(){
 
             </Conteudo>
             <SegundaSection>
-                        <h1>STARTUPS</h1>
-                        <div className='container'>
+                <h1>Startups</h1>
+                <div className='containerStartups'>
+                {
+                    dados.map( (p, ind) => (
+                        <Startup
+                            key={ind}
+                            imagem = {p.imagem}
+                            nome = {p.nome}
+                            texto={p.texto}
+                            ID = {p.ID}
+                            link = {p.link}
+                        />
+                    ))
+                }
+                </div>
+            </SegundaSection>
+            <SegundaSectionCards>
+                <h1>Conheça os parceiros</h1>
+                <div className='containerCards'>
                         {
-                            dados.map( (p, ind) => (
-                                <Startup
-                                    key={ind}
+                            info.map( (p, ind) => (
+                                <Integrantes
+                                    key = { ind }
                                     imagem = {p.imagem}
                                     nome = {p.nome}
-                                    texto={p.texto}
+                                    texto = {p.texto}
                                     ID = {p.ID}
-                                    link = {p.link}
                                 />
-
                             ))
                         }
-                        </div>
-                </SegundaSection>
-
+                </div>
+            </SegundaSectionCards>
+            
             <TerceiraSection>
                 <SectionNoticia>
                     <h1>Notícias</h1>

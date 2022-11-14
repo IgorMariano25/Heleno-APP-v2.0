@@ -1,19 +1,17 @@
 import React from 'react';
-import { Conteudo, Texto, Img, Card, Link} from "./styles";
-
+import { Conteudo, Img, Card, Nome, Texto } from "./styles";
 
 export default function App(props) {
     return (
-        <Link href={`${props.link}`} target={`_blank`}>
         <Card>
             <Img
                 src={ `imagens/${props.imagem}`}
                 alt={props.nome}
             />
             <Conteudo>
+                <Nome>{props.nome}</Nome>
                 <Texto>{props.texto}</Texto>
             </Conteudo>
         </Card>
-        </Link>
     );
 }
