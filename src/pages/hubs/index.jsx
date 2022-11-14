@@ -4,7 +4,7 @@ import { useState} from "react";
 import hubsEstrutura from '../../assets/imagensHubs/hubs_ibmec_rio.jpg'
 import Master from '../masterPage'
 import {PrimeiraSection, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, SegundaSectionCards, Botao,
-    SectionNoticia, PrimeiraNoticia, TextoNoticia, SegundaNoticia, Texto2, ImgDiv, TerceiraSection} from './style';
+    DivNoticia, PrimeiraNoticia, TextoNoticia, SegundaNoticia, Texto2, ImgDiv, TerceiraSection} from './style';
 import arquivo from '../../startups.json'
 import arquivo2 from '../../parceirosHubs.json'
 import Startup from '../../components/Hubs/startup/Startup';
@@ -98,7 +98,7 @@ export default function Hubs(){
             </SegundaSectionCards>
             
             <TerceiraSection>
-                <SectionNoticia>
+                <DivNoticia>
                     <h1>Notícias</h1>
                 <a href="https://blog.ibmec.br/noticias/ex-aluno-de-administracao-do-ibmec-rj-e-aprovado-no-mba-do-mit-nos-eua/?_ga=2.199914926.147188793.1668013948-108964509.1651693829" target="blank">
                         <PrimeiraNoticia src={noticia1} alt={'primeira notícia do hubs'}/>
@@ -113,7 +113,7 @@ export default function Hubs(){
                     <a href="https://blog.ibmec.br/noticias/?_ga=2.25384637.147188793.1668013948-108964509.1651693829" target="blank">
                         <h3>Todas as notícias</h3>
                     </a>
-                </SectionNoticia>
+                </DivNoticia>
 
                 <ImgDiv>
                     <img src={hubsEstrutura} alt={'Estrutura do hubs'}/>
@@ -126,7 +126,6 @@ export default function Hubs(){
                 Saiba Mais
             </Botao></a>
 
-            <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
         </Master>
     )
 }

@@ -43,18 +43,20 @@ const TituloImagem = styled.h1`
     color: white;
     top: -80%;
     padding-left: 18%;
-    width: 60%;
+    width: 65%;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #061c38;
 
     @media screen and (min-width: 1224px) {
         font: italic 55px Impact;
         top: -63%;
+        width: 80%;
     }
 
     @media screen and (min-width: 680px) {
         font: italic 45px Impact;
         top: -68%;
+        width: 80%;
     }
 `
 
@@ -97,6 +99,7 @@ const Lista = styled.ul`
 const ImgLogo = styled.img`
     width: 55%;
     margin-left: 20%;
+    margin: 10%;
 
     @media screen and (min-width: 1224px) {
         width: 28%;
@@ -209,124 +212,255 @@ const SegundaSectionCards = styled.div`
 
 const TerceiraSection = styled.section`
     background-color: #002555;
-
-    @media screen and (min-width: 1224px) {
-        display: flex;
-    }
+    width: 100%;
+    height: 970px;
+    position: relative;
+    margin-bottom: 15%;
 
     @media screen and (min-width: 680px) {
-        display: flex;
+        background-color: #002555;
+        width: 100%;
+        height: 500px;
+        position: relative;
+        margin-bottom: 8%;
+    }
+
+    @media screen and (min-width: 1224px) {
+        background-color: #002555;
+        width: 100%;
+        height: 530px;
+        position: relative;
+        margin-bottom: 5%;
     }
 `
 
-const SectionNoticia = styled.section`
-    width: 45%;
-    height: 380px;
+const DivNoticia = styled.div`
+    width: 80%;
+    height: 600px;
+    margin-left: 45px;
+    top: 3%;
     background-color: white;
-    margin-left: 5%;
-    margin-top: 7%;
-    margin-bottom: 15%;
+    position: relative;
+    padding-top: 3%;
 
     h1 {
-        font-family: Barlow;
-        color: white;
+        color: #002555;
         text-align: center;
         font-size: 35px;
-        margin-bottom: 5px;
     }
 
     h3 {
-        font-family: Arial;
-        color: white;
-        margin-left: 30px;
-    }
-
-    @media screen and (min-width: 1224px){
-        width: 45%;
-        height: 380px;
-        margin-left: 5%;
-        margin-top: 7%;
-        margin-bottom: 15%;
+        color: #002555;
+        text-align: center;
     }
 
     @media screen and (min-width: 680px) {
-        width: 45%;
-        height: 380px;
-        margin-left: 5%;
-        margin-top: 7%;
-        margin-bottom: 15%;
+        width: 50%;
+        height: 420px;
+        margin-left: 20px;
+        top: 5%;
+        background-color: white;
+        position: relative;
+        padding-top: 2%;
+
+        h1 {
+            color: #002555;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        h3 {
+            color: #002555;
+            text-align: center;
+            font-size: 25px;
+            margin-top: 5%;
+        }
     }
+
+    @media screen and (min-width: 1224px) {
+        width: 45%;
+        height: 450px;
+        margin-left: 45px;
+        top: 5%;
+        background-color: white;
+        position: relative;
+
+        h1 {
+            color: #002555;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        h3 {
+            color: #002555;
+            text-align: center;
+            font-size: 25px;
+            margin-top: 5%;
+        }
+    }
+
 `
 
 
 const PrimeiraNoticia = styled.img`
-    position: relative;
-    width: 40%;
+    width: 60%;
     height: 220px;
-    margin-left: 120px;
+    margin-left: 75px;
+    padding-top: 3%;
+
+    @media screen and (min-width: 680px) {
+        width: 47%;
+        height: 260px;
+        margin-left: 15px;
+        padding-top: 3%;
+    }
 
     @media screen and (min-width: 1224px) {
+        width: 40%;
+        height: 260px;
         margin-left: 40px;
+        padding-top: 3%;
     }
 `
+
+
 const TextoNoticia = styled.p`
-    position: absolute;
     background-color: white;
     color: black;
     font-size: 18px;
-    width: 18%;
-    margin-left: 40px;
-    margin-top: -70px;
+    width: 60%;
+    margin-left: 80px;
+    margin-top: -75px;
+    position: relative;
+
+
+    @media screen and (min-width: 680px) {
+        background-color: white;
+        color: black;
+        font-size: 15px;
+        width: 45%;
+        margin-left: 30px;
+        margin-top: -80px;
+        position: relative; 
+    }
 
     @media screen and (min-width: 1224px) {
+        background-color: white;
+        color: black;
         font-size: 18px;
-        width: 18%;
-        margin-left: 40px;
-        margin-top: -70px;
+        width: 35%;
+        margin-left: 60px;
+        margin-top: -75px;
+        position: relative; 
     }
 `
 
 const SegundaNoticia = styled.img`
-    position: relative;
-    width: 40%;
+    width: 60%;
     height: 220px;
-    margin-left: 50px;
+    margin-left: 75px;
+    padding-top: 3%;
 
+    @media screen and (min-width: 680px) {
+        width: 45%;
+        height: 220px;
+        margin-left: 250px;
+        margin-top: -62%;
+    }
 
     @media screen and (min-width: 1224px) {
         width: 40%;
-        height: 220px;
-        margin-left: 50px;
+        height: 260px;
+        margin-left: 350px;
+        margin-top: -45%;
     }
+
 `
 
 const Texto2 = styled.p`
-    position: absolute;
     background-color: white;
     color: black;
-    font-size: 20px;
-    width: 18%;
-    margin-left: 363px;
-    margin-top: -70px;
+    font-size: 18px;
+    width: 60%;
+    margin-left: 75px;
+    margin-top: -78px;
+    position: relative;
+
+
+    @media screen and (min-width: 680px) {
+        background-color: white;
+        color: black;
+        font-size: 15px;
+        width: 47%;
+        margin-left: 250px;
+        margin-top: -110px;
+        position: relative;
+    }
+
+    @media screen and (min-width: 1224px) {
+        background-color: white;
+        color: black;
+        font-size: 20px;
+        width: 40%;
+        margin-left: 350px;
+        margin-top: -120px;
+        position: relative;
+    }
 `
 
 const ImgDiv = styled.div`
 
     img {
-        width: 95%;
+        width: 90%;
         margin-bottom: 5%;
-        margin-left: 13%;
-        margin-top: 18%;
-        position: relative;
+        margin-left: 25px;
+        margin-top: 55px;
 
     }
 
     p {
+        color: white;
         margin-left: 35%;
-        margin-bottom: 40%;
-        position: absolute;
+        position: relative;
+        top: -15px;
     }
 
+    @media screen and (min-width:680px) {
+        img {
+        width: 45%;
+        height: 350px;
+        margin-bottom: 5%;
+        margin-left: 500px;
+        margin-top: -38%;
+
+        }
+
+        p {
+        color: white;
+        margin-left: 77%;
+        position: relative;
+        top: -40px;
+        }
+    }
+
+    
+    @media screen and (min-width: 1224px) {
+        img {
+        width: 45%;
+        height: 450px;
+        margin-bottom: 5%;
+        margin-left: 760px;
+        margin-top: -28%;
+
+        }
+
+        p {
+        color: white;
+        margin-left: 82%;
+        position: relative;
+        top: -60px;
+        }
+    }
 `
 
 const Botao = styled.button`
@@ -345,6 +479,7 @@ const Botao = styled.button`
     box-shadow: 12px 12px 24px rgba(79,209,197,.64);
     cursor: pointer;
     position: relative;
+    margin-bottom: 15%;
 
 
     @media screen and (min-width: 1224px) {
@@ -363,6 +498,7 @@ const Botao = styled.button`
         box-shadow: 12px 12px 24px rgba(79,209,197,.64);
         cursor: pointer;
         position: relative;
+        margin-bottom: 10%;
     }
 
     @media screen and (min-width: 680px) {
@@ -381,6 +517,7 @@ const Botao = styled.button`
         box-shadow: 12px 12px 24px rgba(79,209,197,.64);
         cursor: pointer;
         position: relative;
+        margin-bottom: 10%;
     }
 
 `;
@@ -388,5 +525,5 @@ const Botao = styled.button`
 
 
 export {PrimeiraSection, ImgDiv, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, SegundaSectionCards,
-    Botao, SectionNoticia, PrimeiraNoticia, TextoNoticia, SegundaNoticia, Texto2, TerceiraSection};
+    Botao, DivNoticia, PrimeiraNoticia, TextoNoticia, SegundaNoticia, Texto2, TerceiraSection};
 
