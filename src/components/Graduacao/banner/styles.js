@@ -26,7 +26,7 @@ const H1Banner = styled.h1`
     position: relative;
     top: -5em;
     left: 0%;
-    font-weight: bolder;
+    font: italic 40px Impact;
     font-size: 4.9em;
     color: rgb(255, 255, 255);
     font-family: "Barlow";

@@ -1,5 +1,7 @@
 import React from 'react';
-import './styles.css';
+
+import './styles.css'; //import do css, ns oq ta acontecendo pra ele n rodar direito
+
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
 import CardGraduacao from '../../components/Graduacao/cardGraduacao';
@@ -10,7 +12,6 @@ import ExportBanner from "../../components/Graduacao/banner/bannerGraduacao"
 
 
 export default function App(){
-
     const [dados, setDados] = useState(arquivo);
 
     const [parametros, setParametros] = useSearchParams();
@@ -32,7 +33,11 @@ export default function App(){
 
             const filtrados = dados.filter(
 
-                (e) => e.nome.toLowerCase().includes(parametro.toLocaleLowerCase()) || e.duracao.toLowerCase().includes(parametro.toLocaleLowerCase()) || e.tipo.toLowerCase().includes(parametro.toLowerCase()) || e.categoria.toLowerCase().includes(parametro.toLowerCase())
+                (e) =>
+                e.nome.toLowerCase().includes(parametro.toLocaleLowerCase()) ||
+                e.duracao.toLowerCase().includes(parametro.toLocaleLowerCase()) ||
+                e.tipo.toLowerCase().includes(parametro.toLowerCase()) ||
+                e.categoria.toLowerCase().includes(parametro.toLowerCase())
 
             );
 
