@@ -10,8 +10,8 @@ export default function App(){
         <Master>
             <Conteudo>
                 <Banner/>
+                <Carousel/>
             </Conteudo>
-            <Carousel/>
         </Master>
     );
 }
