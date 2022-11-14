@@ -20,6 +20,7 @@ const Banner = styled.div`
 
 const FotoBanner = styled.img`
     opacity: 0.3;
+    
 `;
 
 const H1Banner = styled.h1`
@@ -30,6 +31,8 @@ const H1Banner = styled.h1`
     font-size: 4.9em;
     color: rgb(255, 255, 255);
     font-family: "Barlow";
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #061c38;
 `;
 
 const TextoBanner = styled.p`
