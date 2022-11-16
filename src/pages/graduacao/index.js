@@ -90,7 +90,7 @@ export default function App(){
                 </form>
 
                 </div>
-                <div className="container">
+                <div className="containerGraduacao">
 
                 {
                     dados.map( (p, ind) => (

@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-.container {
+.containerGraduacao {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -11,18 +11,18 @@
 }
 
 @media screen and (min-width: 768px) {
-    .container {
+    .containerGraduacao {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 1224px) {
-    .container {
+    .containerGraduacao {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 @media screen and (min-width: 1824px) {
-    .container {
+    .containerGraduacao {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
