@@ -30,12 +30,10 @@ const H1Banner = styled.h1`
     position: relative;
     top: -5em;
     left: 0%;
-    font: italic 40px Impact;
     font-size: 4.9em;
     color: rgb(255, 255, 255);
     font-family: "Barlow";
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #061c38;
+    opacity: 0.7;
 `;
 
 const TextoBanner = styled.p`
@@ -44,9 +42,9 @@ const TextoBanner = styled.p`
     top: -8.4em;
     left: 0%;
     font-size: 3em;
-    width: 9em;
     text-align: center;
     font-family: "Barlow";
+    opacity: 0.7;
 `;
 
 export { Banner, Espacamento, DivisoriaFoto, FotoBanner, H1Banner, TextoBanner }
