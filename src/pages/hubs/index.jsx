@@ -4,7 +4,7 @@ import { useState} from "react";
 import hubsEstrutura from '../../assets/imagensHubs/hubs_ibmec_rio.jpg'
 import Master from '../masterPage'
 import {PrimeiraSection, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, SegundaSectionCards, Botao,
-    DivNoticia, PrimeiraNoticia, TextoNoticia, SegundaNoticia, Texto2, ImgDiv, TerceiraSection} from './style';
+    DivNoticia, ImgDiv, TerceiraSection} from './style';
 import arquivo from '../../startups.json'
 import arquivo2 from '../../parceirosHubs.json'
 import Startup from '../../components/Hubs/startup/Startup';
@@ -100,14 +100,14 @@ export default function Hubs(){
             <TerceiraSection>
                 <DivNoticia>
                     <h1>Notícias</h1>
-                <a href="https://blog.ibmec.br/noticias/ex-aluno-de-administracao-do-ibmec-rj-e-aprovado-no-mba-do-mit-nos-eua/?_ga=2.199914926.147188793.1668013948-108964509.1651693829" target="blank">
-                        <PrimeiraNoticia src={noticia1} alt={'primeira notícia do hubs'}/>
-                        <TextoNoticia>Ex-aluno de Administração do Ibmec RJ é aprovado no MBA do MIT, nos EUA</TextoNoticia>
+                    <a href="https://blog.ibmec.br/noticias/ex-aluno-de-administracao-do-ibmec-rj-e-aprovado-no-mba-do-mit-nos-eua/?_ga=2.199914926.147188793.1668013948-108964509.1651693829" target="blank">
+                        <img src={noticia1} id="primeiranoticia" alt={'primeira notícia do hubs'}/>
+                        <p id="texto1">Ex-aluno de Administração do Ibmec RJ é aprovado no MBA do MIT, nos EUA</p>
                     </a>
 
                     <a href="https://blog.ibmec.br/conteudo-gratuito/ibmec-rj-cria-ecossistema-de-inovacao-para-desenvolver-startups/?_ga=2.233389726.147188793.1668013948-108964509.1651693829" target="blank">
-                        <SegundaNoticia src={noticia2} alt={'segunda notícia do hubs'}/>
-                        <Texto2>Ibmec RJ cria ecossistema de inovação para desenvolver startups</Texto2>
+                        <img src={noticia2} id="segundanoticia" alt={'segunda notícia do hubs'}/>
+                        <p id="texto2">Ibmec RJ cria ecossistema de inovação para desenvolver startups</p>
                     </a>
 
                     <a href="https://blog.ibmec.br/noticias/?_ga=2.25384637.147188793.1668013948-108964509.1651693829" target="blank">
