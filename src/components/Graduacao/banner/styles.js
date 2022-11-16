@@ -20,7 +20,10 @@ const Banner = styled.div`
 
 const FotoBanner = styled.img`
     opacity: 0.3;
-    
+    height: 512px;
+    @media (min-width: 980px){
+        width: 100%;
+    }
 `;
 
 const H1Banner = styled.h1`
