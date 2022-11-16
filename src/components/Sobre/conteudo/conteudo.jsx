@@ -1,6 +1,5 @@
 import fotoTurmaAntiga from "../../../assets/imagensSobre/fotoTurmaAntiga.jpg"
 import fotoTurmaNova from "../../../assets/imagensSobre/fotoTurmaNova.jpg"
-import "./styleBotoesSobre.css"
 import { DescricaoSobre, ContainerDescricao, ListaAlunos, ListaSemPonto, ContainerBotoes, BotaoDocumentacao, ImgBotoes } from "./styledComponents"
 
 const Sobre = () => {
