@@ -54,7 +54,7 @@ export default function App(){
 
     return (
         <Master tipoFooter="tipo1">
-
+            <div className='espacamento'></div>
 
         <div className='conteudo'>
             <div className="Pesquisa">
@@ -101,15 +101,7 @@ export default function App(){
 
                 </div>
             </div>
-            <div>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-            </div>
+            <div className='espacamento'></div>
         </Master>
     );
 }

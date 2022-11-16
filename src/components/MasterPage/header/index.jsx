@@ -12,13 +12,13 @@ const Topo = ( props ) => {
         document.getElementById('dropdown-educacao').style.display = 'block';
     }
 
-    const navigate = useNavigate();    
+    const navigate = useNavigate();
     return(
         <nav>
             <Card>
                 <a id="acessibilidade" href="/">
                 <img    id="logoibmec"
-                        src={ `./imagens/logoIBMECFundoAzul.png` }
+                        src={ `/imagens/logoIBMECFundoAzul.png` }
                         alt={'logo do IBMEC'}
                         onClick={()=>navigate("/")}
                         title="Logo Ibmec"
@@ -40,7 +40,7 @@ const Topo = ( props ) => {
                                 <a href="/mba">MBA</a>
                                 <a href="/pos">Pós</a>
                                 <a href="/graduacao">Graduação</a>
-                            </ul> 
+                            </ul>
                         </a>
                             <img id="logoibmecmenu"
                                 src={ `./imagens/logoIBMECFundoAmarelo.png` }
@@ -48,7 +48,7 @@ const Topo = ( props ) => {
                                 onClick={()=>navigate("/")}
                                 title="Logo Ibmec"
                             />
-                    </ul>   
+                    </ul>
                 </div>
             </Card>
         </nav>

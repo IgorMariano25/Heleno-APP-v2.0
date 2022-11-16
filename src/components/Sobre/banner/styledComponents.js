@@ -20,31 +20,31 @@ const Banner = styled.div`
 
 const FotoBanner = styled.img`
     opacity: 0.3;
-    height: 512px;
-    @media (min-width: 980px){
-        width: 100%;
-    }
+
 `;
 
 const H1Banner = styled.h1`
     position: relative;
     top: -5em;
     left: 0%;
+    font: italic 40px Impact;
     font-size: 4.9em;
     color: rgb(255, 255, 255);
     font-family: "Barlow";
-    opacity: 0.7;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #061c38;
 `;
 
 const TextoBanner = styled.p`
-    color: rgb(255, 255, 255);
     position: relative;
-    top: -8.4em;
+    top: -8em;
     left: 0%;
+    font: italic 30px Impact;
     font-size: 3em;
-    text-align: center;
+    color: rgb(255, 255, 255);
     font-family: "Barlow";
-    opacity: 0.7;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #061c38;
 `;
 
 export { Banner, Espacamento, DivisoriaFoto, FotoBanner, H1Banner, TextoBanner }

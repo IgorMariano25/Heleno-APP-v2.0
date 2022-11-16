@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+
+.banner{
+    max-width: 100%;
+    margin-bottom: -5px;
+    background: url(./assets/bannerMBA.png);
+}
+.banner h2{
+    color: white;
+    display: flex;
+    padding-top: 220px;
+    justify-content: center;
+    font-size: 64px;
+    opacity: 0.5;
+    font-family: 'barlow';
+}
+.banner h3{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 54px;
+    opacity: 0.5;
+    font-family: 'barlow';
+    margin-top: -25px;
+}
+
+
+/*Diferenciais*/
+h2{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+}
+
+.diferenciais{
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.diferenciais h2{
+    margin-top: 30px;
+}
+
+.imgDiferencial{
+    width: 100%;
+    margin: 10px;
+    margin-top: 0;
+    align-self: center;
+    margin-bottom: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    
+}
+.box-diferencial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2541C0;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 400px;
+    height: 450px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+}
+
+.box-diferencial h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    text-align: center;
+}
+
+.box-diferencial p{
+    text-align: left;
+    margin: 20px;
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*METODOLOGIA*/
+.metodologia{
+    background-color: #002555;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+.metodologia h2{
+    margin-top: 25px;
+}
+
+.metodologia p{
+    margin: 20%;
+    margin-top: 0px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family:  'Montserrat', sans-serif;
+
+}
+
+.bt-ingresse{
+    text-align: center;
+    padding: 10px;
+    width: 500px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 0 5px 0.5px black;
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #002555;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    align-self: center;
+    align-items: center;
+    justify-content: center; 
+}
+
+#white{
+    background-color: white;
+    color: #002555;
+}
+.bt-ingresse:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 1px #F5AC00;
+    color: rgb(188, 188, 188);
+}
+/*CURSOS*/
+.cursos {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    
+    column-gap: 1px;
+    row-gap: 15px;
+    justify-items: center;
+    margin-bottom: 10px;
+}
+.container-cursos h2{
+    margin-bottom: 25px;
+    
+}
+.container-cursos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#bt1{
+    color: #002555;
+    text-decoration: none;
+}
+
+#bt2{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+/*MOBILE - CELULAR*/
+@media screen and (max-width: 768px) {
+    .banner{
+        width: 100%;
+        height: 300px;
+        background: url(./assets/bannerMBA.png);
+        object-fit: cover;
+    }    
+    .banner h2{
+        padding-top: 125px;
+        font-size: 48px;
+    }
+    .banner h3{
+        font-size: 32px;
+        margin-top: -10px;
+    }
+    /*DIFERENCIAIS*/
+    .container{
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    /*METODOLOGIA*/
+    .metodologia p{
+        margin: 10%;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .metodologia button{
+        width: 80%;
+    }
+    /*CURSOS*/
+    .cursos{
+        grid-template-columns: 1fr 1fr;
+    }
+    .container-cursos button{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1224px) {
+    .banner{
+        width: 100%;
+        height: 300px;
+        background: url(./assets/bannerMBA.png);
+        object-fit: inherit;
+    }    
+    .banner h2{
+        padding-top: 125px;
+        font-size: 52px;
+    }
+    .banner h3{
+        font-size: 36px;
+        margin-top: -10px;
+    }
+    /*DIFERENCIAIS*/
+    .container{
+        align-items: center;
+        flex-direction: column;
+    }
+    .box-diferencial{
+        height: 480px;
+    }
+    .box-diferencial img{
+        height: 265px;
+    }
+    /*METODOLOGIA*/
+    .metodologia p{
+        margin: 10%;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .metodologia button{
+        width: 50%;
+    }
+    /*CURSOS*/
+    .cursos{
+        justify-content: center;
+        grid-template-columns: 250px 250px;
+    }
+    .container-cursos button{
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1824px){
+    .banner{
+    width: 100%;
+    height: 300px;
+    }
+    .banner h2{
+        padding-top: 12px;
+        font-size: 40pt;
+    }
+    .banner h3{
+        font-size: 32px;
+        margin-top: -10px;
+    }
+    .container{
+        flex-direction: row;
+    }
+    .metodologia p{
+        margin:10%;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .metodologia button{
+        width: 50%;
+    }
+    .container-cursos button{
+        width: 50%;
+    }
+
+}

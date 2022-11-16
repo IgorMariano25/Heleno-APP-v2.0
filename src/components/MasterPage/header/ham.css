@@ -34,8 +34,6 @@
   }
   body
   {
-    margin: 0;
-    padding: 0;
     font-family: "Avenir Next", "Avenir", sans-serif;
   }
 
@@ -45,9 +43,9 @@
     position: relative;
     top: 30px;
     left: 50px;
-    
+
     z-index: 2;
-    
+
     -webkit-user-select: none;
     user-select: none;
   }
@@ -56,7 +54,7 @@
   {
     text-decoration: none;
     color: #232323;
-    
+
     transition: color 0.3s ease;
   }
 
@@ -76,10 +74,10 @@
     left: -5px;
     margin-left: 600px;
     cursor: pointer;
-    
-    opacity: 0; 
-    z-index: 3; 
-    
+
+    opacity: 0;
+    z-index: 3;
+
     -webkit-touch-callout: none;
   }
 /*Created and developed exclusively by William Fagundes*/
@@ -91,14 +89,14 @@
     margin-bottom: 5px;
     margin-left: 600px;
     position: relative;
-    
+
     background: #F5AC00;
     border-radius: 3px;
-    
+
     z-index: 2;
-    
+
     transform-origin: 4px 0px;
-    
+
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
@@ -151,12 +149,12 @@
       border-radius: 0  8px  8px 0;
       text-decoration: none;
       color:white;
-    
+
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
-    
+
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-    
+
   }
 /*Created and developed exclusively by William Fagundes*/
   #menu li
@@ -169,7 +167,7 @@
   {
     transform: none;
   }
-} 
+}
 
 @media screen and (min-width: 1000px){
   #menuToggle {
@@ -192,6 +190,7 @@
     margin-left: 10px;
     list-style-type: none;
     display: flex;
+    margin-top: -10px;
   }
 }
 @media screen and (max-width: 920px){
@@ -258,12 +257,13 @@
     display: none;
     flex-direction: column;
     background-color: #002555;
-    width: 250px;
+    width: 300px;
     text-align: center;
-    margin-left: 300px;
+    margin-left: 0px;
     list-style: none;
     height: 30px;
     margin-top: 0px;
+    border-radius: 10px;
   }
   #dropdown-educacao a:hover {
     color: #F5AC00;
