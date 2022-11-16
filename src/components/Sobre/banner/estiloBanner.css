@@ -1,0 +1,10 @@
+.banner {
+    height: 512px;
+}
+
+@media screen and (min-width: 980px) {
+    .banner {
+        width: 100%;
+    }
+
+}

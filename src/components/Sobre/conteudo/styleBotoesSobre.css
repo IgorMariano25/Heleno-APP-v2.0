@@ -1,0 +1,14 @@
+
+.ImagensGrupos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.imagem{
+    width: 100%;
+    border-radius: 5%;
+    height:350px;
+}
