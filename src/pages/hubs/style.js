@@ -230,6 +230,10 @@ const TerceiraSection = styled.section`
         margin-bottom: 5%;
     }
 
+    @media screen and (min-width: 1800px) {
+        width: auto;
+        margin-bottom: 5%;
+    }
 `
 
 const DivNoticia = styled.div`
@@ -323,6 +327,31 @@ const DivNoticia = styled.div`
 
     }
     
+    @media screen and (min-width: 1800px) {
+        
+        h1 {
+            font-size: 50px;
+        }
+
+        h3 {
+            font-size: 35px;
+        }
+
+        #texto1 {
+            font-size: 23px;
+        }
+
+        #texto2 {
+            width: 52%;
+            margin-left: 53%;
+            font-size: 23px;
+            margin-top: -30%;
+        }
+
+        #segundanoticia {
+            margin-top: -78%;
+        }
+    }
 `
 
 
@@ -362,6 +391,13 @@ const ImgDiv = styled.div`
         p {
             margin-left: 85%;
             margin-top: -2%;
+        }
+    }
+
+    @media screen and (min-width: 1800px) {
+        p {
+            font-size: 20px;
+            margin-left: 84%;
         }
     }
 `
