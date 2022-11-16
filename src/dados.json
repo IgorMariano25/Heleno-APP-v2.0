@@ -217,13 +217,13 @@
     ,
     {
         "ID" : 19,
-        "nome": "Matheuz Herzog",
+        "nome": "Matheus Herzog",
         "imagem" : "MatheusHezog.png",
         "curso" : "Análise e Desenvolvimento de Sistemas",
-        "matricula": "(PREENCHER)",
+        "matricula": "202208386271",
         "ingresso": "2022.2",
         "formacao": "2024",
-        "bio": "Amigo perfeito incrivel <3",
+        "bio": "Cadê o banheiro dos não binare?",
         "Projetos": "Projeto Heleno"
     }
     ,
@@ -268,7 +268,7 @@
         "nome": "Théo Furtado",
         "imagem" : "DjThéoFurtado.png",
         "curso" : "Análise e Desenvolvimento de Sistemas",
-        "matricula": "(PREENCHER)",
+        "matricula": "202208386301",
         "ingresso": "2022.2",
         "formacao": "2024",
         "bio": "O astro do momento!",
