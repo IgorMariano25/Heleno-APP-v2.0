@@ -1,37 +1,29 @@
 import React from 'react';
 import Master from '../masterPage'
-import banner from './assets/bannerMBA.png';
 import diferencial1 from './assets/1.png';
 import diferencial2 from './assets/2.png';
 import diferencial3 from './assets/3.png';
-
+/*import CardDiferenciais from '../../components/Mba/cardDiferenciais';*/
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
 
-import './styles.css';
+import './styleMBA.css';
 import arquivo from '../../cursosMba.json'
 
 import CardCurso from '../../components/Mba/cardCursos'
-import { TbDiamonds } from 'react-icons/tb';
+
 
 export default function MBA(){
     const [dados, setDados] = useState(arquivo);
 
     const [parametros, setParametros] = useSearchParams();
 
-    const entrada = useRef();
-
-
     const filtra = useCallback((dados) => {
-
-        const parametro = parametros.get("busca");
-
 
         if (!parametro) {
 
             return dados;
-
 
         } else {
 
@@ -49,25 +41,12 @@ export default function MBA(){
     }, [parametros]);
 
 
-    useEffect(() => {
-
-        const dadosFiltrados = filtra(arquivo);
-
-        setDados(dadosFiltrados);
-
-
-    }, [filtra]);
-
-
     return(
         <Master>
 
             <div className="banner">
-                <img
-                    id='bannerMBA'
-                    src={banner}
-                    alt={'MBA Ibmec'}
-                />
+                <h2>MBA</h2>
+                <h3>Conheça nossos cursos</h3>
             </div>
 
             <div className="diferenciais">
@@ -84,13 +63,11 @@ export default function MBA(){
                             <p>
                             No Ibmec Hubs você tira suas ideias do papel e constrói sua start-up com o
                             apoio de profissionais experientes. Mentores do Ibmec Hubs do Rio de Janeiro
-                            ensina e auxilia nos primeiros passos para aqueles que querem iniciar sua jornada empreendedora
-                            de sucesso.
-
+                            ensina e auxilia nos primeiros passos para aqueles que querem iniciar sua jornada de sucesso.
                             </p>
                     </div>
 
-                    <div className="box-diferencial">
+                    <div className="box-diferencial">        
                             <img
                                 className='imgDiferencial'
                                 src={diferencial2}
@@ -170,7 +147,7 @@ export default function MBA(){
                         ))
                     }
                 </div>
-                <button className="bt-ingresse">
+                <button className="bt-ingresse" id="bt2">
                     <a id="bt2" href="https://www.ibmec.br/pos-graduacao/mba">Ingresse Agora</a>
                 </button>
             </div>
