@@ -1,6 +1,5 @@
 import React from 'react';
-import { Conteudo, Texto, Img, Card} from "./styles";
-
+import { Conteudo, Img, Card, Nome, Texto } from "./styles";
 
 export default function App(props) {
     return (
@@ -10,6 +9,7 @@ export default function App(props) {
                 alt={props.nome}
             />
             <Conteudo>
+                <Nome>{props.nome}</Nome>
                 <Texto>{props.texto}</Texto>
             </Conteudo>
         </Card>

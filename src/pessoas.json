@@ -1,0 +1,313 @@
+[
+    {   
+        "ID" : 1,
+        "nome": "Clarissa Proença",
+        "imagem" : "clarissa.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "202002422789",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Sou formada na UFRJ 2019 em Design e agora sou aluna de full-stack no Ibmec",
+        "Projetos": "Projeto Heleno, machine learning usando Python, Framework Django, Banco de Dados"
+    }
+    ,
+    {
+        "ID" : 2,
+        "nome": "Igor Mariano",
+        "imagem" : "Igor.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "202051724821",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Uma pessoa muito simpática, confia",
+        "Projetos": "Projeto Heleno, machine learning usando Python, Framework Django, Banco de Dados"
+    }
+    ,
+    {
+        "ID" : 3,
+        "nome": "Guilherme Felix",
+        "imagem" : "gui.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "2022",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Deve ser o Gui",
+        "Projetos": "Projeto Heleno, machine learning usando Python, Framework Django, Banco de Dados"
+    }
+    ,
+    {
+        "ID" : 4,
+        "nome": "Felipe Castelhano",
+        "imagem" : "felipe.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "202203287702",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Lutador e estudante",
+        "Projetos": "Projeto Heleno, machine learning usando Python, Framework Django, Banco de Dados"
+    }
+    ,
+    {
+        "ID" : 5,
+        "nome": "William Fagundes",
+        "imagem" : "WilliamFagundes.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "202201388005",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "O brabo dos computadores",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 6,
+        "nome": "Caio Da Luz",
+        "imagem" : "CaioDaLuz.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Fit da turma",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 7,
+        "nome": "Guilherme Maia",
+        "imagem" : "GuilhermeMaia.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Meu mundo gira em torno de mulheres, bebidas e mulheres com bebidas",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 8,
+        "nome": "Amanda Senra",
+        "imagem" : "AmandaSenra.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Meta de vida é viver na Europa ganhando em euros",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 9,
+        "nome": "Victor Hugo",
+        "imagem" : "VictorHugo.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Bora um Factorio ?",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 10,
+        "nome": "Gabriel Espósito",
+        "imagem" : "GabrielEsposito.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Esse trabalho está uma P***",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 11,
+        "nome": "Leonardo Tims",
+        "imagem" : "LeoTims.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "FLAMENGOOOOOOOOOOOO",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 12,
+        "nome": "Ilidio",
+        "imagem" : "Ilidio.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Quanto menos sabem de mim, melhor",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 13,
+        "nome": "Maria Giulia",
+        "imagem" : "MariaGiulia.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "202202390046",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Bora beber <3",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 14,
+        "nome": "Beatriz Moura",
+        "imagem" : "BeatrizMoura.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.2",
+        "formacao": "2024",
+        "bio": "Gatinhos fofinhos são vida",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 15,
+        "nome": "Gabriel Martinez",
+        "imagem" : "GabrielMartinez.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.2",
+        "formacao": "2024",
+        "bio": "Ladrão de computador :/",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 16,
+        "nome": "Gabriel Oscar",
+        "imagem" : "GabrielOscar.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.2",
+        "formacao": "2024",
+        "bio": "print('Hello World')",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 17,
+        "nome": "João Pedro Constant",
+        "imagem" : "JoaoConstant.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.2",
+        "formacao": "2024",
+        "bio": "Acho você muito legal, porém meio caladão",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 18,
+        "nome": "João Pedro Correia",
+        "imagem" : "PerfilSemFoto.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.2",
+        "formacao": "2024",
+        "bio": "-",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 19,
+        "nome": "Matheuz Herzog",
+        "imagem" : "MatheusHezog.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.2",
+        "formacao": "2024",
+        "bio": "Amigo perfeito incrivel <3",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 20,
+        "nome": "Rafael Neiva",
+        "imagem" : "PerfilSemFoto.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.2",
+        "formacao": "2024",
+        "bio": "Olá",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 21,
+        "nome": "Raphael Meres",
+        "imagem" : "RaphaelMeres.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.2",
+        "formacao": "2024",
+        "bio": "Crypto, NFT e Metaverso",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 22,
+        "nome": "Thaís Bustamante",
+        "imagem" : "ThaísBustamante.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "202208386296",
+        "ingresso": "2022.2",
+        "formacao": "2024",
+        "bio": "Vizinha",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 23,
+        "nome": "Théo Furtado",
+        "imagem" : "DjThéoFurtado.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.2",
+        "formacao": "2024",
+        "bio": "O astro do momento!",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 24,
+        "nome": "Vitor Lobianco",
+        "imagem" : "PerfilSemFoto.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "202208386326",
+        "ingresso": "2022.2",
+        "formacao": "2024",
+        "bio": "Menino Low Profile",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 25,
+        "nome": "João Curvello",
+        "imagem" : "PerfilSemFoto.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.2",
+        "formacao": "2024",
+        "bio": "-",
+        "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 26,
+        "nome": "Pedro Reis",
+        "imagem" : "PedroReis.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.2",
+        "formacao": "2024",
+        "bio": "Quem é você ?",
+        "Projetos": "Projeto Heleno"
+    }
+]

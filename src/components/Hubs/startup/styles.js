@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+const Link = styled.a`
+     text-decoration: none;
+     color: black;
+     
+     &:hover{
+        color: black;
+    }
+`;
+
 const Card = styled.div` 
     height: 11.5em;
     width: auto;
@@ -14,13 +23,13 @@ const Conteudo = styled.div`
      font-family: 'Barlow';
      text-align: center;
      width: auto;
-     padding-top: -100px;
+     padding: .5em;
+     flex-grow: 0;
 `;
 
 const Texto = styled.p`
      line-height: 1.15;
-     font-weight: 400;
-     margin: 0px;
+     margin: 0;
 `;
 
 const Img = styled.img`
@@ -29,4 +38,4 @@ const Img = styled.img`
 `;
 
 
-export { Conteudo, Texto, Img, Card };
+export { Conteudo, Texto, Img, Card, Link };

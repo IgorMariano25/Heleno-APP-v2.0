@@ -3,16 +3,19 @@ import hubs from '../../assets/imagensHubs/hubsimg.png'
 import { useState} from "react";
 import hubsEstrutura from '../../assets/imagensHubs/hubs_ibmec_rio.jpg'
 import Master from '../masterPage'
-import {PrimeiraSection, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, Botao,
-    SectionNoticia, PrimeiraNoticia, TextoNoticia, SegundaNoticia, Texto2, ImgDiv, TerceiraSection} from './style';
+import {PrimeiraSection, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, SegundaSectionCards, Botao,
+    DivNoticia, ImgDiv, TerceiraSection} from './style';
 import arquivo from '../../startups.json'
-import Startup from '../../components/Hubs/Startup';
+import arquivo2 from '../../parceirosHubs.json'
+import Startup from '../../components/Hubs/startup/Startup';
+import Integrantes from '../../components/Hubs/integrantes/Integrantes';
 import noticia1 from '../../assets/imagensHubs/destaques.jpg';
 import noticia2 from '../../assets/imagensHubs/noticia.jpg';
 
 
 export default function Hubs(){
     const [dados, setDados] = useState(arquivo);
+    const [info, setInfo] = useState(arquivo2);
 
     return(
         <Master>
@@ -61,40 +64,56 @@ export default function Hubs(){
 
             </Conteudo>
             <SegundaSection>
-                        <h1>STARTUPS</h1>
-                        <div className='container'>
+                <h1>Startups</h1>
+                <div className='containerStartups'>
+                {
+                    dados.map( (p, ind) => (
+                        <Startup
+                            key={ind}
+                            imagem = {p.imagem}
+                            nome = {p.nome}
+                            texto={p.texto}
+                            ID = {p.ID}
+                            link = {p.link}
+                        />
+                    ))
+                }
+                </div>
+            </SegundaSection>
+            <SegundaSectionCards>
+                <h1>Conheça os parceiros</h1>
+                <div className='containerCards'>
                         {
-                            dados.map( (p, ind) => (
-                                <Startup
-                                    key={ind}
+                            info.map( (p, ind) => (
+                                <Integrantes
+                                    key = { ind }
                                     imagem = {p.imagem}
                                     nome = {p.nome}
-                                    texto={p.texto}
+                                    texto = {p.texto}
                                     ID = {p.ID}
                                 />
-
                             ))
                         }
-                        </div>
-                </SegundaSection>
-
+                </div>
+            </SegundaSectionCards>
+            
             <TerceiraSection>
-                <SectionNoticia>
+                <DivNoticia>
                     <h1>Notícias</h1>
-                <a href="https://blog.ibmec.br/noticias/ex-aluno-de-administracao-do-ibmec-rj-e-aprovado-no-mba-do-mit-nos-eua/?_ga=2.199914926.147188793.1668013948-108964509.1651693829" target="blank">
-                        <PrimeiraNoticia src={noticia1} alt={'primeira notícia do hubs'}/>
-                        <TextoNoticia>Ex-aluno de Administração do Ibmec RJ é aprovado no MBA do MIT, nos EUA</TextoNoticia>
+                    <a href="https://blog.ibmec.br/noticias/ex-aluno-de-administracao-do-ibmec-rj-e-aprovado-no-mba-do-mit-nos-eua/?_ga=2.199914926.147188793.1668013948-108964509.1651693829" target="blank">
+                        <img src={noticia1} id="primeiranoticia" alt={'primeira notícia do hubs'}/>
+                        <p id="texto1">Ex-aluno de Administração do Ibmec RJ é aprovado no MBA do MIT, nos EUA</p>
                     </a>
 
                     <a href="https://blog.ibmec.br/conteudo-gratuito/ibmec-rj-cria-ecossistema-de-inovacao-para-desenvolver-startups/?_ga=2.233389726.147188793.1668013948-108964509.1651693829" target="blank">
-                        <SegundaNoticia src={noticia2} alt={'segunda notícia do hubs'}/>
-                        <Texto2>Ibmec RJ cria ecossistema de inovação para desenvolver startups</Texto2>
+                        <img src={noticia2} id="segundanoticia" alt={'segunda notícia do hubs'}/>
+                        <p id="texto2">Ibmec RJ cria ecossistema de inovação para desenvolver startups</p>
                     </a>
 
                     <a href="https://blog.ibmec.br/noticias/?_ga=2.25384637.147188793.1668013948-108964509.1651693829" target="blank">
                         <h3>Todas as notícias</h3>
                     </a>
-                </SectionNoticia>
+                </DivNoticia>
 
                 <ImgDiv>
                     <img src={hubsEstrutura} alt={'Estrutura do hubs'}/>
@@ -107,7 +126,6 @@ export default function Hubs(){
                 Saiba Mais
             </Botao></a>
 
-            <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
         </Master>
     )
 }
