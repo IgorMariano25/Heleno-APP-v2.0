@@ -1,6 +1,6 @@
 import Master from './masterPage'
 import PessoaCardDetalhado from "../components/Alunos/cardPessoaDetalhado";
-import arquivo from "../pessoas.json";
+import arquivo from "../dados.json";
 import { useParams } from "react-router-dom";
 
 import "../App.css";

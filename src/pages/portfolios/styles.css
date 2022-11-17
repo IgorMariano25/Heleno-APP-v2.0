@@ -1,7 +1,3 @@
-body {
-    margin: 0;
-}
-
 .Pesquisa{
     text-align: center;
 }
@@ -54,4 +50,8 @@ body {
 
 .PerfilAlunoDetalhado{
     font-size: 2em;
+}
+
+.espacamento {
+    height: 4.6875em;
 }

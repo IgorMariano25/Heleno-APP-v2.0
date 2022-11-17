@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+
+.titulo-curso{
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: open sans;
+}
+
+.descricao-curso{
+    font-weight: bold;
+    font-family: montserrat;
+}
+
+.link-curso{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0,37,85);
+}
+
+.img-carousel{
+    width: 50%;
+    opacity: 0.4;
+}
+
+@media screen and (max-width: 768px) {
+    .img-carousel{
+        width: 100%;
+    }
+
+    .titulo-curso{
+        font-size: 14pt;
+    }
+    
+    .descricao-curso{
+        font-size: medium;
+        font-weight: bold;
+        font-family: montserrat;
+    }
+    
+    .link-curso{
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(0,37,85);
+    }
+}

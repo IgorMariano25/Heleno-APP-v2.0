@@ -20,10 +20,6 @@ const CardDetalhado = styled.div`
     padding: .5em;
     text-decoration: none;
     color: black;
-<<<<<<< HEAD
-=======
-
->>>>>>> release
 `;
 
 const Img = styled.img`
@@ -42,6 +38,7 @@ const Textos = styled.div`
      text-align: center;
      bottom: 0;
      margin: 0;
+     border-radius: 20px;
      width: auto;
 `;
 

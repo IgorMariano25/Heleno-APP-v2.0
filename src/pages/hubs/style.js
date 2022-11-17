@@ -43,18 +43,20 @@ const TituloImagem = styled.h1`
     color: white;
     top: -80%;
     padding-left: 18%;
-    width: 60%;
+    width: 65%;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #061c38;
 
     @media screen and (min-width: 1224px) {
         font: italic 55px Impact;
         top: -63%;
+        width: 80%;
     }
 
     @media screen and (min-width: 680px) {
         font: italic 45px Impact;
         top: -68%;
+        width: 80%;
     }
 `
 
@@ -97,6 +99,7 @@ const Lista = styled.ul`
 const ImgLogo = styled.img`
     width: 55%;
     margin-left: 20%;
+    margin: 10%;
 
     @media screen and (min-width: 1224px) {
         width: 28%;
@@ -117,51 +120,288 @@ const ImgLogo = styled.img`
 
 const SegundaSection = styled.div`
     background-color: #002555;
-    height: 48em;
+    height: auto;
     width: 100%;
-    margin-top: 3em;
+    margin-top: 2em;
+    padding-bottom: 1.5em;
 
     h1 {
+        text-transform: uppercase;
         font-family: Barlow;
         color: white;
         text-align: center;
         padding-top: .8em;
     }
 
-    .container {
+    .containerStartups {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5em;
+        max-width: 55em;
+        margin: auto;
+        padding: 1em;
+    }
+
+    .containerStartups > *:nth-child(3n-2):nth-last-of-type(1) {
+        grid-column: span 3;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .containerStartups{
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 40em;
+        }
+        .containerStartups > *:nth-child(3n-2):nth-last-of-type(1) {
+            grid-column: span 2;
+        }
+    }
+
+    @media screen and (max-width: 680px){
+        .containerStartups {
+            grid-template-columns: repeat(1, 1fr);
+            width: 75%;
+            max-width: 18em;
+        }
+        .containerStartups > *:nth-child(3n-2):nth-last-of-type(1) {
+            grid-column: span 1;
+        }
+    }
+`;
+
+const SegundaSectionCards = styled.div`
+    background-color: white;
+    height: auto;
+    width: 100%;
+    padding-bottom: 1.5em;
+
+    h1 {
+        text-transform: uppercase;
+        font-family: Barlow;
+        color: black;
+        text-align: center;
+        padding-top: .8em;
+    }
+
+    .containerCards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 55em;
         margin: auto;
         padding: 1em;
         gap: 1.5em;
-    }
-
-    .container > *:nth-child(3n-2):nth-last-of-type(1) {
-        grid-column: span 3;
+        justify-items: center;
     }
 
     @media screen and (max-width: 1024px) {
-        height: 62.5em;
-        .container{
+        .containerCards{
             grid-template-columns: repeat(2, 1fr);
             max-width: 40em;
         }
-        .container > *:nth-child(3n-2):nth-last-of-type(1) {
-            grid-column: auto;
-        }
     }
 
-    @media (max-width: 680px){
-        height: 103em;
-        .container {
+    @media screen and (max-width: 680px){
+        padding-bottom: 0;
+        
+        .containerCards {
             grid-template-columns: repeat(1, 1fr);
             width: 75%;
             max-width: 18em;
         }
     }
+    `; 
 
-`;
+const TerceiraSection = styled.section`
+    width: 100%;
+    background-color: #002555;
+    margin-bottom: 8%;
+    
+    a {
+        width: 50%;
+        text-decoration: none;
+    }
+    
+    @media screen and (min-width: 720px) {
+        width: auto;
+        margin-bottom: 5%;
+    }
+
+    @media screen and (min-width: 1224px) {
+        width: auto;
+        margin-bottom: 5%;
+    }
+
+    @media screen and (min-width: 1800px) {
+        width: auto;
+        margin-bottom: 5%;
+    }
+`
+
+const DivNoticia = styled.div`
+    width: 70%;
+    background-color: white;
+    padding: 5%;
+    margin: auto;
+ 
+    h1 {
+        color: #002555;
+        text-align: center;
+        font-size: 35px;
+       
+    }
+
+    h3 {
+        color: #002555;
+        text-align: center;
+        //margin-bottom: 5%;
+    }
+
+    #texto1 {
+        color: black;
+        width: 100%;
+        background-color: white;
+        position: relative;
+        margin-top: -15%;
+        margin-left: auto;
+        margin-bottom: 10%;
+    }
+
+    #texto2 {
+        color: black;
+        width: 100%;
+        background-color: white;
+        position: relative;
+        margin-top: -16%;
+        margin-left: auto;
+        margin-bottom: 5%;
+    }
+
+    #primeiranoticia {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    #segundanoticia {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 720px) {
+        width: 50%;
+
+        #texto1 {
+            margin-top: -10%;
+        }
+
+        #texto2 {
+            margin-top: -10%;
+        }
+    }
+
+    @media screen and (min-width: 1224px) {
+        width: 45%;
+        margin-left: 3%;
+
+        #texto1 {
+            width: 50%;
+            margin-right: 60%;
+        }
+
+        #texto2 {
+            width: 50%;
+            margin-left: 54%;
+            margin-top: -26%;
+        }
+
+        #primeiranoticia {
+            width: 50%;
+            height: 260px;
+            display: inline-flex;
+        }
+
+        #segundanoticia {
+            width: 50%;
+            height: 260px;
+            display: inline-flex;
+            margin-left: 54%;
+            margin-top: -80%;
+        }
+
+    }
+    
+    @media screen and (min-width: 1800px) {
+        
+        h1 {
+            font-size: 50px;
+        }
+
+        h3 {
+            font-size: 35px;
+        }
+
+        #texto1 {
+            font-size: 23px;
+        }
+
+        #texto2 {
+            width: 52%;
+            margin-left: 53%;
+            font-size: 23px;
+            margin-top: -30%;
+        }
+
+        #segundanoticia {
+            margin-top: -78%;
+        }
+    }
+`
+
+
+const ImgDiv = styled.div`
+
+    img {
+        width: 90%;
+        margin-bottom: 5%;
+        margin-left: 25px;
+        margin-top: 55px;
+        display: block;
+
+    }
+
+    p {
+        color: white;
+        margin-left: 35%;
+        position: relative;
+        top: -15px;
+        display: block;
+    }
+
+    @media screen and (min-width: 720px) {
+        img {
+            width: 70%;
+            margin-left: 15%;
+        }
+    }
+
+    @media screen and (min-width: 1224px) {
+        img {
+            width: 45%;
+            margin-left: 52%;
+            margin-top: -30%;
+        }
+
+        p {
+            margin-left: 85%;
+            margin-top: -2%;
+        }
+    }
+
+    @media screen and (min-width: 1800px) {
+        p {
+            font-size: 20px;
+            margin-left: 84%;
+        }
+    }
+`
+
 
 const Botao = styled.button`
     margin-left: 35%;
@@ -179,171 +419,51 @@ const Botao = styled.button`
     box-shadow: 12px 12px 24px rgba(79,209,197,.64);
     cursor: pointer;
     position: relative;
-
-
-    @media screen and (min-width: 1224px) {
-        margin-left: 43%;
-        min-width: 14%;
-        min-height: 60px;
-        font: normal 50px Arial;
-        font-size: 100%;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        font-weight: 550;
-        color: white;
-        background: #002555;
-        border-radius: 1000px;
-        border-color: #002555;
-        box-shadow: 12px 12px 24px rgba(79,209,197,.64);
-        cursor: pointer;
-        position: relative;
-    }
-
-    @media screen and (min-width: 680px) {
-        margin-left: 43%;
-        min-width: 14%;
-        min-height: 60px;
-        font: normal 50px Arial;
-        font-size: 100%;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        font-weight: 550;
-        color: white;
-        background: #002555;
-        border-radius: 1000px;
-        border-color: #002555;
-        box-shadow: 12px 12px 24px rgba(79,209,197,.64);
-        cursor: pointer;
-        position: relative;
-    }
-
-`
-
-
-const SectionNoticia = styled.section`
-    width: 45%;
-    height: 380px;
-    background-color: #002555;
-    margin-left: 5%;
-    margin-top: 7%;
     margin-bottom: 15%;
 
-    h1 {
-        font-family: Barlow;
+
+    @media screen and (min-width: 1224px) {
+        margin-left: 43%;
+        min-width: 14%;
+        min-height: 60px;
+        font: normal 50px Arial;
+        font-size: 100%;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 550;
         color: white;
-        text-align: center;
-        font-size: 35px;
-        margin-bottom: 5px;
-    }
-
-    h3 {
-        font-family: Arial;
-        color: white;
-        margin-left: 30px;
-    }
-
-    @media screen and (min-width: 1224px){
-        width: 45%;
-        height: 380px;
-        margin-left: 5%;
-        margin-top: 7%;
-        margin-bottom: 15%;
-    }
-
-    @media screen and (min-width: 680px) {
-        width: 45%;
-        height: 380px;
-        margin-left: 5%;
-        margin-top: 7%;
-        margin-bottom: 15%;
-    }
-`
-
-
-const PrimeiraNoticia = styled.img`
-    position: relative;
-    width: 40%;
-    height: 220px;
-    margin-left: 120px;
-
-    @media screen and (min-width: 1224px) {
-        margin-left: 40px;
-    }
-`
-const TextoNoticia = styled.p`
-    position: absolute;
-    background-color: white;
-    color: black;
-    font-size: 18px;
-    width: 18%;
-    margin-left: 40px;
-    margin-top: -70px;
-
-    @media screen and (min-width: 1224px) {
-        font-size: 18px;
-        width: 18%;
-        margin-left: 40px;
-        margin-top: -70px;
-    }
-`
-
-const SegundaNoticia = styled.img`
-    position: relative;
-    width: 40%;
-    height: 220px;
-    margin-left: 50px;
-
-
-    @media screen and (min-width: 1224px) {
-        width: 40%;
-        height: 220px;
-        margin-left: 50px;
-    }
-`
-
-const Texto2 = styled.p`
-    position: absolute;
-    background-color: white;
-    color: black;
-    font-size: 20px;
-    width: 18%;
-    margin-left: 363px;
-    margin-top: -70px;
-`
-
-const ImgDiv = styled.div`
-
-    img {
-        width: 95%;
-        margin-bottom: 5%;
-        margin-left: 13%;
-        margin-top: 18%;
+        background: #002555;
+        border-radius: 1000px;
+        border-color: #002555;
+        box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+        cursor: pointer;
         position: relative;
-
-    }
-
-    p {
-        margin-left: 35%;
-        margin-bottom: 40%;
-        position: absolute;
-    }
-
-`
-
-const TerceiraSection = styled.section`
-
-    @media screen and (min-width: 1224px) {
-        display: flex;
+        margin-bottom: 10%;
     }
 
     @media screen and (min-width: 680px) {
-        display: flex;
+        margin-left: 43%;
+        min-width: 14%;
+        min-height: 60px;
+        font: normal 50px Arial;
+        font-size: 100%;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 550;
+        color: white;
+        background: #002555;
+        border-radius: 1000px;
+        border-color: #002555;
+        box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 10%;
     }
-`
+
+`;
 
 
 
-
-export {PrimeiraSection, ImgDiv, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection,
-    Botao, SectionNoticia, PrimeiraNoticia, TextoNoticia, SegundaNoticia, Texto2, TerceiraSection};
+export {PrimeiraSection, ImgDiv, Titulo, Conteudo, ImgLogo, P, Subtitulo, Lista, TituloImagem, Container, SegundaSection, SegundaSectionCards,
+    Botao, DivNoticia, TerceiraSection};
 
