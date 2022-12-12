@@ -1,0 +1,119 @@
+[
+    {
+        "ID": 1,
+        "link" : "https://www.ibmec.br/pos-graduacao/mba",
+        "nome": "MBA em BI & Data Science",
+        "duracao": "12 meses",
+        "tipo": "MBA",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 2,
+        "link" : "https://www.ibmec.br/pos-graduacao/mba",
+        "nome": "MBA em CIO & IT Management",
+        "duracao": "12 meses",
+        "tipo": "MBA",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 3,
+        "link" : "https://www.ibmec.br/pos-graduacao/mba",
+        "nome": "MBA em Controladoria",
+        "duracao": "12 meses",
+        "tipo": "MBA",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 4,
+        "link" : "https://www.ibmec.br/pos-graduacao/mba",
+        "nome": "MBA em Cyber Security",
+        "duracao": "12 meses",
+        "tipo": "MBA",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 5,
+        "link" : "https://www.ibmec.br/pos-graduacao/mba",
+        "nome": "MBA em Finanças",
+        "duracao": "12 meses",
+        "tipo": "MBA",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 6,
+        "link" : "https://www.ibmec.br/pos-graduacao/mba",
+        "nome": "MBA em Gestão de Negócios",
+        "duracao": "12 meses",
+        "tipo": "MBA",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 7,
+        "link" : "https://www.ibmec.br/pos-graduacao/mba",
+        "nome": "MBA em Finanças e Controladoria",
+        "duracao": "12 meses",
+        "tipo": "MBA",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 8,
+        "link" : "https://www.ibmec.br/pos-graduacao/mba",
+        "nome": "MBA em Gestão de Marketing",
+        "duracao": "12 meses",
+        "tipo": "MBA",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 9,
+        "link" : "https://www.ibmec.br/pos-graduacao/mba",
+        "nome": "MBA em Gestão de Processos - BPM",
+        "duracao": "12 meses",
+        "tipo": "MBA",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 10,
+        "link" : "https://www.ibmec.br/pos-graduacao/mba",
+        "nome": "MBA em Gestão de Projetos",
+        "duracao": "12 meses",
+        "tipo": "MBA",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 11,
+        "link" : "https://www.ibmec.br/pos-graduacao/mba",
+        "nome": "MBA em Liderança e Desenvolvimento de Pessoas",
+        "duracao": "12 meses",
+        "tipo": "MBA",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 12,
+        "link" : "https://www.ibmec.br/pos-graduacao/mba",
+        "nome": "MBA em Mercado de Capitais",
+        "duracao": "12 meses",
+        "tipo": "MBA",
+        "categoria": "Presencial"
+    }
+    ,
+    {
+        "ID": 13,
+        "link" : "https://www.ibmec.br/pos-graduacao/mba",
+        "nome": "MBA em Políticas Públicas e Relações Institucionais",
+        "duracao": "12 meses",
+        "tipo": "MBA",
+        "categoria": "Presencial"
+    }
+    
+]

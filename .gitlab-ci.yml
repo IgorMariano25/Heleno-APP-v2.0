@@ -7,8 +7,8 @@ build:
   stage: build
   variables: 
     # Replace this with your site URL
-    PUBLIC_URL: http://projeto-multidisciplinar.gitlab.io/heleno-app
-    REACT_APP_BASE_NAME: /heleno-app
+    PUBLIC_URL: https://ibtech.sendodigital.com
+    # REACT_APP_BASE_NAME: /
   script:
     - npm install      
     - npm run build
@@ -23,7 +23,8 @@ pages:
     GIT_STRATEGY: none        # Do not clone git repo
   script:
     # Rename the CRA `build` folder to `public`
-    - mv build public         
+    - mv build public 
+    - cp public/index.html public/404.html        
   artifacts:
     paths:
       - public

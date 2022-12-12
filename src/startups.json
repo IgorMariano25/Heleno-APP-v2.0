@@ -1,0 +1,57 @@
+[
+    {
+        "ID" : 1,
+        "link": "https://loudvoiceservices.com/",
+        "texto": "Startup de tecnologia focada na criação de experiências de voz cognitiva super humanizadas.",
+        "nome": "Loud Voice Services",
+        "imagem" : "loud.jpg"
+    }
+    ,
+    {
+        "ID" : 2,
+        "link": "https://www.nossolivro.com.br/",
+        "texto": "Marketplace destinado à compra, venda, doação e futuramente troca e aluguel de livros.",
+        "nome": "Nosso Livro",
+        "imagem" : "nossolivro.jpg"
+    }
+    ,
+    {
+        "ID" : 3,
+        "link": "https://mypubli.digital/",
+        "texto": "Startup de marketing digital, com planos por assinatura customizados.",
+        "nome": "MyPubli.Digital",
+        "imagem" : "mypubli.jpg"
+    }
+    ,
+    {
+        "ID" : 4,
+        "link": "https://hotmart.com/pt-br/marketplace/produtos/businesspal-tire-seus-sonhos-do-papel/E50249586U",
+        "texto": "Plataforma de organização e modelagem de negócios, utilizando as melhores metodologias do mercado.",
+        "nome": "businesspal",
+        "imagem" : "businesspal.jpg"
+    }
+    ,
+    {
+        "ID" : 5,
+        "link": "https://www.diamondbigger.com/",
+        "texto": "Startup com o objetivo de repensar processos de fabricação industrial, com um olhar mais moderno.",
+        "nome": "DiamongBigger",
+        "imagem" : "diamondbigger.jpg"
+    }
+    ,
+    {
+        "ID" : 6,
+        "link": "https://www.prismapp.com.br/",
+        "texto": "Startup que conecta pessoas por meio da gameficação e distribuição de recompensas.",
+        "nome": "PrismaApp",
+        "imagem" : "prismapp.png"
+    }
+    ,
+    {
+        "ID" : 7,
+        "link": "https://eulaudo.com.br/",
+        "texto": "Auxilia na validação de documentos como laudos remotos, de modo acessível e prático para profissionais da saúde e de outras áreas.",
+        "nome": "EuLaudo",
+        "imagem" : "eulaudo.png"
+    }
+]

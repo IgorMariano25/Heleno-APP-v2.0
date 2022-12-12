@@ -1,0 +1,57 @@
+.Pesquisa{
+    text-align: center;
+}
+
+.help-tipo {
+    margin: 0;
+    min-height: 750px;
+}
+
+.Filtro {
+    margin-left: 10vw;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    margin-right: 3vw;
+    font-family: 'Barlow';
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 2px #000000;
+    width: 20vw;
+}
+
+.BotaoFiltro {
+    background-color: #002555;
+    border: none;
+    border-radius: 5px;
+    height: 2.5em;
+    color: white;
+    font-weight: 800;
+    width: 10em;
+}
+
+.BotaoFiltro:active{
+    transform: scale(0.94);
+    transition: transform 0.2s ease;
+}
+
+.BotaoFiltro:hover{
+    background-color: #061c38;
+}
+
+.AlinhamentoAlunosProjetos{
+    margin-left: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.PerfilAlunoDetalhado{
+    font-size: 2em;
+}
+
+.espacamento {
+    height: 4.6875em;
+}

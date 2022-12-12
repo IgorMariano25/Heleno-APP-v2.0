@@ -1,0 +1,22 @@
+[
+    {   
+        "ID" : 1,
+        "nome": "Fernanda Paes",
+        "imagem" : "fernanda.jfif",
+        "texto" : "Coordenadora na Ibmec"
+    }
+    ,
+    {
+        "ID" : 2,
+        "nome": "Luiz Barbieri",
+        "imagem" : "barbieri.jfif",
+        "texto" : "Coordenador do Ibmec Hubs"
+    }
+    ,
+    {
+        "ID" : 3,
+        "nome": "Fernando Filardi",
+        "imagem" : "filardi.jfif",
+        "texto" : "Professor Associado do Ibmec Hubs"
+    }
+]

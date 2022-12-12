@@ -1,26 +1,54 @@
-# Projeto-ibtech
+<img src="https://pbs.twimg.com/profile_images/1382706348534730753/TUCMEUXA_400x400.png" alt="drawing" width="25"/>  **Projeto Ibtech**
 
 # Descrição:
 
-***O projeto visa facilitar a apresentação dos projetos feitos pelos alunos da instituição Ibmec nos cursos de tecnologia, tendo como base a apresentação de portifólios dos alunos bem como os resultados alcançados por eles.***
+* [Descrição](#des)
+* [Objetivo do Site](#obj)
+* [Público Alvo](#publi)
+* [Requisitos](#req)
+* [Diagrama de Casos de Uso](#diagr)
+* [Descrição e correlação dos Casos de Uso com Requisitos](#uso)
+* [Diagrama de Componentes](#comp)
+* [Prototipação](#prototi)
+* [Participantes](#alunos)
+* [Link do Site](#rede)
 
-# História:
-
-***O Projeto surgiu em 2022 como projeto final da disciplina de Projeto Front-end do curso de Análise e Desenvolvimento de Sistemas do IBMEC. Seu idealizador foi o professor Eduardo Mangeli e seu desenvolvimento ficou a cargo dos alunos Clarissa Proença, Guilherme Félix, Felipe Castelhano e Igor Mariano do primeiro período. O foco do site são os alunos e os projetos desenvolvidos por eles. Através dessa plataforma alunos de todos os períodos, dos cursos de tecnologia, poderão mostrar os códigos e projetos que desenvolveram ou venham a desenvolver ao longo de sua formação acadêmica.***
-
-# Status do projeto: Em desenvolvimento
 
 
+## <a name = "des"> Descrição </a>
+Projeto Front-End para os alunos do primeiro e segundo período de Full Stack realizando a transformação do Site Heleno no Site Ibtech.
 
+
+## <a name = "obj"> Objetivo do Site </a>
+Site da Faculdade Ibmec que permite seus alunos compartilharem portifólios, projetos e até mesmo a criação de Startups.
 
 # Técnicas de lavantamento de requisito:
 
-* ***Entrevista***
-* ***Prototipação***
+## <a name = "publi"> Público Alvo </a>
+* Alunos do Ibmec;
+* Pessoas interessadas em conhecer os projetos da Faculdade;
+* Empresas em busca de profissonais.
 
-## <a name="requisitos"> Listagem de requisitos:
-
-### Funcionais:
+## <a name = "req"> Requisitos </a>
+### > Funcionais
+| CÓDIGO | DESCRIÇÃO |
+| - | - |
+| RF01 | O sistema deve [manter](#legenda) as pessoas.
+| RF02 | O sistema deve [manter](#legenda) os projetos.
+| RF03 | O sistema deve [manter](#legenda) novas tecnologias.
+| RF04 | O sistema deve [manter](#legenda) página IBMEC HUBS.
+| RF05 | O sistema deve [manter](#legenda) página Graduação.
+| RF06 | O sistema deve [manter](#legenda) página Pós-Graduação.
+| RF07 | O sistema deve [manter](#legenda) página MBA.
+| RF08 | Possibilitar que o usuário realize buscas por pessoas.
+| RF09 | Possibilitar que o usuário realize buscas por projetos.
+| RF10 | Possibilitar que o usuário realize buscas por [empresas](#legenda).
+| RF11 | Possibilitar que o usuário filtre como informações de busca por pessoas.
+| RF12 | Possibilitar que o usuário filtre como informações de busca por projetos.
+| RF13 | Possibilitar que o usuário filtre como informações de busca por [empresas](#legenda).
+| RF14 | Permitir uma referência entre a pessoa e o projeto.
+| RF15 | O sistema deve possibilitar que o usuário adicione uma foto ao projeto, com até X (Kb, Mb ou Gb).
+| RF16 | O sistema deve permitir fazer login
 
 - [RF1] Permitir o cadastro de novos usuários;
 - [RF2] Permitir o cadastro de novos projetos;
@@ -36,8 +64,8 @@
 - [RF12] Permitir pesquisar por alunos dentro de um projeto
 - [RF13] Permitir adicionar novidades do IBMEC
 - [RF14] Possibilitar que o usuário adicione uma foto ao projeto, com até X (Kb, Mb ou Gb);
-
-### Não Funcionias:
+>##### <a name="legenda"> *Manter: Listar, Visualizar, Editar, Criar e Excluir* </a>
+>##### <a name="legenda"> *Empresas: Startups criadas por alunos do Ibmec* </a>
 
 - [RNF1] Estar disponível para o usuário 24/7;
 - [RNF2] Criptografar a senha do usuário;
@@ -45,40 +73,60 @@
 - [RNF4] Estar hospedado no GitLab Pages;
 - [RNF5] Ser elaborado com o React;
 
+### > Não Funcionais 
+| CÓDIGO | DESCRIÇÃO |
+| - | - |
+| RNF01   | O sistema deve criptografar a senha do usuário.
+| RNF02   | Ser elaborado com o React.
+| RNF03   | Estar hospedado no GitLab Pages.  
+| RNF04   | Estar disponível para o usuário 24/7.   
+| RNF05   | O sistema deve ser responsivo. 
 
-# Técnica de descrição de requisitos a ser utilizada:
-
-*  ***História de usuário com critérios de aceitação***
-
-# Gestão de ramos (branchs) escolhida para esse projeto:
-
-* *A gestão de ramos (branchs) escolhida para esse projeto foi: Integração Contínua* 
-
-O motivo pelo qual o grupo escolheu essa gestão de ramos (branchs) foi porque ela é altamente recomendada para ser utilizada em conjunto com os processos de desenvolvimento ágil de software. Além disso, a medida que o desenvolvedor efetua alterações no código ele deve disponibilizar essas alterações no repositório ***(develop)*** para que os outros desenvolvedores tenham acesso a ele, visando facilitar a compreensão do código desenvolvido. Outro fator que contribuiu para a nossa escolha se deve ao fato da rastreabilidade de erros ser facilitada, justamente porque o código será atualizado constantimente com pequenos commits.
-
-[Explicação da integração contínua](https://aws.amazon.com/pt/devops/continuous-integration/#:~:text=Explica%C3%A7%C3%A3o%20da%20integra%C3%A7%C3%A3o%20cont%C3%ADnua&text=Os%20principais%20objetivos%20da%20integra%C3%A7%C3%A3o,lan%C3%A7ar%20novas%20atualiza%C3%A7%C3%B5es%20de%20software.)
-[Dicas para usar os repositórios com integração contínua ](https://www.atlassian.com/br/continuous-delivery/continuous-integration/ci-friendly-git-repos)
+## <a name = "diagr"> Diagrama de Casos de Uso </a>
+![](https://gitlab.com/EduardoMangeli/ibtech/-/raw/master/Casos_de_Uso_-_Ibtech.png)
 
 
-# Definição da Branchs:
+###  <a name = "uso"> Descrição e correlação dos Casos de Uso com Requisitos </a>
+* [UC01](https://gitlab.com/EduardoMangeli/ibtech/-/blob/master/Casos%20de%20uso/UC01-cadastrar-login.md) - Cadastrar login
+* [UC02](https://gitlab.com/EduardoMangeli/ibtech/-/blob/master/Casos%20de%20uso/UC02-fazer-login.md) - Verificar Login
+* [UC03](https://gitlab.com/EduardoMangeli/ibtech/-/blob/master/Casos%20de%20uso/UC03-Criar-Pessoas.md) - Criar Pessoas 
+* [UC04](https://gitlab.com/EduardoMangeli/ibtech/-/blob/master/Casos%20de%20uso/UC04-Exibir-e-buscar-Pessoas.md) - Exibir e buscar pessoas
+* [UC05](https://gitlab.com/EduardoMangeli/ibtech/-/blob/master/Casos%20de%20uso/UC04-Exibir-e-buscar-Pessoas.md) - Deleção de pessoas
+* [UC06](https://gitlab.com/EduardoMangeli/ibtech/-/blob/master/Casos%20de%20uso/UC04-Exibir-e-buscar-Pessoas.md) - Atualização de pessoas 
+* [UC07](https://gitlab.com/EduardoMangeli/ibtech/-/blob/master/Casos%20de%20uso/UC07-Criar-projetos.md) - Criar Projetos
+* [UC08](https://gitlab.com/EduardoMangeli/ibtech/-/blob/master/Casos%20de%20uso/UC08-Exibir-e-buscar-projetos.md) - Exibir e buscar projetos
+* [UC09](https://gitlab.com/EduardoMangeli/ibtech/-/blob/master/Casos%20de%20uso/UC09-Atualiza%C3%A7%C3%A3o-de-projeto.md) - Atualização de projetos
+* [UC10](https://gitlab.com/EduardoMangeli/ibtech/-/blob/master/Casos%20de%20uso/UC10-Delecao-de-projetos.md) - Deleção de projetos 
 
-***Teremos:***
 
-* ***(1) MAIN***
-* ***(2) DEVELOP***
-* ***(3) IMAGENS/LAYOUT***
+## <a name = "comp"> Diagrama de Componentes </a>
+![](https://gitlab.com/EduardoMangeli/ibtech/-/raw/master/Diagramas%20de%20componentes/Diagrama_de_componentes-contato_-_P%C3%A1gina_1.png)
 
-### Decidir uma das opções abaixo 
-* [Fluxo de trabalho de um branch de recurso do Git Flow](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow) 
-* [Desenvolvimento baseado em tronco](https://www.atlassian.com/br/continuous-delivery/continuous-integration/trunk-based-development)
-* [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
-* [Git Flow: o que é e como gerenciar branches? Exemplos!](https://blog.betrybe.com/git/git-flow/)
-* [Integração contínua](https://www.atlassian.com/br/continuous-delivery/continuous-integration)
 
-***A equipes escolheu  Integração Contínua***
+## <a name = "prototi"> Prototipação </a>
+* Protótipo Graduação Desktop
 
-# Link para site do projeto
-Projeto Heleno: http://projeto-multidisciplinar.gitlab.io/heleno-app/
+![](https://gitlab.com/EduardoMangeli/ibtech/-/raw/master/Prot%C3%B3tipos/Gradua%C3%A7%C3%A3o_Desktop.png)
+
+* Protótipo Pós-Graduação Desktop
+
+![](https://gitlab.com/EduardoMangeli/ibtech/-/raw/master/Prot%C3%B3tipos/Po%CC%81s_Proto%CC%81tipo_Desktop.png)
+
+* Protótipo Pós-Graduação Mobile
+
+![](https://gitlab.com/EduardoMangeli/ibtech/-/raw/master/Prot%C3%B3tipos/Po%CC%81s_Proto%CC%81tipo_Mobile.png)
+
+* [Todos os protótipos do projeto](https://gitlab.com/EduardoMangeli/ibtech/-/tree/master/Prot%C3%B3tipos)
+
+
+## <a name = "alunos"> Participantes </a>
+* Professor: Eduardo Mangeli
+
+* Alunos: Amanda Senra, Victor Hugo Rocha, Matheus Herzog, William Fagundes, Caio da luz, Gabriel Espósito, Guilherme Maia, Ilidio , João Victor Meirelles, João Pedro Constant, Leonardo Campello, Maria Giulia , Pedro Reis, Augusto Amorim, Thaís Bustamante, Gabriel Oscar, Vitor Lobianco, Raphael Meres, João Curvelho, Theo Furtado, Rafael Neiva, Beatriz Moura, Gabriel Martinez, João Pedro Correia
+
+## <a name = "rede"> Link do Site </a>
+
+<https://ibtech.sendodigital.com/>
 
 ```
 cd existing_repo
@@ -135,4 +183,3 @@ git push -uf origin main
 ### SOBRE 
 
 - Colocar a galeria das turmas e seus respectivos projetos.
-

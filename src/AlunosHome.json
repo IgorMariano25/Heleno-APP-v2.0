@@ -1,0 +1,49 @@
+[
+    {   
+        "ID" : 1,
+        "nome": "Clarissa Proença",
+        "imagem" : "clarissa.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "202002422789",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Sou formada na UFRJ 2019 em Design e agora sou aluna de full-stack no Ibmec",
+        "Projetos": "Projeto Heleno, machine learning usando Python, Framework Django, Banco de Dados"
+    }
+    ,
+    {
+            "ID" : 23,
+            "nome": "Théo Furtado",
+            "imagem" : "DjThéoFurtado.png",
+            "curso" : "Análise e Desenvolvimento de Sistemas",
+            "matricula": "(PREENCHER)",
+            "ingresso": "2022.2",
+            "formacao": "2024",
+            "bio": "O astro do momento!",
+            "Projetos": "Projeto Heleno"
+    }
+    ,
+    {
+        "ID" : 3,
+        "nome": "Guilherme Felix",
+        "imagem" : "gui.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "2022",
+        "ingresso": "2022.1",
+        "formacao": "2024",
+        "bio": "Deve ser o Gui",
+        "Projetos": "Projeto Heleno, machine learning usando Python, Framework Django, Banco de Dados"
+    }
+    ,
+    {
+        "ID" : 21,
+        "nome": "Raphael Meres",
+        "imagem" : "RaphaelMeres.png",
+        "curso" : "Análise e Desenvolvimento de Sistemas",
+        "matricula": "(PREENCHER)",
+        "ingresso": "2022.2",
+        "formacao": "2024",
+        "bio": "Crypto, NFT e Metaverso",
+        "Projetos": "Projeto Heleno"
+    }
+]
