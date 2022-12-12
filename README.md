@@ -1,6 +1,6 @@
 <img src="https://pbs.twimg.com/profile_images/1382706348534730753/TUCMEUXA_400x400.png" alt="drawing" width="25"/>  **Projeto Ibtech**
-------
 
+# Descrição:
 
 * [Descrição](#des)
 * [Objetivo do Site](#obj)
@@ -22,12 +22,12 @@ Projeto Front-End para os alunos do primeiro e segundo período de Full Stack re
 ## <a name = "obj"> Objetivo do Site </a>
 Site da Faculdade Ibmec que permite seus alunos compartilharem portifólios, projetos e até mesmo a criação de Startups.
 
+# Técnicas de lavantamento de requisito:
 
 ## <a name = "publi"> Público Alvo </a>
 * Alunos do Ibmec;
 * Pessoas interessadas em conhecer os projetos da Faculdade;
 * Empresas em busca de profissonais.
-
 
 ## <a name = "req"> Requisitos </a>
 ### > Funcionais
@@ -50,10 +50,28 @@ Site da Faculdade Ibmec que permite seus alunos compartilharem portifólios, pro
 | RF15 | O sistema deve possibilitar que o usuário adicione uma foto ao projeto, com até X (Kb, Mb ou Gb).
 | RF16 | O sistema deve permitir fazer login
 
-
+- [RF1] Permitir o cadastro de novos usuários;
+- [RF2] Permitir o cadastro de novos projetos;
+- [RF3] Permitir o cadastro de novas tecnologias;
+- [RF4] Possibilitar que o usuário realize buscas por projetos;
+- [RF5] Possibilitar que o usuário filtre as informações de busca por pessoas;
+- [RF6] Possibilitar que o usuário filtre as informações de busca por projetos;
+- [RF7] Exibir as informações dos projetos;
+- [RF8] Exibir quais tecnologia foram usadas no projeto;
+- [RF9] Permitir que o usuário adicione arquivos ao projeto;
+- [RF10] Permitir a edição dos projetos;
+- [RF11] Permitir a edição dos perfis dos alunos;
+- [RF12] Permitir pesquisar por alunos dentro de um projeto
+- [RF13] Permitir adicionar novidades do IBMEC
+- [RF14] Possibilitar que o usuário adicione uma foto ao projeto, com até X (Kb, Mb ou Gb);
 >##### <a name="legenda"> *Manter: Listar, Visualizar, Editar, Criar e Excluir* </a>
 >##### <a name="legenda"> *Empresas: Startups criadas por alunos do Ibmec* </a>
 
+- [RNF1] Estar disponível para o usuário 24/7;
+- [RNF2] Criptografar a senha do usuário;
+- [RNF3] Deve rodar em vários tipos de navegadores;
+- [RNF4] Estar hospedado no GitLab Pages;
+- [RNF5] Ser elaborado com o React;
 
 ### > Não Funcionais 
 | CÓDIGO | DESCRIÇÃO |
@@ -63,7 +81,6 @@ Site da Faculdade Ibmec que permite seus alunos compartilharem portifólios, pro
 | RNF03   | Estar hospedado no GitLab Pages.  
 | RNF04   | Estar disponível para o usuário 24/7.   
 | RNF05   | O sistema deve ser responsivo. 
-
 
 ## <a name = "diagr"> Diagrama de Casos de Uso </a>
 ![](https://gitlab.com/EduardoMangeli/ibtech/-/raw/master/Casos_de_Uso_-_Ibtech.png)
@@ -111,3 +128,58 @@ Site da Faculdade Ibmec que permite seus alunos compartilharem portifólios, pro
 
 <https://ibtech.sendodigital.com/>
 
+```
+cd existing_repo
+git remote add origin https://gitlab.com/projeto-multidisciplinar/projeto-eleno.git
+git branch -M main
+git push -uf origin main
+```
+
+### Caso de uso adicionado 
+
+# Requisitos debatidos pela turma
+
+### GERAL
+- Criar a area do Hubs, Graduações, Pós Graduações e MBA.
+
+- Deixar a navbar presa.
+
+- Deixar o footer solto.
+
+- Deixar responsivo.
+
+### HOME
+- Tirar a secao de alunos
+
+- Tirar a secao de projetos
+
+- Colocar um `Como Chegar no Ibmec` google maps
+
+- Seção para falar sobre o Hubs, com botão para levar a aba própria do Hubs
+
+### PORTFOLIOS
+- Colocar o nome do lider do projeto no card da lista.
+
+- Tirar os nomes de todos os participantes do card da lista.
+
+- Tirar a lista de projetos dos alunos.
+
+- Colocar a lista de projetos do ibmec.
+
+- Ao clicar no card, aparecer todos os participantes com as tecnologias.
+
+### ALUNOS
+
+- Ao clicar no card, aparecer todos os projetos do aluno.
+
+- Ajeitar o estilo do card.
+
+### CONTATO
+
+- Integrar o botao `enviar mensagem` com o whatsapp.
+
+- Transformar o botao de mensagem em uma textarea.
+
+### SOBRE 
+
+- Colocar a galeria das turmas e seus respectivos projetos.
